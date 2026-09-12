@@ -7,7 +7,7 @@ seat: Constructor-HV (DeepSeek)
 
 # ART-06b — H-V Construction Memo (shell)
 
-**Blind build.** Do not see ART-06a before freeze. Dual steelman. Identical packet: ART-01…ART-05 + runbook + Master Prompt.
+**Blind build.** Do not see ART-06a / ART-06c before freeze. Three-hypothesis Stage 6 (H-R, H-A, H-V). Identical packet: ART-01…ART-05 + runbook + Master Prompt.
 
 ## 1. Exact hypothesis text (from ART-01)
 
@@ -78,6 +78,6 @@ Generic rival-type self-contrast OK; not a prosecution file. Do not dump every n
 ## Exit checklist
 
 - [ ] Complete template; parity, specificity, self-risk present
-- [ ] No peeking / cross-reference to ART-06a
+- [ ] No peeking / cross-reference to ART-06a / ART-06c
 - [ ] Costed nonempty correlate (no empty-correlate collapse)
 - [ ] No unlocked criteria; no side constitution

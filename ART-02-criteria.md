@@ -7,7 +7,7 @@ status: PACK BASELINE (for new runs under 1.1)
 # ART-02 — Abductive Criteria (pack baseline)
 
 **Protocol pin:** `HVHR-IBE-RB-1.1`  
-**Role:** Concise C1–C8 lock for new runs. No H-R/H-V scores here. Fuller literature crosswalk and hostile-reader table: live-run `ART-02-criteria-lock.md` when present; essentials below.
+**Role:** Concise C1–C8 lock for new runs. No H-R / H-A / H-V scores here. Fuller literature crosswalk and hostile-reader table: live-run `ART-02-criteria-lock.md` when present; essentials below.
 
 ## Criteria (C1–C8)
 
@@ -24,30 +24,37 @@ status: PACK BASELINE (for new runs under 1.1)
 
 **Default weights:** `w(C1) = … = w(C8) = 1` (equal). Subfunctions get no extra weights.
 
-## Ordinal scale
+## Ordinal scale — two pairwise courts
 
-`H-R+` / `H-V+` / `≈` / `insuf` (no probabilities). No blended overall winner. Shared downstream telling cancels. Mode ≠ source (see ART-01).
+**Not a single three-way blended winner.** Stage 7 scores two courts with court-specific ordinal labels:
+
+| Court | Pair | Ordinal labels |
+|---|---|---|
+| **Court 1** | H-R vs H-A | `H-R+` / `H-A+` / `≈` / `insuf` |
+| **Court 2** | H-R vs H-V | `H-R+` / `H-V+` / `≈` / `insuf` |
+
+No probabilities. Shared downstream telling cancels. Mode ≠ source (see ART-01). Do not blend Court 1 and Court 2 into one overall crown.
 
 ## Stage 7 aggregation lenses (owner lock for new runs)
 
-Scorecards stay **C1–C8** with the **equal-weight primary profile**. After filling cells, Stage 7 **must also publish two sensitivity aggregations over the same cells** (do **not** cook criteria; do **not** invent new families):
+Scorecards stay **C1–C8** with the **equal-weight primary profile**. After filling cells, Stage 7 **must also publish two sensitivity aggregations over the same cells** (do **not** cook criteria; do **not** invent new families) — **per court**:
 
 1. **Equal** — default; all `w = 1` (primary).
 2. **C3-heavy** — total-evidence coherence weighted strongest (`w(C3) = 3`; others `1`).
 3. **C1-heavy** — content-fit weighted strongest (`w(C1) = 3`; others `1`).
 
-**Lenses are aggregations, not new criteria.** Anti-abstention still applies to filling cells: unpaid bridges ≠ auto-`insuf`; assign `H-R+` / `H-V+` / `≈` when ordinal difference is clear; `insuf` only after compare when warrant missing or deadlocked. **Equal-weight remains primary.**
+**Lenses are aggregations, not new criteria.** Anti-abstention still applies to filling cells **per court**: unpaid bridges ≠ auto-`insuf`; assign the court-appropriate `H-R+` / `H-A+` or `H-R+` / `H-V+` / `≈` when ordinal difference is clear; `insuf` only after compare when warrant missing or deadlocked. **Equal-weight remains primary** in each court.
 
 ### Owner Stage-7 honesty checks (aggregation lenses)
 
-When publishing **C3-heavy**, require an explicit **per-node** tag:
+When publishing **C3-heavy**, require an explicit **per-node** tag (per court):
 
 - **ARGUED+LOCKED** — the metaphysics relevant to C3 is argued and locked **for this node**, or
 - **SMUGGLED** — metaphysics is smuggled (imported without node-level lock/argument).
 
 If **SMUGGLED**, **C3-heavy must not be treated as decisive** for that node (flag / downgrade commentary).
 
-When publishing **C1-heavy**, require an explicit **per-criterion-or-node** tag:
+When publishing **C1-heavy**, require an explicit **per-criterion-or-node** tag (per court):
 
 - **EVIDENCE-BRIDGE** — C1 rests on a bridge from data → differential expectedness vs the steelman rival, or
 - **SLOGAN-FIT** — C1 is slogan-fit only (label / catchphrase without that bridge).

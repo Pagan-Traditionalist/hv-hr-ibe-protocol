@@ -7,7 +7,7 @@ seat: Constructor-HR (Grok)
 
 # ART-06a — H-R Construction Memo (shell)
 
-**Blind build.** Do not see ART-06b before freeze. Dual steelman. Identical packet: ART-01…ART-05 + runbook + Master Prompt.
+**Blind build.** Do not see ART-06b / ART-06c before freeze. Three-hypothesis Stage 6 (H-R, H-A, H-V). Identical packet: ART-01…ART-05 + runbook + Master Prompt.
 
 ## 1. Exact hypothesis text (from ART-01)
 
@@ -76,6 +76,6 @@ Generic rival-type self-contrast OK; not a prosecution file.
 ## Exit checklist
 
 - [ ] Complete template; parity, specificity, self-risk present
-- [ ] No peeking / cross-reference to ART-06b
+- [ ] No peeking / cross-reference to ART-06b / ART-06c
 - [ ] No unlocked criteria; no side constitution
 - [ ] Transformed-bodily H-R (not swoon)
