@@ -191,7 +191,7 @@ Each gate is operational. Vague “looks fair” does not pass. Any Fail = STOP 
 **Candidate criterion families (proposal fodder; owner locks a thin discriminating set):**  
 Likelihood/fit · content-fit (raised / appeared / burial language) · parsimony / ontological economy · type-familiarity / analogy · explanatory scope · total-evidence coherence · auxiliary cost · precision / ad-hocness · causal unity · discriminating power · source independence · vulnerability (losing conditions) · robustness to contested data.
 
-**Scoring rule (locked here):** Ordinal only (`--` / `-` / `0` / `+` / `++`, or equivalently `H-R+` / `H-V+` / `≈` / `insuf`). No cardinal probabilities unless owner later adds a *named optional* numeric appendix. Shared downstream telling (ordinary rumor, liturgy, memory, group reinforcement) **cancels**. Default **equal family weight**; any non-equal weighting requires written challenge + owner lock **before Stage 6**.
+**Scoring rule (locked here):** Ordinal only (`--` / `-` / `0` / `+` / `++`, or equivalently `H-R+` / `H-V+` / `≈` / `insuf`). No cardinal probabilities unless owner later adds a *named optional* numeric appendix. Shared downstream telling (ordinary rumor, liturgy, memory, group reinforcement) **cancels**. Default **equal family weight** (`w=1`); any non-equal *criterion* change requires written challenge + owner lock **before Stage 6**. Pack baseline criteria: `ART-02-criteria.md` (C1–C8). **Stage 7 aggregation lenses** (Equal / C3-heavy / C1-heavy) are required sensitivity aggregations over the *same* cells — they are **not** new criteria and do **not** cook the ruler (see Stage 7).
 
 **1.1 neutrality on criteria:** Do not cook families or scales to privilege H-R or H-V. Cooking criteria is a Neutrality Fail, distinct from honest discriminating power.
 
@@ -374,6 +374,16 @@ Pre-register slices in `ART-04`. Run all registered slices or none (no one-sided
 
 **Work:** Fill locked scorecard **once per node** (**B, T, G, C**). Base = evidence Slice A. Sensitivity = pre-registered evidence Slices B/C (slice letters ≠ worldview nodes). Thin attack/refutation ledger only for *criteria applications* (smuggle, cartoon, dropped losing condition) — capped at strongest **N** objections per side.
 
+#### Aggregation lenses (1.1 — required after equal-weight profile)
+
+Scorecards stay **C1–C8**. Primary profile = **equal weights** (`w=1`). After cells are filled, Stage 7 **must publish three aggregations over the same cells** (do **not** cook criteria; do **not** invent new families):
+
+1. **Equal** — default primary (`w(Ci)=1` all).
+2. **C3-heavy** — total-evidence coherence weighted strongest (`w(C3)=3`; others `1`).
+3. **C1-heavy** — content-fit weighted strongest (`w(C1)=3`; others `1`).
+
+**Lenses are aggregations, not new criteria.** Anti-abstention still governs cell-filling. Report each lens per node; no blended overall winner across nodes.
+
 #### Anti-abstention rule (1.1 — constitutive for Stage 7 / IBE)
 
 **Spell abstention explicitly. Neutrality ≠ abstention.** Stage 7 must perform **comparative IBE** — not fairness theater that withholds labels.
@@ -398,12 +408,13 @@ Unpaid auxiliaries / **unpaid bridges** do **not** by themselves auto-`insuf`.
 
 - Scorecard complete for every required node (B, T, G, C) and both hypotheses; ordinal only.  
 - Shared mechanisms cancel; Contested as sensitivity; no post-hoc criteria; no blended overall winner.  
+- **Three aggregations published** after the equal-weight profile: Equal, C3-heavy, C1-heavy (same cells; lenses ≠ new criteria).  
 - Weighting challenges logged.  
 - C can show H-R ahead if warranted; T can show H-V ahead where evidence warrants under OpenTI; B stays agnostic unless evidence strongly shifts under agnostic priors; G may often yield `≈`.  
 - Anti-abstention rule honored: clear ordinal differences labeled; `insuf` only after compare when warrant missing or deadlocked.  
 - Ceiling language only; auditor did not rewrite hyps or criteria.
 
-**Fail:** missing rows; invented criterion; blended winner; C inert; single B-only official court; **abstention** (protocol Fail); treating unpaid auxiliaries / unpaid bridges alone as automatic `insuf`; skipping comparative IBE.
+**Fail:** missing rows; invented criterion; blended winner; C inert; single B-only official court; **abstention** (protocol Fail); treating unpaid auxiliaries / unpaid bridges alone as automatic `insuf`; skipping comparative IBE; **omitting Equal / C3-heavy / C1-heavy aggregations**.
 
 ---
 
@@ -430,8 +441,8 @@ Unpaid auxiliaries / **unpaid bridges** do **not** by themselves auto-`insuf`.
 
 | Stage | Artifact | One-line description |
 |---|---|---|
-| 1 | `ART-01-hypotheses.md` | Frozen fair wording of H-V and H-R; READ-ONLY |
-| 2 | `ART-02-criteria-lock.md` | Frozen symmetric IBE criteria, scales, cancel/weight rules |
+| 1 | `ART-01-hypotheses.md` | Frozen fair wording of H-V and H-R; READ-ONLY (pack baseline shipped) |
+| 2 | `ART-02-criteria.md` / live `ART-02-criteria-lock.md` | Frozen C1–C8 + Stage 7 aggregation lenses; scales, cancel/weight rules |
 | 3 | `ART-03-presupposition-tree.md` | Frozen slim tree B/T/G/C; C prior; T label-only |
 | 4 | `ART-04-record-lock.md` | Accepted / Contested / Background / Excluded + slices A/B/C |
 | 5 | `ART-05-dossier.md` | Neutral shared evidence and background; no ranking |
@@ -442,7 +453,7 @@ Unpaid auxiliaries / **unpaid bridges** do **not** by themselves auto-`insuf`.
 | — | `hv-hr-master-prompt.md` | Thin stage-routed launcher; version-pinned |
 | — | `NEUTRALITY_GATE.md` | Hostile-reader checklist results (protocol and/or run) |
 
-Hash-and-freeze artifacts when available. Live ARTs are **not** part of this method-pack repo.
+Hash-and-freeze artifacts when available. This method pack ships **pack-baseline** `ART-01-hypotheses.md` and `ART-02-criteria.md` only — not live-run dumps (`ART-03`…`ART-08`, sessions).
 
 ---
 
@@ -472,9 +483,9 @@ Hash-and-freeze artifacts when available. Live ARTs are **not** part of this met
 5. Ordinal only (unless owner-approved optional numeric appendix).  
 6. Weighting challenges recorded; do not silently change weights.  
 7. C may produce H-R ahead; T may produce H-V ahead; B stays agnostic unless evidence strongly shifts under agnostic priors; G often `≈`.  
-8. Under each node list: (i) base Slice-A profile, (ii) discriminating families, (iii) sensitivity deltas.  
-9. Legal summary template: `Under {node}: H-R+ on {families}; H-V+ on {families}; net: H-R ahead / H-V ahead / underdetermined.`  
-10. **Anti-abstention:** do not replace a clear ordinal net with a wall of `insuf`.
+8. Under each node list: (i) base Slice-A equal-weight profile, (ii) discriminating families, (iii) sensitivity deltas, (iv) **Equal / C3-heavy / C1-heavy aggregations** over the same cells.  
+9. Legal summary template: `Under {node}: H-R+ on {families}; H-V+ on {families}; net: H-R ahead / H-V ahead / underdetermined.` Repeat net under each aggregation lens.  
+10. **Anti-abstention:** do not replace a clear ordinal net with a wall of `insuf`. Lenses do not excuse unfilled cells.
 
 ---
 

@@ -15,11 +15,16 @@ Supersedes HVHR-IBE-RB-1.0.
   - **G** — God + MF (thin; label stays God + MF)
   - **C** — God + MF + Christian worldview presuppositions (bodily mode not locked)
 - Dual steelman H-R vs H-V.
-- This repo: method pack only (no live ARTs).
+- Pack baselines: `ART-01-hypotheses.md`, `ART-02-criteria.md` (not live-run dumps).
+- Stage 7: after equal-weight C1–C8 profile, publish aggregations **Equal** / **C3-heavy** / **C1-heavy** (same cells; lenses ≠ new criteria; anti-abstention still fills cells).
+- Tree: **B / T / G / C**; **G = God + MF**; no Craig/Kalam.
+- This repo: method pack only (no live ART-03…ART-08 / sessions).
 
 ## Files
 
 - `hv-hr-stage-gated-protocol.md`
 - `hv-hr-master-prompt.md`
+- `ART-01-hypotheses.md`
+- `ART-02-criteria.md`
 - `protocol-merge-notes.md`
 - `README.md`

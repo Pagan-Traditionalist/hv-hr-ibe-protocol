@@ -22,7 +22,8 @@ Why 1.1 exists: **Stage 7 / IBE abstention failure** under 1.0 (unpaid auxiliari
 | **G** | God + MF (required; thin; label stays **God + MF**). |
 | **C** | God + MF + Christian worldview presuppositions (authorization / expected vindication); bodily MODE not locked. |
 | **Dual steelman** | H-R vs H-V remains default. |
-| **Repo scope** | Method-pack only (five files); no design-passes; no live ARTs / `run/` in this tree. |
+| **Repo scope** | Method-pack only; ships pack-baseline ART-01/ART-02; no design-passes; no live ART-03…ART-08 / `run/` in this tree. |
+| **Stage 7 aggregations** | After equal-weight C1–C8 profile: publish **Equal**, **C3-heavy** (`w(C3)=3`), **C1-heavy** (`w(C1)=3`) over the *same* cells. Lenses ≠ new criteria; anti-abstention still fills cells. |
 
 ---
 
@@ -77,8 +78,10 @@ None blocking freeze of `HVHR-IBE-RB-1.1`. Optional later: attack-ledger N; stan
 |---|---|
 | `hv-hr-stage-gated-protocol.md` | Canonical runbook `HVHR-IBE-RB-1.1` |
 | `hv-hr-master-prompt.md` | Thin stage-routed Master Prompt |
+| `ART-01-hypotheses.md` | Pack baseline dual-steelman H-R / H-V |
+| `ART-02-criteria.md` | Pack baseline C1–C8 + Stage 7 aggregation lenses |
 | `protocol-merge-notes.md` | This merge / patch note |
 | `HVHR-IBE-RB-1.1.md` | Freeze marker |
 | `README.md` | Method-pack index |
 
-**Five files only.** Naming locked. Method only; no resurrection verdict; no design-passes; no live `run/` / ART artifacts in this repo.
+Naming locked. Method only; no resurrection verdict; no design-passes; no live-run dumps (ART-03…ART-08 / sessions) in this repo.
