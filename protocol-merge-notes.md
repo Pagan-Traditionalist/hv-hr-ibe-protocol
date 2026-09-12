@@ -22,7 +22,7 @@ Why 1.1 exists: **Stage 7 / IBE abstention failure** under 1.0 (unpaid auxiliari
 | **G** | God + MF (required; thin; label stays **God + MF**). |
 | **C** | God + MF + Christian worldview presuppositions (authorization / expected vindication); bodily MODE not locked. |
 | **Dual steelman** | H-R vs H-V remains default. |
-| **Repo scope** | Method-pack only; ships pack-baseline ART-01/ART-02; no design-passes; no live ART-03…ART-08 / `run/` in this tree. |
+| **Repo scope** | Method-pack; ships pack-baseline ART-01/ART-02 + empty ART-03…ART-08 / NEUTRALITY_GATE shells; no design-passes; no live-run dumps / `run/` sessions in this tree. |
 | **Stage 7 aggregations** | After equal-weight C1–C8 profile (primary): publish **Equal**, **C3-heavy** (`w(C3)=3`), **C1-heavy** (`w(C1)=3`) over the *same* cells. Lenses ≠ new criteria; anti-abstention still fills cells. **Honesty:** C3-heavy per-node **ARGUED+LOCKED** vs **SMUGGLED** (SMUGGLED → not decisive); C1-heavy per-criterion-or-node **EVIDENCE-BRIDGE** vs **SLOGAN-FIT** (SLOGAN-FIT → not decisive). |
 
 ---
