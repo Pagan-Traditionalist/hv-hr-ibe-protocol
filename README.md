@@ -10,15 +10,16 @@ Account: **Pagan-Traditionalist** (Nyklot).
 
 ## 1.1 repairs
 
-- Anti-abstention for Stage 7 / IBE
+- Anti-abstention / comparative IBE for Stage 7 — **Neutrality ≠ abstention**; unpaid bridges ≠ auto-`insuf`; abstention = protocol Fail
 - Neutrality = fair criteria + fair data (not withholding labels)
-- Slim tree **B / T / G / C** (MF on every node; T ≠ G)
+- Research / effort split: thin **B**/**G**; concentrate on **T** (OpenTI entailments) and **C** (fair Christian worldview presuppositions)
+- Slim tree **B / T / G / C** (MF on every node; T ≠ G; Will ≠ God; causation in phenomena; classical H-R not well-typed under T; H-V-style can be)
 
 | Node | Layer (+ shared MF) |
 |------|---------------------|
-| **B** | Metaphysical agnosticism + MF |
+| **B** | Metaphysical agnosticism + MF (thin seat) |
 | **T** | OpenTI + MF |
-| **G** | God + MF |
+| **G** | God + MF (thin seat) |
 | **C** | God + MF + Christian worldview presuppositions |
 
 ## Files

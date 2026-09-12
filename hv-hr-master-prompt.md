@@ -32,16 +32,23 @@ Publishable: no secret side instructions. No peeking across blind seats.
 
 1.1 locks (pointers — full text in runbook):
   Neutrality = (a) do not cook criteria to privilege H-R or H-V; (b) do not cherry-pick/pad record.
-  Neutrality ≠ abstaining from comparative labels when ordinal difference is clear.
-  Anti-abstention (Stage 7): unpaid auxiliaries alone ≠ insuf; compare outstanding burdens;
-    assign H-R+ / H-V+ / ≈ when clear; insuf only after compare when warrant missing or deadlocked.
+  Neutrality ≠ abstention. Spell abstention explicitly. Abstention is a protocol Fail.
+  Anti-abstention / comparative IBE (Stage 7): unpaid auxiliaries / unpaid bridges do NOT auto-insuf;
+    compare outstanding burdens; assign H-R+ / H-V+ / ≈ when ordinal difference is clear;
+    insuf only after compare when warrant missing or deadlocked.
   Slim tree (required): B / T / G / C — DROP A and C−.
     MF (minimal facts) is SHARED on every node; nodes differ by worldview layer only.
-    B = metaphysical agnosticism + MF.
+    B = metaphysical agnosticism + MF.  (thin seat — no Deep Research to discover agnosticism)
     T = OpenTI + MF (open transcendental idealism: noumenal disclosure — Will, aesthetic intuition; not Kant-closed; Schopenhauer ancestry/gloss only; Will ≠ God). T ≠ G.
-    Node hygiene: T ≠ G — OpenTI Will/noumenal disclosure is NOT creator-God; do not collapse T into G or steelman classical H-R under T by equating Will with God / personal creator-cause. Appearance/manifestation pathways may be well-typed under OpenTI; creatio-style personal divine raising belongs under G/C, not by redefining T.
-    G = God + MF.
+    Node hygiene / T entailments (owner lock): T ≠ G — Will ≠ God; causation in phenomena, not creatio-style cause into phenomena;
+      visions/spirit-seeing/manifestations of Will can be well-typed under T;
+      classical H-R (personal creator God raising a corpse) is NOT well-typed under T;
+      H-V-style appearance pathways can be well-typed under T;
+      shared phenomenal MF (death, reports, proclamation, etc.) can appear under both as representation-level;
+      creatio-style personal divine raising belongs under G/C, not by redefining T.
+    G = God + MF.  (thin seat — no Deep Research to discover bare God; label stays God + MF)
     C = God + MF + Christian worldview presuppositions (authorization / expected vindication); bodily MODE not locked.
+  Research / effort split: concentrate Deep Research on T (OpenTI entailments) and C (fair Christian worldview presuppositions); B and G stay thin.
   Dual steelman H-R vs H-V default.
 
 Locked artifacts (read by reference — do NOT restate contents into a new constitution):
@@ -63,7 +70,7 @@ Stage router (execute only the named stage):
   4 Record Lock     → lock ART-04 tiers; slices A/B/C = sensitivity (hostile-C); no cherry-pick/pad
   5 Shared Dossier  → ART-05; no ranking sentences; total-evidence floor
   6 Dual Construction → blind steelmans: Grok=ART-06a (H-R), DeepSeek=ART-06b (H-V)
-  7 Comparative Audit → third auditor fills ART-07 per node B/T/G/C; ordinal; anti-abstention
+  7 Comparative Audit → third auditor fills ART-07 per node B/T/G/C; MUST perform comparative IBE; Neutrality ≠ abstention; unpaid bridges ≠ auto-insuf; assign H-R+ / H-V+ / ≈ when clear; abstention = protocol Fail
   8 Interpretation  → Owner ART-08 keep/cut; run Neutrality Gate on the run
 
 Independence:
@@ -86,10 +93,10 @@ If Fail: STOP and report Fail items. Do not silently continue.
 | Seat | Opens | Must not |
 |---|---|---|
 | Coordinator | Packet assembly, timestamps, routing | Vote, rewrite memos, crown winner |
-| Research | Stages 2–5 proposals | Announce winner in dossier; cook criteria; pad/omit record |
+| Research | Stages 2–5 proposals; **thin B/G**; concentrate Deep Research on **T** + **C** | Announce winner in dossier; cook criteria; pad/omit record; invent B/G via Deep Research |
 | Constructor-HR | Stage 6 → ART-06a only | See ART-06b before freeze; prosecute instead of build |
 | Constructor-HV | Stage 6 → ART-06b only | See ART-06a before freeze; empty-correlate collapse |
-| Auditor | Stage 7 → ART-07 on **B/T/G/C** | Rewrite hyps/criteria; blend nodes; **abstain** when ordinal difference is clear |
+| Auditor | Stage 7 → ART-07 on **B/T/G/C**; comparative IBE; anti-abstention | Rewrite hyps/criteria; blend nodes; **abstention** (withhold H-R+/H-V+/≈ when ordinal difference is clear) — protocol Fail |
 | Owner | All locks; Stage 8; Neutrality Gate adjudication | Mid-run hyp rewrite without version bump |
 | Neutrality reader | Checklist in runbook §12 | Self-grade if you wrote the soft language; equate neutrality with abstention |
 
@@ -107,6 +114,6 @@ Never edit this prompt mid-run as a side constitution.
 ---
 ## FREEZE RECORD
 **Status:** FROZEN as owner keep — `HVHR-IBE-RB-1.1`  
-**Owner keep/cut:** Freeze v1.1 method pack (anti-abstention; slim tree B/T/G/C OpenTI; MF shared on every node) — 2026-09-12, America/Chicago  
+**Owner keep/cut:** Freeze v1.1 method pack (anti-abstention / comparative IBE; research split thin B/G concentrate T/C; T entailments; slim tree B/T/G/C OpenTI; MF shared) — 2026-09-12, America/Chicago  
 **Supersedes:** `HVHR-IBE-RB-1.0`  
 **No mid-run edit** without version bump + re-issue of Master Prompt.

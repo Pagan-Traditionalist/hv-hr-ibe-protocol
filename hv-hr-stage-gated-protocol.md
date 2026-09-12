@@ -18,9 +18,11 @@
 **1.1 patches (method only):**
 
 1. **Neutrality clarified** — (a) do not cook C1–C8 to privilege H-R or H-V; (b) do not cherry-pick or pad the record for either. Neutrality ≠ abstaining from comparative labels when ordinal difference is clear.
-2. **Anti-abstention (Stage 7 / IBE)** — unpaid auxiliaries do **not** by themselves justify `insuf`; compare outstanding burdens; assign `H-R+` / `H-V+` / `≈` when ordinal difference is clear; reserve `insuf` only after comparing, when warrant is missing or deadlocked. Use the word **abstention** (not “extension”).
+2. **Anti-abstention (Stage 7 / IBE)** — spell **abstention** explicitly. **Neutrality ≠ abstention.** Stage 7 must perform **comparative IBE**: unpaid auxiliaries / unpaid bridges do **not** auto-`insuf`; compare outstanding burdens; assign `H-R+` / `H-V+` / `≈` when ordinal difference is clear; reserve `insuf` only after comparing, when warrant is missing or deadlocked. **Abstention is a protocol Fail.** Use the word **abstention** (not “extension”).
 3. **Slim presupposition tree** — required nodes: **B / T / G / C** (NOT B/S/G/C; former S seat is now T / OpenTI). **MF (minimal facts) is SHARED on every node**; nodes differ by worldview layer only. **B** = metaphysical agnosticism + MF (renames 1.0 T0). **T** = OpenTI + MF (open transcendental idealism: noumenal disclosure — Will, aesthetic intuition; not Kant-closed; Schopenhauer ancestry/gloss only; Will ≠ God). Brand is **OpenTI / T**, not “Schopenhauerian TI.” **G** = God + MF. **C** = God + MF + Christian worldview presuppositions (authorization / expected vindication; bodily MODE not locked). Drop **A** and **C−**. T ≠ G.
-4. **Dual steelman H-R vs H-V** remains the default construction posture.
+4. **Research / effort split** — **B** and **G** are **thin seats** (no Deep Research budget to “discover” agnosticism or bare God). Concentrate research on **T** (OpenTI entailments) and **C** (fair Christian worldview presuppositions).
+5. **T / OpenTI owner lock (vs H-R / H-V)** — under T: Will ≠ God; causation in phenomena, not creatio-style cause into phenomena; visions / spirit-seeing / manifestations of Will can be well-typed; classical H-R (personal creator God raising a corpse) is **not** well-typed under T; H-V-style appearance pathways can be. Shared phenomenal MF (death, reports, proclamation, etc.) can appear under both as representation-level. **T ≠ G**. G label stays **God + MF**.
+6. **Dual steelman H-R vs H-V** remains the default construction posture.
 5. Method-pack only: this repo does not carry live ARTs / run artifacts.
 
 ---
@@ -125,7 +127,7 @@ A node ranking is a **fit ranking under a frozen node**, not a metaphysical verd
 |---|---|---|
 | **Owner** | Locks wording, criteria, tree, record tiers; keep/cut; Neutrality Gate adjudication; version control | Secretly editing hyps mid-run; outcome-based rejection without citing protocol defects |
 | **Grok Bot (Coordinator)** | Stage routing, packet assembly, timestamps, artifact merge, Master Prompt routing | Voting, constructing, scoring, rewriting memos |
-| **ChatGPT (Research)** | Proposes criteria, record, dossier, terminology; may propose audit matrix | Crowning a winner; announcing superiority in dossier |
+| **ChatGPT (Research)** | Proposes criteria, record, dossier, terminology; may propose audit matrix. **Effort split:** thin on **B**/**G**; concentrate Deep Research on **T** (OpenTI entailments) and **C** (fair Christian worldview presuppositions) | Crowning a winner; announcing superiority in dossier; spending Deep Research budget to “discover” agnosticism (B) or bare God (G) |
 | **Grok (Constructor-HR)** | Builds strongest complete **H-R** memo only (Stage 6) | Quiet hyp rewrite; prosecuting H-V instead of building H-R; coordinating-as-judge in same unfrozen pass |
 | **DeepSeek (Constructor-HV)** | Builds strongest complete **H-V** memo only (Stage 6) | Quiet hyp rewrite; empty-correlate collapse; building H-R |
 | **Third auditor** | Comparative scorecard after both builds | Being constructor of either hyp in the same pass; **abstention** when ordinal difference is clear |
@@ -233,10 +235,18 @@ MF (minimal facts) is SHARED on every node. Nodes differ by worldview layer only
 
 - **B:** **Metaphysical agnosticism + MF.** No theism, TI, or Christian package assumed. Metaphysics unsettled. Forbids lean-TI, Christian uniqueness/authorization package, and hidden naturalism. **B replaces 1.0’s T0-label.** MF here is the same shared MF as on T/G/C.  
 - **T:** **OpenTI + MF** (open transcendental idealism: noumenal disclosure — Will, aesthetic intuition; not Kant-closed; Schopenhauer ancestry/gloss only; Will ≠ God). Not Kant-closed TI. Brand is **OpenTI / T**, not “Schopenhauerian TI.” No creatio-ban footnotes; no mandatory creatio/direct-cause strain essay as a scoring weapon. Strain, if claimed, is a costed node-typing note under T only — not smuggled into B. **T ≠ G** (Will ≠ God).
-- **G:** **God + MF**. Personal creator God available; **not** the full Christian specialness package. Agnostic on whether God acts in this particular history beyond bare theism. Expect many `≈` cells; that is not protocol failure. **G is required.** **T ≠ G** (Will ≠ God).
+- **G:** **God + MF**. Personal creator God available; **not** the full Christian specialness package. Agnostic on whether God acts in this particular history beyond bare theism. Expect many `≈` cells; that is not protocol failure. **G is required.** **T ≠ G** (Will ≠ God). Label stays **God + MF**.
 - **C:** **God + MF + Christian worldview presuppositions** (on G): authorization + expected vindication of this person (independent prior on grounds other than post-mortem signs already in the shared record). Prior must be pre-data indexed. **Bodily MODE is not locked** by C — mode competition remains an IBE question under C. If the prior cannot be specified independently, C is not yet a legal node — owner repairs the prior, does not quietly drop C.
 
-**Node hygiene (brief — not a creatio-ban appendix):** **T ≠ G.** OpenTI’s Will / noumenal disclosure is **not** creator-God. Do **not** collapse T into G, and do **not** steelman classical H-R under T by equating Will with God or treating Will as personal creator-cause. Appearance-type / manifestation-style pathways may be well-typed under OpenTI; creatio-style personal divine raising belongs under **G/C**, not as a free redefinition of **T**.
+**Research / effort split (owner lock):** **B** and **G** are **thin seats** — do not spend Deep Research budget to “discover” metaphysical agnosticism or bare God. Concentrate research on **T** (OpenTI entailments / well-typing) and **C** (fair Christian worldview presuppositions).
+
+**Node hygiene / T entailments (owner lock — not a creatio-ban appendix):** **T ≠ G.** OpenTI’s Will / noumenal disclosure is **not** creator-God. Do **not** collapse T into G.
+- Under **T**: causation is **in phenomena**, not creatio-style cause **into** phenomena.
+- Visions / spirit-seeing / manifestations of Will can be **well-typed** under T.
+- Classical **H-R** (personal creator God raising a corpse) is **not** well-typed under T — do not steelman it under T by equating Will with God / personal creator-cause.
+- **H-V**-style appearance pathways **can** be well-typed under T.
+- Shared phenomenal **MF** (death, reports, proclamation, etc.) can appear under both hyps as **representation-level**.
+- Creatio-style personal divine raising belongs under **G/C**, not as a free redefinition of **T**.
 
 Score **H-R vs H-V at each node** (B, T, G, C). No blended overall winner. Constructors may cite a presupposition only if that node licenses it. Named schools score **only under a licensed node**.
 
@@ -304,7 +314,7 @@ Pre-register slices in `ART-04`. Run all registered slices or none (no one-sided
 **Artifact:** `ART-05-dossier.md`  
 **Cap:** ~6–10k words principal dossier; ledgers outside.
 
-**Thin modules (A–J fodder):** evidence/MF method · earliest sources · language & Jewish categories · burial/tomb/groups/Paul/James · vision/apparition/bereavement comparanda (populations + disanalogies) · testimony/memory/social formation · strongest H-R scholarship · strongest H-V / underdetermination scholarship · miracle epistemology · criteria crosswalk · optional brief TI notes under T only (no creatio-ban essay).
+**Thin modules (A–J fodder):** evidence/MF method · earliest sources · language & Jewish categories · burial/tomb/groups/Paul/James · vision/apparition/bereavement comparanda (populations + disanalogies) · testimony/memory/social formation · strongest H-R scholarship · strongest H-V / underdetermination scholarship · miracle epistemology · criteria crosswalk · **T-concentrated** OpenTI entailment / well-typing notes (no creatio-ban essay) · **C-concentrated** fair Christian worldview presupposition notes. **B/G thin** — no Deep Research to invent agnosticism or bare God.
 
 **Required thin ledgers (outside principal dossier; keep thin):** Evidence · Background · Source-dependence · Terminology · Criteria · Auxiliaries · Group pathway · Objection/defect (cap objection N).
 
@@ -366,19 +376,21 @@ Pre-register slices in `ART-04`. Run all registered slices or none (no one-sided
 
 #### Anti-abstention rule (1.1 — constitutive for Stage 7 / IBE)
 
-Unpaid auxiliaries do **not** by themselves justify `insuf`.
+**Spell abstention explicitly. Neutrality ≠ abstention.** Stage 7 must perform **comparative IBE** — not fairness theater that withholds labels.
+
+Unpaid auxiliaries / **unpaid bridges** do **not** by themselves auto-`insuf`.
 
 1. **Compare outstanding burdens** on each criterion under the node.  
 2. When the ordinal difference is clear, assign **`H-R+`**, **`H-V+`**, or **`≈`**.  
 3. Use **`insuf` only after comparing**, when warrant is genuinely missing **or** the comparison is deadlocked (no clear ordinal difference).  
-4. Withholding a clear label to look “neutral” is **abstention** — a protocol Fail, not fairness.  
+4. Withholding a clear label to look “neutral” is **abstention** — a **protocol Fail**, not fairness.  
 5. Use the word **abstention** (not “extension”) when naming this defect.
 
 **Auditor flags (must watch):** contested-as-accepted · circular uniqueness/authorization · named school freeloading on B · shared-mechanism asymmetry · visions used as proof of extra-mental correlate · H-R reduced to resuscitation · grade inflation · cause laundering · secret sources · T lean leaked into B · G collapsed into C · C used as automatic bodily-MODE lock · **abstention** (insuf used to avoid clear ordinal labels).
 
 **Required special lines:**
 
-- **T:** “T treated as OpenTI (noumenal disclosure — Will, aesthetic intuition; not Kant-closed; Schopenhauer ancestry/gloss only). Brand not ‘Schopenhauerian TI’. Creatio-ban footnotes used? YES/NO (must be NO for base scoring).”  
+- **T:** “T treated as OpenTI (noumenal disclosure — Will, aesthetic intuition; not Kant-closed; Schopenhauer ancestry/gloss only). Brand not ‘Schopenhauerian TI’. Will ≠ God; T ≠ G. Causation-in-phenomena (not creatio-into-phenomena)? YES/NO. Classical H-R (personal creator God raising a corpse) treated as well-typed under T? MUST BE NO. H-V-style appearance / vision / spirit-seeing / Will-manifestation pathways allowed as well-typed? YES expected. Creatio-ban footnotes used? YES/NO (must be NO for base scoring).”  
 - **C:** “Authorization + expected vindication prior used: {quote from ART-03}. Circular-from-record? YES/NO. Bodily MODE locked by node? MUST BE NO. If circular YES, C cell is invalid.”  
 - **Anti-abstention:** “For each `insuf` cell: compared outstanding burdens? YES/NO. Clear ordinal difference withheld? YES/NO (YES = Fail).”
 
@@ -391,7 +403,7 @@ Unpaid auxiliaries do **not** by themselves justify `insuf`.
 - Anti-abstention rule honored: clear ordinal differences labeled; `insuf` only after compare when warrant missing or deadlocked.  
 - Ceiling language only; auditor did not rewrite hyps or criteria.
 
-**Fail:** missing rows; invented criterion; blended winner; C inert; single B-only official court; **abstention**; treating unpaid auxiliaries alone as automatic `insuf`.
+**Fail:** missing rows; invented criterion; blended winner; C inert; single B-only official court; **abstention** (protocol Fail); treating unpaid auxiliaries / unpaid bridges alone as automatic `insuf`; skipping comparative IBE.
 
 ---
 
@@ -487,7 +499,7 @@ Hash-and-freeze artifacts when available. Live ARTs are **not** part of this met
 | **Ledger bloat** | Attack ledger unbounded | Cap at strongest N per side |
 | **Abstention** | `insuf` used to avoid clear ordinal labels; unpaid auxiliaries alone cited as automatic insuf | Rescore under anti-abstention rule; Neutrality / Stage-7 Fail |
 
-**Hard bans (compact):** H-V emptied into internal-only vision · H-V = named school on B · visions prove extra-mental · circular C uniqueness · H-R as crude resuscitation · “one cause” = automatic parsimony · majority vote · clinical diagnosis of ancients · James psychologized beyond sources · mass hallucination label · silent hyp rewrite · blended verdict across nodes · mid-run prompt as side constitution · **Stage-7 abstention** · creatio-ban footnote regime under T · reintroducing A or C− without version bump.
+**Hard bans (compact):** H-V emptied into internal-only vision · H-V = named school on B · visions prove extra-mental · circular C uniqueness · H-R as crude resuscitation · “one cause” = automatic parsimony · majority vote · clinical diagnosis of ancients · James psychologized beyond sources · mass hallucination label · silent hyp rewrite · blended verdict across nodes · mid-run prompt as side constitution · **Stage-7 abstention** (unpaid bridges auto-`insuf`) · classical H-R well-typed under T · creatio-ban footnote regime under T · Deep Research inventing B/G · reintroducing A or C− without version bump.
 
 ---
 
@@ -692,7 +704,7 @@ Underdetermination, H-V ahead, and H-R ahead are legitimate *possible outputs of
 | Social formation | Downstream group processes that produce the record | A third competing hyp |
 | B | Metaphysical agnosticism + shared MF | Theism, TI, or Christian package; MF exclusive to B |
 | MF | Shared minimal-facts package on **every** node | Habermas brand; naturalism; “only on B” |
-| T | OpenTI + shared MF (noumenal disclosure — Will, aesthetic intuition; not Kant-closed; Schopenhauer ancestry/gloss only; Will ≠ God) | God / theism (that is G); Kant-closed TI; “Schopenhauerian TI” as brand |
+| T | OpenTI + shared MF (noumenal disclosure — Will, aesthetic intuition; not Kant-closed; Schopenhauer ancestry/gloss only; Will ≠ God; causation in phenomena; H-V-style appearance/vision/spirit-seeing/Will-manifestation well-typed; classical H-R not well-typed) | God / theism (that is G); Kant-closed TI; “Schopenhauerian TI” as brand; creatio-style cause into phenomena; classical H-R under T |
 | G | God + shared MF | Christian authorization/vindication package (that is C) |
 | C | God + shared MF + Christian worldview presuppositions | Automatic bodily MODE lock |
 | Contested | Sensitivity only | Deleted |
@@ -730,6 +742,6 @@ Adversarial notes for ART-03 semantics — tree is the **1.1 slim set**:
 ---
 ## FREEZE RECORD
 **Status:** FROZEN as owner keep — `HVHR-IBE-RB-1.1`  
-**Owner keep/cut:** Freeze v1.1 method pack with anti-abstention + slim tree B/T/G/C OpenTI (MF shared on every node) — 2026-09-12, America/Chicago  
+**Owner keep/cut:** Freeze v1.1 method pack — anti-abstention / comparative IBE; research split (thin B/G; concentrate T/C); T entailments (Will ≠ God; causation in phenomena; classical H-R not well-typed under T; H-V-style can be); slim tree B/T/G/C OpenTI (MF shared) — 2026-09-12, America/Chicago  
 **Supersedes:** `HVHR-IBE-RB-1.0`  
 **No mid-run edit** without version bump + re-issue of Master Prompt.
