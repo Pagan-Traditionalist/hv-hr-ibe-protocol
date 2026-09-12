@@ -17,7 +17,6 @@ Supersedes HVHR-IBE-RB-1.0.
 - Dual steelman H-R vs H-V.
 - Pack baselines: `ART-01-hypotheses.md`, `ART-02-criteria.md` (not live-run dumps).
 - Stage 7: after equal-weight C1–C8 profile, publish aggregations **Equal** / **C3-heavy** / **C1-heavy** (same cells; lenses ≠ new criteria; anti-abstention still fills cells).
-- Tree: **B / T / G / C**; **G = God + MF**; no Craig/Kalam.
 - This repo: method pack only (no live ART-03…ART-08 / sessions).
 
 ## Files
