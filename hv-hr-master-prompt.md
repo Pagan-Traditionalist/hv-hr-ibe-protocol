@@ -70,7 +70,7 @@ Stage router (execute only the named stage):
   4 Record Lock     → lock ART-04 tiers; slices A/B/C = sensitivity (hostile-C); no cherry-pick/pad
   5 Shared Dossier  → ART-05; no ranking sentences; total-evidence floor
   6 Dual Construction → blind steelmans: Grok=ART-06a (H-R), DeepSeek=ART-06b (H-V)
-  7 Comparative Audit → third auditor fills ART-07 per node B/T/G/C; MUST perform comparative IBE; Neutrality ≠ abstention; unpaid bridges ≠ auto-insuf; assign H-R+ / H-V+ / ≈ when clear; abstention = protocol Fail; AFTER equal-weight profile publish aggregations Equal / C3-heavy / C1-heavy over same cells (lenses ≠ new criteria)
+  7 Comparative Audit → third auditor fills ART-07 per node B/T/G/C; MUST perform comparative IBE; Neutrality ≠ abstention; unpaid bridges ≠ auto-insuf; assign H-R+ / H-V+ / ≈ when clear; abstention = protocol Fail; AFTER equal-weight (primary) profile publish aggregations Equal / C3-heavy / C1-heavy over same cells (lenses ≠ new criteria); C3-heavy needs per-node ARGUED+LOCKED vs SMUGGLED (SMUGGLED → not decisive); C1-heavy needs per-criterion-or-node EVIDENCE-BRIDGE vs SLOGAN-FIT (SLOGAN-FIT → not decisive)
   8 Interpretation  → Owner ART-08 keep/cut; run Neutrality Gate on the run
 
 Independence:
@@ -96,7 +96,7 @@ If Fail: STOP and report Fail items. Do not silently continue.
 | Research | Stages 2–5 proposals; **thin B/G**; concentrate Deep Research on **T** + **C** | Announce winner in dossier; cook criteria; pad/omit record; invent B/G via Deep Research |
 | Constructor-HR | Stage 6 → ART-06a only | See ART-06b before freeze; prosecute instead of build |
 | Constructor-HV | Stage 6 → ART-06b only | See ART-06a before freeze; empty-correlate collapse |
-| Auditor | Stage 7 → ART-07 on **B/T/G/C**; comparative IBE; anti-abstention; Equal / C3-heavy / C1-heavy aggregations | Rewrite hyps/criteria; blend nodes; cook criteria via lenses; **abstention** (withhold H-R+/H-V+/≈ when ordinal difference is clear) — protocol Fail |
+| Auditor | Stage 7 → ART-07 on **B/T/G/C**; comparative IBE; anti-abstention; Equal (primary) / C3-heavy / C1-heavy aggregations + honesty tags (ARGUED+LOCKED/SMUGGLED; EVIDENCE-BRIDGE/SLOGAN-FIT) | Rewrite hyps/criteria; blend nodes; cook criteria via lenses; treat C3-heavy decisive under SMUGGLED or C1-heavy under SLOGAN-FIT; **abstention** (withhold H-R+/H-V+/≈ when ordinal difference is clear) — protocol Fail |
 | Owner | All locks; Stage 8; Neutrality Gate adjudication | Mid-run hyp rewrite without version bump |
 | Neutrality reader | Checklist in runbook §12 | Self-grade if you wrote the soft language; equate neutrality with abstention |
 
@@ -114,6 +114,6 @@ Never edit this prompt mid-run as a side constitution.
 ---
 ## FREEZE RECORD
 **Status:** FROZEN as owner keep — `HVHR-IBE-RB-1.1`  
-**Owner keep/cut:** Freeze v1.1 method pack (anti-abstention / comparative IBE; Stage 7 Equal/C3-heavy/C1-heavy aggregations; pack ART-01/ART-02 baselines; research split thin B/G concentrate T/C; T entailments; slim tree B/T/G/C OpenTI; MF shared; G = God + MF) — 2026-09-12, America/Chicago  
+**Owner keep/cut:** Freeze v1.1 method pack (anti-abstention / comparative IBE; Stage 7 Equal/C3-heavy/C1-heavy aggregations + honesty tags ARGUED+LOCKED/SMUGGLED & EVIDENCE-BRIDGE/SLOGAN-FIT; pack ART-01/ART-02 baselines; research split thin B/G concentrate T/C; T entailments; slim tree B/T/G/C OpenTI; MF shared; G = God + MF) — 2026-09-12, America/Chicago  
 **Supersedes:** `HVHR-IBE-RB-1.0`  
 **No mid-run edit** without version bump + re-issue of Master Prompt.

@@ -36,7 +36,23 @@ Scorecards stay **C1–C8** with the **equal-weight primary profile**. After fil
 2. **C3-heavy** — total-evidence coherence weighted strongest (`w(C3) = 3`; others `1`).
 3. **C1-heavy** — content-fit weighted strongest (`w(C1) = 3`; others `1`).
 
-**Lenses are aggregations, not new criteria.** Anti-abstention still applies to filling cells: unpaid bridges ≠ auto-`insuf`; assign `H-R+` / `H-V+` / `≈` when ordinal difference is clear; `insuf` only after compare when warrant missing or deadlocked.
+**Lenses are aggregations, not new criteria.** Anti-abstention still applies to filling cells: unpaid bridges ≠ auto-`insuf`; assign `H-R+` / `H-V+` / `≈` when ordinal difference is clear; `insuf` only after compare when warrant missing or deadlocked. **Equal-weight remains primary.**
+
+### Owner Stage-7 honesty checks (aggregation lenses)
+
+When publishing **C3-heavy**, require an explicit **per-node** tag:
+
+- **ARGUED+LOCKED** — the metaphysics relevant to C3 is argued and locked **for this node**, or
+- **SMUGGLED** — metaphysics is smuggled (imported without node-level lock/argument).
+
+If **SMUGGLED**, **C3-heavy must not be treated as decisive** for that node (flag / downgrade commentary).
+
+When publishing **C1-heavy**, require an explicit **per-criterion-or-node** tag:
+
+- **EVIDENCE-BRIDGE** — C1 rests on a bridge from data → differential expectedness vs the steelman rival, or
+- **SLOGAN-FIT** — C1 is slogan-fit only (label / catchphrase without that bridge).
+
+If **SLOGAN-FIT**, **C1-heavy must not be treated as decisive**.
 
 ## Essentials (anti-cooking)
 

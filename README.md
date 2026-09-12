@@ -14,7 +14,7 @@ Account: **Pagan-Traditionalist** (Nyklot).
 - Neutrality = fair criteria + fair data (not withholding labels)
 - Research / effort split: thin **B**/**G**; concentrate on **T** (OpenTI entailments) and **C** (fair Christian worldview presuppositions)
 - Slim tree **B / T / G / C** (MF on every node; T ≠ G; Will ≠ God; causation in phenomena; classical H-R not well-typed under T; H-V-style can be)
-- Stage 7 aggregation lenses over same C1–C8 cells: **Equal** (primary), **C3-heavy**, **C1-heavy** (lenses ≠ new criteria)
+- Stage 7 aggregation lenses over same C1–C8 cells: **Equal** (primary), **C3-heavy**, **C1-heavy** (lenses ≠ new criteria); honesty tags **ARGUED+LOCKED/SMUGGLED** (C3-heavy) and **EVIDENCE-BRIDGE/SLOGAN-FIT** (C1-heavy) — SMUGGLED/SLOGAN-FIT → lens not decisive
 
 | Node | Layer (+ shared MF) |
 |------|---------------------|

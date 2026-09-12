@@ -382,7 +382,21 @@ Scorecards stay **C1–C8**. Primary profile = **equal weights** (`w=1`). After 
 2. **C3-heavy** — total-evidence coherence weighted strongest (`w(C3)=3`; others `1`).
 3. **C1-heavy** — content-fit weighted strongest (`w(C1)=3`; others `1`).
 
-**Lenses are aggregations, not new criteria.** Anti-abstention still governs cell-filling. Report each lens per node; no blended overall winner across nodes.
+**Lenses are aggregations, not new criteria.** Anti-abstention still governs cell-filling. Report each lens per node; no blended overall winner across nodes. **Equal-weight remains the primary profile.**
+
+#### Owner honesty checks (aggregation lenses)
+
+**C3-heavy — per-node metaphysics tag (required):**
+
+- Tag each node **ARGUED+LOCKED** (metaphysics relevant to C3 is argued and locked for *this* node) or **SMUGGLED** (metaphysics imported without node-level lock/argument).
+- If **SMUGGLED**: **C3-heavy must not be treated as decisive** for that node — flag and downgrade commentary (Equal remains primary).
+
+**C1-heavy — per-criterion-or-node bridge tag (required):**
+
+- Tag each criterion-or-node **EVIDENCE-BRIDGE** (C1 rests on data → differential expectedness vs the steelman rival) or **SLOGAN-FIT** (slogan/label fit without that bridge).
+- If **SLOGAN-FIT**: **C1-heavy must not be treated as decisive** — flag and downgrade commentary (Equal remains primary).
+
+These tags do **not** alter anti-abstention cell-filling; they constrain how sensitivity lenses may be read.
 
 #### Anti-abstention rule (1.1 — constitutive for Stage 7 / IBE)
 
@@ -403,18 +417,21 @@ Unpaid auxiliaries / **unpaid bridges** do **not** by themselves auto-`insuf`.
 - **T:** “T treated as OpenTI (noumenal disclosure — Will, aesthetic intuition; not Kant-closed; Schopenhauer ancestry/gloss only). Brand not ‘Schopenhauerian TI’. Will ≠ God; T ≠ G. Causation-in-phenomena (not creatio-into-phenomena)? YES/NO. Classical H-R (personal creator God raising a corpse) treated as well-typed under T? MUST BE NO. H-V-style appearance / vision / spirit-seeing / Will-manifestation pathways allowed as well-typed? YES expected. Creatio-ban footnotes used? YES/NO (must be NO for base scoring).”  
 - **C:** “Authorization + expected vindication prior used: {quote from ART-03}. Circular-from-record? YES/NO. Bodily MODE locked by node? MUST BE NO. If circular YES, C cell is invalid.”  
 - **Anti-abstention:** “For each `insuf` cell: compared outstanding burdens? YES/NO. Clear ordinal difference withheld? YES/NO (YES = Fail).”
+- **C3-heavy honesty:** “Per node B/T/G/C: metaphysics for C3 = ARGUED+LOCKED / SMUGGLED. If SMUGGLED, C3-heavy not treated as decisive for that node? YES/NO.”
+- **C1-heavy honesty:** “Per criterion-or-node: C1 = EVIDENCE-BRIDGE / SLOGAN-FIT. If SLOGAN-FIT, C1-heavy not treated as decisive? YES/NO.”
 
 **Exit — Pass when all true:**
 
 - Scorecard complete for every required node (B, T, G, C) and both hypotheses; ordinal only.  
 - Shared mechanisms cancel; Contested as sensitivity; no post-hoc criteria; no blended overall winner.  
-- **Three aggregations published** after the equal-weight profile: Equal, C3-heavy, C1-heavy (same cells; lenses ≠ new criteria).  
+- **Three aggregations published** after the equal-weight profile: Equal, C3-heavy, C1-heavy (same cells; lenses ≠ new criteria); Equal remains primary.  
+- **C3-heavy / C1-heavy honesty tags** present; SMUGGLED → C3-heavy not decisive for that node; SLOGAN-FIT → C1-heavy not decisive.  
 - Weighting challenges logged.  
 - C can show H-R ahead if warranted; T can show H-V ahead where evidence warrants under OpenTI; B stays agnostic unless evidence strongly shifts under agnostic priors; G may often yield `≈`.  
 - Anti-abstention rule honored: clear ordinal differences labeled; `insuf` only after compare when warrant missing or deadlocked.  
 - Ceiling language only; auditor did not rewrite hyps or criteria.
 
-**Fail:** missing rows; invented criterion; blended winner; C inert; single B-only official court; **abstention** (protocol Fail); treating unpaid auxiliaries / unpaid bridges alone as automatic `insuf`; skipping comparative IBE; **omitting Equal / C3-heavy / C1-heavy aggregations**.
+**Fail:** missing rows; invented criterion; blended winner; C inert; single B-only official court; **abstention** (protocol Fail); treating unpaid auxiliaries / unpaid bridges alone as automatic `insuf`; skipping comparative IBE; **omitting Equal / C3-heavy / C1-heavy aggregations**; treating **C3-heavy as decisive under SMUGGLED** or **C1-heavy as decisive under SLOGAN-FIT**.
 
 ---
 
@@ -483,8 +500,8 @@ Hash-and-freeze artifacts when available. This method pack ships **pack-baseline
 5. Ordinal only (unless owner-approved optional numeric appendix).  
 6. Weighting challenges recorded; do not silently change weights.  
 7. C may produce H-R ahead; T may produce H-V ahead; B stays agnostic unless evidence strongly shifts under agnostic priors; G often `≈`.  
-8. Under each node list: (i) base Slice-A equal-weight profile, (ii) discriminating families, (iii) sensitivity deltas, (iv) **Equal / C3-heavy / C1-heavy aggregations** over the same cells.  
-9. Legal summary template: `Under {node}: H-R+ on {families}; H-V+ on {families}; net: H-R ahead / H-V ahead / underdetermined.` Repeat net under each aggregation lens.  
+8. Under each node list: (i) base Slice-A equal-weight profile, (ii) discriminating families, (iii) sensitivity deltas, (iv) **Equal / C3-heavy / C1-heavy aggregations** over the same cells, with **C3-heavy ARGUED+LOCKED/SMUGGLED** and **C1-heavy EVIDENCE-BRIDGE/SLOGAN-FIT** tags.  
+9. Legal summary template: `Under {node}: H-R+ on {families}; H-V+ on {families}; net: H-R ahead / H-V ahead / underdetermined.` Repeat net under each aggregation lens; do not treat C3-heavy as decisive if SMUGGLED, or C1-heavy as decisive if SLOGAN-FIT.  
 10. **Anti-abstention:** do not replace a clear ordinal net with a wall of `insuf`. Lenses do not excuse unfilled cells.
 
 ---
@@ -753,6 +770,6 @@ Adversarial notes for ART-03 semantics — tree is the **1.1 slim set**:
 ---
 ## FREEZE RECORD
 **Status:** FROZEN as owner keep — `HVHR-IBE-RB-1.1`  
-**Owner keep/cut:** Freeze v1.1 method pack — anti-abstention / comparative IBE; research split (thin B/G; concentrate T/C); T entailments (Will ≠ God; causation in phenomena; classical H-R not well-typed under T; H-V-style can be); slim tree B/T/G/C OpenTI (MF shared) — 2026-09-12, America/Chicago  
+**Owner keep/cut:** Freeze v1.1 method pack — anti-abstention / comparative IBE; Stage 7 Equal/C3-heavy/C1-heavy aggregations + honesty tags (ARGUED+LOCKED/SMUGGLED; EVIDENCE-BRIDGE/SLOGAN-FIT); research split (thin B/G; concentrate T/C); T entailments (Will ≠ God; causation in phenomena; classical H-R not well-typed under T; H-V-style can be); slim tree B/T/G/C OpenTI (MF shared) — 2026-09-12, America/Chicago  
 **Supersedes:** `HVHR-IBE-RB-1.0`  
 **No mid-run edit** without version bump + re-issue of Master Prompt.

@@ -16,7 +16,8 @@ Supersedes HVHR-IBE-RB-1.0.
   - **C** — God + MF + Christian worldview presuppositions (bodily mode not locked)
 - Dual steelman H-R vs H-V.
 - Pack baselines: `ART-01-hypotheses.md`, `ART-02-criteria.md` (not live-run dumps).
-- Stage 7: after equal-weight C1–C8 profile, publish aggregations **Equal** / **C3-heavy** / **C1-heavy** (same cells; lenses ≠ new criteria; anti-abstention still fills cells).
+- Stage 7: after equal-weight C1–C8 profile (primary), publish aggregations **Equal** / **C3-heavy** / **C1-heavy** (same cells; lenses ≠ new criteria; anti-abstention still fills cells).
+- Stage 7 honesty: **C3-heavy** needs per-node **ARGUED+LOCKED** vs **SMUGGLED** (SMUGGLED → not decisive); **C1-heavy** needs per-criterion-or-node **EVIDENCE-BRIDGE** vs **SLOGAN-FIT** (SLOGAN-FIT → not decisive).
 - This repo: method pack only (no live ART-03…ART-08 / sessions).
 
 ## Files
