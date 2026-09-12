@@ -2,7 +2,7 @@
 
 Stage-gated protocol for comparing **H-V** and **H-R**. Method pack — procedure, not a verdict. Ships pack-baseline ART-01/ART-02 plus **empty stage shells** for ART-03…ART-08 and the Neutrality Gate (not live-run dumps).
 
-Account: **Pagan-Traditionalist** (Nyklot).
+Account: **Nyklot**.
 
 ## Version
 
