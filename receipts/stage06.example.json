@@ -1,0 +1,38 @@
+{
+  "protocol_version": "HVHR-IBE-RB-1.2",
+  "stage": 6,
+  "status": "FROZEN",
+  "stage_started_at": "2026-09-16T02:00:00Z",
+  "packet_manifest_path": "packet-manifest.json",
+  "packet_manifest_md5": "REPLACE_WITH_MD5",
+  "constructions": [
+    {
+      "hypothesis": "H-R",
+      "constructor_id": "Constructor-HR",
+      "artifact_path": "ART-06a-HR-memo.md",
+      "artifact_md5": "REPLACE_WITH_MD5",
+      "packet_manifest_md5": "REPLACE_WITH_SAME_PACKET_MD5",
+      "frozen_at": "2026-09-16T03:00:00Z",
+      "blind_first_pass_attested": true
+    },
+    {
+      "hypothesis": "H-A",
+      "constructor_id": "Constructor-HA",
+      "artifact_path": "ART-06c-HA-memo.md",
+      "artifact_md5": "REPLACE_WITH_MD5",
+      "packet_manifest_md5": "REPLACE_WITH_SAME_PACKET_MD5",
+      "frozen_at": "2026-09-16T03:05:00Z",
+      "blind_first_pass_attested": true
+    },
+    {
+      "hypothesis": "H-V",
+      "constructor_id": "Constructor-HV",
+      "artifact_path": "ART-06b-HV-memo.md",
+      "artifact_md5": "REPLACE_WITH_MD5",
+      "packet_manifest_md5": "REPLACE_WITH_SAME_PACKET_MD5",
+      "frozen_at": "2026-09-16T03:10:00Z",
+      "blind_first_pass_attested": true
+    }
+  ],
+  "unresolved_fail_items": 0
+}
