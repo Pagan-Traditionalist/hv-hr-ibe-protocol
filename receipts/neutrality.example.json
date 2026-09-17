@@ -1,0 +1,9 @@
+{
+  "protocol_version": "HVHR-IBE-RB-1.2",
+  "status": "PASS",
+  "independent_reader_id": "Neutrality-Reader",
+  "artifact_path": "NEUTRALITY_GATE.md",
+  "artifact_md5": "REPLACE_WITH_MD5",
+  "checked_at": "2026-09-16T05:30:00Z",
+  "unresolved_fail_items": 0
+}
