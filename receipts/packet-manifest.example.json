@@ -1,0 +1,13 @@
+{
+  "protocol_version": "HVHR-IBE-RB-1.2",
+  "packet_id": "REPLACE_WITH_RUN_PACKET_ID",
+  "issued_at": "2026-09-16T01:55:00Z",
+  "artifacts": [
+    {"path": "ART-01-hypotheses.md", "md5": "REPLACE_WITH_MD5"},
+    {"path": "ART-02-criteria-lock.md", "md5": "REPLACE_WITH_MD5"},
+    {"path": "ART-03-presupposition-tree.md", "md5": "REPLACE_WITH_MD5"},
+    {"path": "ART-04-record-lock.md", "md5": "REPLACE_WITH_MD5"},
+    {"path": "ART-05-dossier.md", "md5": "REPLACE_WITH_MD5"}
+  ],
+  "note": "The Stage-6 receipt fingerprints this complete manifest file. All constructors must declare that same manifest fingerprint."
+}
