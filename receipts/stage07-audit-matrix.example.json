@@ -1,0 +1,16 @@
+{
+  "protocol_version": "HVHR-IBE-RB-1.2",
+  "criteria": ["C1", "C2", "C3", "C4", "C5", "C6", "C7", "C8"],
+  "cells": [
+    {"court": "Court1", "node": "B", "criterion": "C1", "label": "H-R+"},
+    {"court": "Court1", "node": "B", "criterion": "C2", "label": "≈"},
+    {"court": "Court2", "node": "B", "criterion": "C1", "label": "H-V+"},
+    {"court": "Court2", "node": "B", "criterion": "C2", "label": "insuf"}
+  ],
+  "aggregations": [
+    {"court": "Court1", "node": "B", "lens": "Equal", "net": "underdetermined"},
+    {"court": "Court1", "node": "B", "lens": "C3-heavy", "net": "underdetermined", "honesty_tag": "ARGUED+LOCKED"},
+    {"court": "Court1", "node": "B", "lens": "C1-heavy", "net": "H-R ahead", "honesty_tag": "EVIDENCE-BRIDGE"}
+  ],
+  "example_note": "Shape only. A live file must contain all 64 court/node/criterion cells and all 24 court/node/lens aggregations."
+}
