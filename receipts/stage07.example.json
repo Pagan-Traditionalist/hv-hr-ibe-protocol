@@ -1,0 +1,13 @@
+{
+  "protocol_version": "HVHR-IBE-RB-1.2",
+  "stage": 7,
+  "status": "PASS",
+  "auditor_id": "Auditor-Sterile",
+  "audit_started_at": "2026-09-16T04:00:00Z",
+  "completed_at": "2026-09-16T05:00:00Z",
+  "artifact_path": "ART-07-audit.md",
+  "artifact_md5": "REPLACE_WITH_MD5",
+  "matrix_path": "receipts/stage07-audit-matrix.json",
+  "matrix_md5": "REPLACE_WITH_MD5",
+  "unresolved_fail_items": 0
+}

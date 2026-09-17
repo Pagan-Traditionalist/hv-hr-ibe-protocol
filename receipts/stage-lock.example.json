@@ -1,0 +1,10 @@
+{
+  "protocol_version": "HVHR-IBE-RB-1.2",
+  "stage": 1,
+  "status": "LOCKED",
+  "artifact_path": "ART-01-hypotheses.md",
+  "artifact_md5": "REPLACE_WITH_MD5",
+  "locked_at": "2026-09-16T01:00:00Z",
+  "locked_by": "Owner",
+  "unresolved_fail_items": 0
+}
