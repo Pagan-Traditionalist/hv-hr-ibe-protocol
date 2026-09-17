@@ -1,0 +1,26 @@
+name: Protocol Gate Test
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+      - add-deterministic-protocol-gate
+
+jobs:
+  test-protocol-gate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup R
+        uses: r-lib/actions/setup-r@v2
+        with:
+          use-public-rspm: true
+
+      - name: Install jsonlite
+        run: Rscript -e 'install.packages("jsonlite", repos="https://cloud.r-project.org")'
+
+      - name: Run protocol gate tests
+        run: Rscript validation/protocol-gate/tests/test_protocol_gate.R
