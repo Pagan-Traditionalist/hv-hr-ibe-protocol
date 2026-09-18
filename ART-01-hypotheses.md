@@ -11,7 +11,7 @@ status: PACK BASELINE (for new runs under 1.1)
 
 ## Locked H-R (quoted atomic)
 
-> God raised Jesus from death into transformed, glorified bodily life, with genuine personal and bodily continuity with the Jesus who died. The risen Jesus himself caused postmortem encounters. These encounters, their interpretation within their historical setting—including available Jewish categories—and the transmission of testimony generated and stabilized resurrection belief and proclamation, appearance traditions, the early creed and appearance list, and the continuing movement. Ordinary transmission, elaboration, and literary shaping may account for later forms where supported by the locked evidence.
+> God raised Jesus from death into transformed, glorified bodily life, with genuine personal and bodily continuity with the Jesus who died. The risen Jesus himself was the real causal source of the postmortem encounters and manifested himself to the witnesses.. These encounters, their interpretation within their historical setting—including available Jewish categories—and the transmission of testimony generated and stabilized resurrection belief and proclamation, appearance traditions, the early creed and appearance list, and the continuing movement. Ordinary transmission, elaboration, and literary shaping may account for later forms where supported by the locked evidence.
 
 ## Locked H-A (quoted atomic)
 
