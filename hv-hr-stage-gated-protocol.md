@@ -467,7 +467,7 @@ Unpaid auxiliaries / **unpaid bridges** do **not** by themselves auto-`insuf`.
 
 | Stage | Artifact | One-line description |
 |---|---|---|
-| 1 | `ART-01-hypotheses.md` | Frozen fair wording of H-V and H-R; READ-ONLY (pack baseline shipped) |
+| 1 | `ART-01-hypotheses.md` | Frozen fair wording of H-R, H-A, and H-V; READ-ONLY (pack baseline shipped) |
 | 1 | `ART-02-criteria.md` / live `ART-02-criteria-lock.md` | Frozen C1–C8 + Stage 4 aggregation lenses; scales, cancel/weight rules |
 | 1 | `ART-03-presupposition-tree.md` | Frozen slim tree B/T/G/C; C prior; T label-only |
 | 2 | `ART-04-record-lock.md` | Accepted / Contested / Background / Excluded + slices A/B/C |
@@ -648,13 +648,13 @@ Not a fourth hyp argument. Not self-graded by the seat that wrote soft language.
 | N0c | **Hard success: No relevant-data omission** | Dossier includes strongest H-R *and* H-V scholarship, comparanda, Jewish categories, miracle epistemology; gaps named; tomb/group/Paul/James appear testable; **no cherry-pick / pad** |
 | N0d | **Anti-abstention** | Stage 4 compares outstanding burdens; clear ordinal differences labeled `H-R+`/`H-V+`/`≈`; `insuf` only after compare when warrant missing or deadlocked; unpaid auxiliaries alone ≠ automatic insuf |
 | 1 | Dual steelman (ops) | ART-01 + ART-06a/b show transformed-body H-R (no swoon) and costed-correlate H-V with losing conditions |
-| 1 | Criteria before builds | Timestamp(ART-02 lock) < Timestamp(Stage 3 start) |
-| 1 | Slim tree live | ART-03 has required **B, T, G, C**; A and C− absent; G not optional |
-| 2 | C live, MODE unlocked | ART-03 prior usable; audit can produce H-R ahead under C if warranted; bodily MODE not locked by C |
-| 2 | C not automatic/circular | Stage 4 C line shows independent prior, not tomb/visions/list-derived |
-| 3 | H-R-favorable evidence present | Empty tomb, group, Paul, James in Record; Slice B/C exist as registered |
-| 4 | No hidden naturalism / TI at B | ART-03 B forbids both; B cells do not cite creatio-ban / T strain |
-| 5 | Publishable prompts | Launch packet and locks printable as-is; no secret side instructions |
+| 2 | Criteria before builds | Timestamp(ART-02 lock) < Timestamp(Stage 3 start) |
+| 3 | Slim tree live | ART-03 has required **B, T, G, C**; A and C− absent; G not optional |
+| 4 | C live, MODE unlocked | ART-03 prior usable; audit can produce H-R ahead under C if warranted; bodily MODE not locked by C |
+| 5 | C not automatic/circular | Stage 4 C line shows independent prior, not tomb/visions/list-derived |
+| 6 | H-R-favorable evidence present | Empty tomb, group, Paul, James in Record; Slice B/C exist as registered |
+| 7 | No hidden naturalism / TI at B | ART-03 B forbids both; B cells do not cite creatio-ban / T strain |
+| 8 | Publishable prompts | Launch packet and locks printable as-is; no secret side instructions |
 | 9 | Total-evidence discipline | ART-05 completeness Pass (N0c) |
 | 10 | No hidden destination | Underdetermination, H-V ahead, and H-R ahead all legitimate; destinations are ceilings |
 | 11 | Symmetric standards | Same packet, criteria, templates for both hyps |

@@ -7,7 +7,7 @@ status: EMPTY SHELL (fill at Stage 1; not a live-run dump)
 # ART-03 — Presupposition Lock (shell)
 
 **Protocol pin:** `HVHR-IBE-RB-1.3`  
-**Role:** Lock the slim worldview tree for a fresh run. No hypothesis scores. No Stage 2–8 content.
+**Role:** Lock the slim worldview tree for a fresh run. No hypothesis scores. No Stage 2–5 content.
 
 ## Required slim tree (1.1)
 
