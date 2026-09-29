@@ -52,7 +52,7 @@ make_matrix <- function() {
   }
 
   list(
-    protocol_version = "HVHR-IBE-RB-1.3",
+    protocol_version = "HVHR-IBE-RB-1.4",
     criteria = as.list(paste0("C", 1:8)),
     cells = cells,
     aggregations = aggs
@@ -64,25 +64,15 @@ make_valid_run <- function() {
   dir.create(root, recursive = TRUE)
   dir.create(file.path(root, "receipts"), recursive = TRUE)
 
-  artifact_paths <- c(
-    "ART-01-hypotheses.md",
-    "ART-02-criteria-lock.md",
-    "ART-03-presupposition-tree.md",
-    "ART-04-record-lock.md",
-    "ART-05-dossier.md"
-  )
-
+  artifact_paths <- c("stages/01-frame.md", "stages/02-evidence.md")
   for (rel in artifact_paths) write_text(file.path(root, rel), paste0("Synthetic artifact ", rel))
-  component_names <- c("hypotheses", "criteria", "presuppositions", "record", "dossier")
   for (stage in 1:2) {
-    indices <- if (stage == 1) 1:3 else 4:5
-    artifacts <- lapply(indices, function(i) list(
-      component = component_names[[i]], artifact_path = artifact_paths[[i]],
-      artifact_md5 = md5_rel(root, artifact_paths[[i]])
-    ))
+    components <- if (stage == 1) c("hypotheses", "criteria", "presuppositions") else c("record", "dossier")
     rec <- list(
-      protocol_version = "HVHR-IBE-RB-1.3", stage = stage, status = "LOCKED",
-      artifacts = artifacts, locked_at = sprintf("2026-09-16T01:%02d:00Z", stage),
+      protocol_version = "HVHR-IBE-RB-1.4", stage = stage, status = "LOCKED",
+      artifact_path = artifact_paths[[stage]], artifact_md5 = md5_rel(root, artifact_paths[[stage]]),
+      completed_components = as.list(components),
+      locked_at = sprintf("2026-09-16T01:%02d:00Z", stage),
       locked_by = "Owner", unresolved_fail_items = 0
     )
     write_json_file(rec, file.path(root, "receipts", sprintf("stage%02d.json", stage)))
@@ -92,9 +82,9 @@ make_valid_run <- function() {
   packet_md5 <- md5_rel(root, "packet-manifest.json")
 
   construction_paths <- list(
-    "H-R" = "ART-06a-HR-memo.md",
-    "H-A" = "ART-06c-HA-memo.md",
-    "H-V" = "ART-06b-HV-memo.md"
+    "H-R" = "stages/03-construct/HR.md",
+    "H-A" = "stages/03-construct/HA.md",
+    "H-V" = "stages/03-construct/HV.md"
   )
   constructor_ids <- c("Constructor-HR", "Constructor-HA", "Constructor-HV")
   freeze_times <- c("2026-09-16T03:00:00Z", "2026-09-16T03:05:00Z", "2026-09-16T03:10:00Z")
@@ -117,7 +107,7 @@ make_valid_run <- function() {
   }
 
   stage3 <- list(
-    protocol_version = "HVHR-IBE-RB-1.3",
+    protocol_version = "HVHR-IBE-RB-1.4",
     stage = 3,
     status = "FROZEN",
     stage_started_at = "2026-09-16T02:00:00Z",
@@ -128,20 +118,20 @@ make_valid_run <- function() {
   )
   write_json_file(stage3, file.path(root, "receipts", "stage03.json"))
 
-  write_text(file.path(root, "ART-07-audit.md"), "Synthetic audit")
+  write_text(file.path(root, "stages/04-compare.md"), "Synthetic audit")
   matrix <- make_matrix()
   matrix_rel <- "receipts/stage04-audit-matrix.json"
   write_json_file(matrix, file.path(root, matrix_rel))
 
   stage4 <- list(
-    protocol_version = "HVHR-IBE-RB-1.3",
+    protocol_version = "HVHR-IBE-RB-1.4",
     stage = 4,
     status = "PASS",
     auditor_id = "Auditor-Sterile",
     audit_started_at = "2026-09-16T04:00:00Z",
     completed_at = "2026-09-16T05:00:00Z",
-    artifact_path = "ART-07-audit.md",
-    artifact_md5 = md5_rel(root, "ART-07-audit.md"),
+    artifact_path = "stages/04-compare.md",
+    artifact_md5 = md5_rel(root, "stages/04-compare.md"),
     matrix_path = matrix_rel,
     matrix_md5 = md5_rel(root, matrix_rel),
     unresolved_fail_items = 0
@@ -150,7 +140,7 @@ make_valid_run <- function() {
 
   write_text(file.path(root, "NEUTRALITY_GATE.md"), "Synthetic Neutrality Gate PASS")
   neutrality <- list(
-    protocol_version = "HVHR-IBE-RB-1.3",
+    protocol_version = "HVHR-IBE-RB-1.4",
     status = "PASS",
     independent_reader_id = "Neutrality-Reader",
     artifact_path = "NEUTRALITY_GATE.md",
@@ -181,7 +171,7 @@ stopifnot(isTRUE(res1$status$stage5_allowed))
 
 # FAIL: locked artifact changed after receipt
 run2 <- make_valid_run()
-cat("\nTAMPERED", file = file.path(run2, "ART-02-criteria-lock.md"), append = TRUE)
+cat("\nTAMPERED", file = file.path(run2, "stages/01-frame.md"), append = TRUE)
 res2 <- run_gate(run2)
 stopifnot(res2$code != 0L)
 stopifnot(identical(res2$status$result, "FAIL"))
@@ -215,7 +205,7 @@ stopifnot(any(grepl("missing required aggregation", res4$status$failures, fixed 
 run5 <- make_valid_run()
 lock_path <- file.path(run5, "receipts", "stage01.json")
 rec <- fromJSON(lock_path, simplifyVector = FALSE)
-rec$artifacts <- rec$artifacts[-2]
+rec$completed_components <- rec$completed_components[-2]
 write_json_file(rec, lock_path)
 res5 <- run_gate(run5)
 stopifnot(res5$code != 0L)
@@ -231,15 +221,14 @@ res6 <- run_gate(run6)
 stopifnot(res6$code != 0L)
 stopifnot(any(grepl("Stage 2 locked before Stage 1", res6$status$failures, fixed = TRUE)))
 
-# FAIL: old eight-stage version must not be accepted as a new run.
+# FAIL: the previous receipt schema must not be accepted as a new run.
 run7 <- make_valid_run()
 lock_path <- file.path(run7, "receipts", "stage01.json")
 rec <- fromJSON(lock_path, simplifyVector = FALSE)
-rec$protocol_version <- "HVHR-IBE-RB-1.2"
+rec$protocol_version <- "HVHR-IBE-RB-1.3"
 write_json_file(rec, lock_path)
 res7 <- run_gate(run7)
 stopifnot(res7$code != 0L)
 stopifnot(!isTRUE(res7$status$stage5_allowed))
 
 cat("All protocol-gate tests passed.\n")
-

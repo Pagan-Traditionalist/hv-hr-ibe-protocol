@@ -2,7 +2,7 @@
 
 suppressPackageStartupMessages(library(jsonlite))
 
-EXPECTED_PROTOCOL <- "HVHR-IBE-RB-1.3"
+EXPECTED_PROTOCOL <- "HVHR-IBE-RB-1.4"
 
 args <- commandArgs(trailingOnly = TRUE)
 if (length(args) != 1) {
@@ -107,15 +107,11 @@ for (stage in 1:2) {
     add_fail(paste0("Stage ", stage, " locked_by is missing"))
   }
   expected_components <- if (stage == 1L) c("hypotheses", "criteria", "presuppositions") else c("record", "dossier")
-  artifacts <- rec$artifacts %||% list()
-  components <- vapply(artifacts, function(x) as.character(x$component %||% ""), character(1))
-  if (!identical(unname(components), expected_components)) {
+  components <- as.character(unlist(rec$completed_components %||% list(), use.names = FALSE))
+  if (!identical(components, expected_components)) {
     add_fail(paste0("Stage ", stage, " must include all required components in order"))
   }
-  for (artifact in artifacts) {
-    check_file_hash(artifact$artifact_path, artifact$artifact_md5,
-                    paste0("Stage ", stage, " ", artifact$component %||% "component"))
-  }
+  check_file_hash(rec$artifact_path, rec$artifact_md5, paste0("Stage ", stage, " artifact"))
   lock_times[[stage]] <- parse_utc(rec$locked_at, paste0("Stage ", stage, " locked_at"))
 }
 
@@ -300,4 +296,3 @@ if (length(failures) > 0) {
 
 cat("Stage 5 allowed: true\n")
 quit(save = "no", status = 0)
-

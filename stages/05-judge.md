@@ -1,13 +1,6 @@
----
-protocol: HVHR-IBE-RB-1.3
-artifact: ART-08-interpretation.md
-status: EMPTY SHELL (fill at Stage 5; Owner keep/cut)
-seat: Owner
----
+# Stage 5 — Judge
 
-# ART-08 — Interpretation + Owner Keep/Cut (shell)
-
-**Protocol pin:** `HVHR-IBE-RB-1.3`  
+**Protocol pin:** `HVHR-IBE-RB-1.4`  
 **Role:** Owner keep/cut of audit cells that violate locks (including abstention). No blended overall winner as protocol output. Ceiling language only.
 
 ## Per-node keep/cut
@@ -50,4 +43,3 @@ Label clearly **`EXTRA-PROTOCOL`** if used. Not a blended protocol winner.
 - [ ] Ceiling language; defects named (incl. abstention if present)
 - [ ] Keep/cut reasons cite runbook clauses
 - [ ] Neutrality Gate run on the *run*
-

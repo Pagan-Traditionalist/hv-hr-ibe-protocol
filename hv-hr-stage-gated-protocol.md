@@ -4,16 +4,16 @@
 **Concept name (DA-locked):** stage-gated method  
 **Launcher name (DA-locked):** stage-routed Master Prompt  
 
-**Version:** `HVHR-IBE-RB-1.3`  
+**Version:** `HVHR-IBE-RB-1.4`  
 **Status:** METHOD ONLY — no hypothesis / resurrection verdict in this document  
 **Conflict rule:** If the Master Prompt and this runbook disagree, **runbook + locked stage artifacts win**.  
 **Version pin:** change runbook → bump version → re-issue Master Prompt. Never hot-patch the prompt mid-run as a side constitution.
 
 ---
 
-## 0. v1.3 reorganization
+## 0. v1.4 file consolidation
 
-This version groups the existing eight stages into five. Frame contains the hypothesis, criteria, and presupposition locks; Establish the evidence contains the record lock and shared dossier; construction, comparison, and judgment become Stages 3, 4, and 5. ART filenames remain stable. The existing three-hypothesis/two-court pack and deterministic enforcement layer remain operative. Historical 1.1 safeguards below are retained with current stage references.
+The five stage entries under `stages/` are the working artifacts: Frame, Evidence, Construct, Compare, Judge. Frame combines hypotheses, abductive criteria, and presuppositions; Evidence combines record, dossier, and supporting ledgers. Construct is a directory with three isolated memos, so a builder receives only its own template. Obsolete ART files, freeze-marker files, and merge notes have been removed; Git history retains earlier versions. Hypothesis atomics, C1–C8, weights, worldview nodes, and both pairwise courts are unchanged.
 
 ### Retained 1.1 method history
 
@@ -47,7 +47,7 @@ This document is the **protocol runbook** (method constitution) for a **stage-ga
 
 ### 2.1 Locked comparison
 
-The existing `ART-01-hypotheses.md` supplies the authoritative H-R / H-A / H-V identities, unchanged by this reorganization. `ART-02-criteria.md` supplies the unchanged C1–C8 definitions, weights, ordinal labels, and aggregation rules.
+The existing `stages/01-frame.md` supplies the authoritative H-R / H-A / H-V identities, unchanged by this reorganization. `stages/01-frame.md` supplies the unchanged C1–C8 definitions, weights, ordinal labels, and aggregation rules.
 
 - **Court 1:** H-R vs H-A.
 - **Court 2:** H-R vs H-V.
@@ -63,7 +63,7 @@ Apply the inherited pairwise safeguards below separately in each court; referenc
 4. **Compare and challenge** — compare both pairwise courts, apply the locked criteria, and run sensitivity and fairness checks.
 5. **Judge** — Owner interpretation and keep/cut, only after both gates pass.
 
-Artifact IDs remain stable: ART-01…ART-08 identify documents, not stage numbers. Stage 1 contains three mandatory component locks; Stage 2 contains two. Consolidation does not remove any component gate or change the criteria, weights, hypotheses, worldview nodes, or two-court structure.
+Stage 1 contains three mandatory component locks within Frame; Stage 2 contains two within Evidence. Consolidation does not remove any component gate or change the criteria, weights, hypotheses, worldview nodes, or two-court structure.
 
 ### 2.3 Owner Neutrality Lock (10) — 1.1 clarified
 
@@ -167,9 +167,9 @@ Complete components 1A, 1B, and 1C in order; all must pass before Stage 2.
 
 **Who drafts:** ChatGPT proposes fairest wording (working text below). Coordinator may format-only package.  
 **Who locks:** Owner.  
-**Artifact:** `ART-01-hypotheses.md`
+**Artifact:** `stages/01-frame.md`
 
-**Locked hypothesis texts:** quote the current H-R, H-A, and H-V atomics in `ART-01-hypotheses.md` verbatim. Preserve its two pairwise courts and mode/source distinction. These pack-baseline identities govern; do not substitute an earlier working paraphrase.
+**Locked hypothesis texts:** quote the current H-R, H-A, and H-V atomics in `stages/01-frame.md` verbatim. Preserve its two pairwise courts and mode/source distinction. These pack-baseline identities govern; do not substitute an earlier working paraphrase.
 
 **Exit — Pass when all true:**
 
@@ -178,7 +178,7 @@ Complete components 1A, 1B, and 1C in order; all must pass before Stage 2.
 - H-V includes: veridical-apparition social-formation; bounded group pathway; interpretive bridge; positive extra-mental correlate marked *unspecified but not empty* (must later be costed); no named metaphysics as scoring premise.  
 - Neither side is fraud, resuscitation, empty-correlate escape, or mass-hallucination cartoon.  
 - Each side has explicit auxiliaries placeholders and explicit losing-condition placeholders (filled at Stage 3).  
-- Atomic texts quoted; file READ-ONLY for remainder of run. Mid-build reword = fail / restart Stage 1.
+- Atomic texts quoted; hypothesis section READ-ONLY for remainder of run. Mid-build reword = fail / restart Stage 1.
 
 **Fail:** asymmetry; hidden strawman; softened model; paraphrase adding mechanism/metaphysics/school; H-V as “nothing extra-mental”; H-R as swoon/resuscitation/visionary-only.
 
@@ -188,13 +188,13 @@ Complete components 1A, 1B, and 1C in order; all must pass before Stage 2.
 
 **Who drafts:** ChatGPT (literature-derived proposal).  
 **Who locks:** Owner. Prefer thin: **6–8 families**, not a mega-ledger.  
-**Artifact:** `ART-02-criteria-lock.md`  
+**Artifact:** `stages/01-frame.md`  
 **Timestamp discipline:** criteria locked/timestamped **before** Stage 2 dossier completion-as-input-to-builds and **before** Stage 3 starts.
 
 **Candidate criterion families (proposal fodder; owner locks a thin discriminating set):**  
 Likelihood/fit · content-fit (raised / appeared / burial language) · parsimony / ontological economy · type-familiarity / analogy · explanatory scope · total-evidence coherence · auxiliary cost · precision / ad-hocness · causal unity · discriminating power · source independence · vulnerability (losing conditions) · robustness to contested data.
 
-**Scoring rule (locked here):** Ordinal only (`--` / `-` / `0` / `+` / `++`, or equivalently `H-R+` / `H-V+` / `≈` / `insuf`). No cardinal probabilities unless owner later adds a *named optional* numeric appendix. Shared downstream telling (ordinary rumor, liturgy, memory, group reinforcement) **cancels**. Default **equal family weight** (`w=1`); any non-equal *criterion* change requires written challenge + owner lock **before Stage 3**. Pack baseline criteria: `ART-02-criteria.md` (C1–C8). **Stage 4 aggregation lenses** (Equal / C3-heavy / C1-heavy) are required sensitivity aggregations over the *same* cells — they are **not** new criteria and do **not** cook the ruler (see Stage 4).
+**Scoring rule (locked here):** Ordinal only (`--` / `-` / `0` / `+` / `++`, or equivalently `H-R+` / `H-V+` / `≈` / `insuf`). No cardinal probabilities unless owner later adds a *named optional* numeric appendix. Shared downstream telling (ordinary rumor, liturgy, memory, group reinforcement) **cancels**. Default **equal family weight** (`w=1`); any non-equal *criterion* change requires written challenge + owner lock **before Stage 3**. Pack baseline criteria: `stages/01-frame.md` (C1–C8). **Stage 4 aggregation lenses** (Equal / C3-heavy / C1-heavy) are required sensitivity aggregations over the *same* cells — they are **not** new criteria and do **not** cook the ruler (see Stage 4).
 
 **1.1 neutrality on criteria:** Do not cook families or scales to privilege H-R or H-V. Cooking criteria is a Neutrality Fail, distinct from honest discriminating power.
 
@@ -206,7 +206,7 @@ Likelihood/fit · content-fit (raised / appeared / burial language) · parsimony
 - Discriminating vs canceling rows distinguished.  
 - Weighting rule frozen; challenges recorded.  
 - Hostile-reader Pass on the criteria themselves (hard success #2).  
-- Timestamped before Stage 3; file READ-ONLY.
+- Timestamped before Stage 3; criteria section READ-ONLY.
 
 **Fail:** vague/asymmetric criteria; criterion only one hyp can win by definition (e.g. uniqueness-of-vindication as a *criterion* rather than a C *node prior*; “naturalistic type-familiarity mandatory at B”); criteria invented after memos; cooked rulers.
 
@@ -216,7 +216,7 @@ Likelihood/fit · content-fit (raised / appeared / burial language) · parsimony
 
 **Who drafts:** ChatGPT node-semantics note; Coordinator formats tree.  
 **Who locks:** Owner.  
-**Artifact:** `ART-03-presupposition-tree.md`
+**Artifact:** `stages/01-frame.md`
 
 **1.1 slim tree (required nodes — G is not optional):**
 
@@ -275,7 +275,7 @@ Complete components 2A and 2B in order; both must pass before Stage 3.
 #### 2A — Record Lock
 
 **Who drafts:** ChatGPT. **Who locks:** Owner.  
-**Artifact:** `ART-04-record-lock.md`
+**Artifact:** `stages/02-evidence.md`
 
 | Tier | Use |
 |---|---|
@@ -300,7 +300,7 @@ Complete components 2A and 2B in order; both must pass before Stage 3.
 - **Slice B:** + Qualified Contested promotions (e.g. tomb granted).  
 - **Slice C:** Hostile expansion — strongest defensible empty tomb / event-level group claims granted to **pressure H-V** (procedure-symmetric; content need not be mirror-image).  
 
-Pre-register slices in `ART-04`. Run all registered slices or none (no one-sided sensitivity theater). Report slice results inside each worldview node when material.
+Pre-register slices in `Evidence §2A`. Run all registered slices or none (no one-sided sensitivity theater). Report slice results inside each worldview node when material.
 
 **Exit — Pass when all true:**
 
@@ -318,7 +318,7 @@ Pre-register slices in `ART-04`. Run all registered slices or none (no one-sided
 #### 2B — Shared Dossier
 
 **Who drafts:** ChatGPT research. **Who locks:** Owner (completeness, not winner).  
-**Artifact:** `ART-05-dossier.md`  
+**Artifact:** `stages/02-evidence.md`  
 **Cap:** ~6–10k words principal dossier; ledgers outside.
 
 **Thin modules (A–J fodder):** evidence/MF method · earliest sources · language & Jewish categories · burial/tomb/groups/Paul/James · vision/apparition/bereavement comparanda (populations + disanalogies) · testimony/memory/social formation · strongest H-R scholarship · strongest H-V / underdetermination scholarship · miracle epistemology · criteria crosswalk · **T-concentrated** OpenTI entailment / well-typing notes (no creatio-ban essay) · **C-concentrated** fair Christian worldview presupposition notes. **B/G thin** — no Deep Research to invent agnosticism or bare God.
@@ -339,14 +339,14 @@ Pre-register slices in `ART-04`. Run all registered slices or none (no one-sided
 
 ### Stage 3 — Construct explanations (blind)
 
-**Who builds:** Grok = H-R only; Constructor-HA = H-A only; DeepSeek = H-V only. Fresh threads. Identical packet from `ART-01`…`ART-05` + this runbook + Master Prompt.  
-**Artifacts:** `ART-06a-HR-memo.md` · `ART-06b-HV-memo.md` · `ART-06c-HA-memo.md`
+**Who builds:** Grok = H-R only; Constructor-HA = H-A only; DeepSeek = H-V only. Fresh threads. Identical packet from `stages/01-frame.md` + `stages/02-evidence.md` + this runbook + Master Prompt.  
+**Artifacts:** `stages/03-construct/HR.md` · `stages/03-construct/HV.md` · `stages/03-construct/HA.md`
 
 **Default posture:** three blind steelmans; evaluate H-R vs H-A and H-R vs H-V separately.
 
 **Memo template (parity — required):**
 
-1. Exact hypothesis text from `ART-01`.  
+1. Exact hypothesis text from `Frame §1A`.  
 2. Causal model / positive pathway: event → experiences → social formation → extant record.  
 3. Evidence fit by locked record items.  
 4. Response to each locked criterion.  
@@ -377,7 +377,7 @@ Pre-register slices in `ART-04`. Run all registered slices or none (no one-sided
 ### Stage 4 — Compare and challenge (anti-abstention)
 
 **Who:** Third auditor ≠ either constructor (sterile thread / preferred fourth seat).  
-**Artifacts:** `ART-07-audit.md` (includes scorecard + thin application/attack ledger)
+**Artifacts:** `stages/04-compare.md` (includes scorecard + thin application/attack ledger)
 
 **Work:** Fill locked scorecard **once per node** (**B, T, G, C**). Base = evidence Slice A. Sensitivity = pre-registered evidence Slices B/C (slice letters ≠ worldview nodes). Thin attack/refutation ledger only for *criteria applications* (smuggle, cartoon, dropped losing condition) — capped at strongest **N** objections per side.
 
@@ -422,7 +422,7 @@ Unpaid auxiliaries / **unpaid bridges** do **not** by themselves auto-`insuf`.
 **Required special lines:**
 
 - **T:** “T treated as OpenTI (noumenal disclosure — Will, aesthetic intuition; not Kant-closed; Schopenhauer ancestry/gloss only). Brand not ‘Schopenhauerian TI’. Will ≠ God; T ≠ G. Causation-in-phenomena (not creatio-into-phenomena)? YES/NO. Classical H-R (personal creator God raising a corpse) treated as well-typed under T? MUST BE NO. H-V-style appearance / vision / spirit-seeing / Will-manifestation pathways allowed as well-typed? YES expected. Creatio-ban footnotes used? YES/NO (must be NO for base scoring).”  
-- **C:** “Authorization + expected vindication prior used: {quote from ART-03}. Circular-from-record? YES/NO. Bodily MODE locked by node? MUST BE NO. If circular YES, C cell is invalid.”  
+- **C:** “Authorization + expected vindication prior used: {quote from Frame §1C}. Circular-from-record? YES/NO. Bodily MODE locked by node? MUST BE NO. If circular YES, C cell is invalid.”  
 - **Anti-abstention:** “For each `insuf` cell: compared outstanding burdens? YES/NO. Clear ordinal difference withheld? YES/NO (YES = Fail).”
 - **C3-heavy honesty:** “Per node B/T/G/C: metaphysics for C3 = ARGUED+LOCKED / SMUGGLED. If SMUGGLED, C3-heavy not treated as decisive for that node? YES/NO.”
 - **C1-heavy honesty:** “Per criterion-or-node: C1 = EVIDENCE-BRIDGE / SLOGAN-FIT. If SLOGAN-FIT, C1-heavy not treated as decisive? YES/NO.”
@@ -447,7 +447,7 @@ Unpaid auxiliaries / **unpaid bridges** do **not** by themselves auto-`insuf`.
 **Entry:** completed independent Neutrality Gate PASS and deterministic Protocol Gate PASS with `stage5_allowed: true`.
 
 **Who:** Owner. Coordinator may summarize *process* only.  
-**Artifact:** `ART-08-interpretation.md`
+**Artifact:** `stages/05-judge.md`
 
 **Work:** Keep/cut audit cells that violate locks (including abstention); record surviving weighting challenges; publish node-wise ordinal picture + sensitivity deltas; optional repair of specific cells (not rebuild-to-win). Optional personal synthesis must be labeled **`EXTRA-PROTOCOL`** (outside the protocol court).
 
@@ -463,24 +463,17 @@ Unpaid auxiliaries / **unpaid bridges** do **not** by themselves auto-`insuf`.
 
 ---
 
-## 5. Locked artifacts per stage
+## 5. Required stage files
 
-| Stage | Artifact | One-line description |
+| Stage | File | Contents |
 |---|---|---|
-| 1 | `ART-01-hypotheses.md` | Frozen fair wording of H-R, H-A, and H-V; READ-ONLY (pack baseline shipped) |
-| 1 | `ART-02-criteria.md` / live `ART-02-criteria-lock.md` | Frozen C1–C8 + Stage 4 aggregation lenses; scales, cancel/weight rules |
-| 1 | `ART-03-presupposition-tree.md` | Frozen slim tree B/T/G/C; C prior; T label-only |
-| 2 | `ART-04-record-lock.md` | Accepted / Contested / Background / Excluded + slices A/B/C |
-| 2 | `ART-05-dossier.md` | Neutral shared evidence and background; no ranking |
-| 3 | `ART-06a-HR-memo.md` | Blind H-R construction |
-| 3 | `ART-06b-HV-memo.md` | Blind H-V construction |
-| 3 | `ART-06c-HA-memo.md` | Blind H-A construction |
-| 4 | `ART-07-audit.md` | Per-node comparative scorecard + thin application ledger |
-| 5 | `ART-08-interpretation.md` | Owner keep/cut per node (+ optional EXTRA-PROTOCOL) |
-| — | `hv-hr-master-prompt.md` | Thin stage-routed launcher; version-pinned |
-| — | `NEUTRALITY_GATE.md` | Hostile-reader checklist results (protocol and/or run) |
+| 1 Frame | `stages/01-frame.md` | Hypotheses (§1A), C1–C8 criteria (§1B), presuppositions (§1C) |
+| 2 Establish the evidence | `stages/02-evidence.md` | Record (§2A), shared dossier (§2B), supporting ledgers (§2C) |
+| 3 Construct explanations | `stages/03-construct/HR.md`, `HA.md`, `HV.md` | Three separate blind construction memos |
+| 4 Compare and challenge | `stages/04-compare.md` | Both pairwise courts, sensitivity, and comparative audit |
+| 5 Judge | `stages/05-judge.md` | Owner interpretation and keep/cut after both gates pass |
 
-Hash-and-freeze artifacts when available. This method pack ships **pack-baseline** `ART-01-hypotheses.md` and `ART-02-criteria.md` only — not live-run dumps (`ART-03`…`ART-08`, sessions).
+The pack contains hypothesis/criteria baselines and unfilled templates, not a completed live run. The independent review remains `NEUTRALITY_GATE.md`; the R gate and its receipt examples are required enforcement support. `PROTOCOL_GATE.md` defines the receipt schema. No obsolete ART files are required.
 
 ---
 
@@ -490,11 +483,11 @@ Hash-and-freeze artifacts when available. This method pack ships **pack-baseline
 
 1. **Node** — B / T / G / C  
 2. **Hypothesis** — H-V or H-R  
-3. **Criterion ID** — from `ART-02`  
+3. **Criterion ID** — from `Frame §1B`  
 4. **Criterion definition** — short  
 5. **Score** — ordinal (`--`/`-`/`0`/`+`/`++` or `H-R+`/`H-V+`/`≈`/`insuf`)  
 6. **Weight** — default locked; changes only by owner reopening criteria lock  
-7. **Evidence item IDs** — from `ART-04` / `ART-05`  
+7. **Evidence item IDs** — from `Evidence §2A` / `Evidence §2B`  
 8. **Sensitivity** — A / B / C / None  
 9. **Basis** — one-line reason (must show burden comparison when claiming `insuf`)  
 10. **Limitation / weighting challenge** — logged, not silently resolved  
@@ -520,8 +513,8 @@ Hash-and-freeze artifacts when available. This method pack ships **pack-baseline
 
 | Smuggle | Detection | Remedy |
 |---|---|---|
-| **Hyp rewrite** | Mechanism, metaphysics, or school added to ART-01 | Revert; version bump only by owner; must strengthen both sides symmetrically |
-| **Criteria drift / cooking** | New ruler in Stages 3/4; rulers cooked to privilege one hyp | Strike; rescore on frozen ART-02 only; Neutrality Fail if cooked |
+| **Hyp rewrite** | Mechanism, metaphysics, or school added to Frame §1A | Revert; version bump only by owner; must strengthen both sides symmetrically |
+| **Criteria drift / cooking** | New ruler in Stages 3/4; rulers cooked to privilege one hyp | Strike; rescore on frozen Frame §1B only; Neutrality Fail if cooked |
 | **Tier laundering** | Contested treated as Accepted in base cells | Move to sensitivity; invalidate base cell; status changes need owner version bump + reason |
 | **Cause laundering** | “Early list existed” scored as “risen body caused list” | Split datum |
 | **Empty-correlate collapse** | H-V correlate = nothing / whatever works | Fail H-V memo; rebuild or lose completeness |
@@ -531,7 +524,7 @@ Hash-and-freeze artifacts when available. This method pack ships **pack-baseline
 | **Presupposition smuggling** | T or uniqueness in B; inert/circular C; G collapsed into C; A/C− reintroduced | Invalid cells; repair tree |
 | **Bodily-MODE lock via C** | C treated as forcing transformed body | Strike; mode remains IBE under C |
 | **Shared-mechanism double count** | Ordinary preaching scored as unique win | Mark cancel |
-| **Secret sources** | Constructor cites material not in ART-05 | Add to dossier for both or strike |
+| **Secret sources** | Constructor cites material not in Evidence §2B | Add to dossier for both or strike |
 | **Prompt hacking / side-channel** | Unprinted instruction; hyp-favoring examples in launcher | Fail publishable-prompt rule; rerun |
 | **H-R-favorable erasure / padding** | Tomb/group moved to Excluded silently; one-sided padding | Restore / rebalance; Neutrality Fail |
 | **Ledger bloat** | Attack ledger unbounded | Cap at strongest N per side |
@@ -581,11 +574,11 @@ Keep old clarity; cut mega-theater. Ledgers live **outside** the principal dossi
 
 | Ledger | Cap / rule |
 |---|---|
-| Evidence | One row per ART-04 item |
+| Evidence | One row per Evidence §2A item |
 | Background | Sourced; no hyp spin |
 | Source-dependence | Alternatives that could flip a row |
 | Terminology | Thin table (see Appendix B) |
-| Criteria | Points at ART-02 only |
+| Criteria | Points at Frame §1B only |
 | Auxiliaries | Listed + costed per memo |
 | Group pathway | Bounded; both sides |
 | Objection / attack | **Strongest N per side** (owner sets N; default small, e.g. 5–8) |
@@ -615,10 +608,10 @@ Distinct from OLD failure bans:
 5. **Grok dual-hat** — Coordinator + H-R builder. Mitigation: thread split + hash freeze before coordinating comment on H-V.  
 6. **Auditor bias** — auditor ≠ constructor; locked criteria constrain scoring.  
 7. **Contested evidence erased / padded** — Record Lock requires sensitivity, not silent drop or one-sided inflation.  
-8. **C circular or automatic** — if uniqueness/authorization read off data, C is fake; if C locks bodily MODE or makes H-R unable to lose, IBE is theater. Mitigation: ART-03 independent-prior clause + Stage 4 circularity / MODE lines.  
+8. **C circular or automatic** — if uniqueness/authorization read off data, C is fake; if C locks bodily MODE or makes H-R unable to lose, IBE is theater. Mitigation: Frame §1C independent-prior clause + Stage 4 circularity / MODE lines.  
 9. **T overkill** — creatio-ban footnotes / TI strain used as B weapon. Mitigation: T is OpenTI (not Kant-closed; Schopenhauer gloss only); any typing note stays under T.  
 10. **H-V unfalsifiable fog** — unspecified correlate drifts to empty. Mitigation: completeness + costed posit + self-risk.  
-11. **H-R over-specified theology** — full creed dumped so C is smuggled everywhere. Mitigation: H-R identity is ART-01; C is a node; MODE not locked.  
+11. **H-R over-specified theology** — full creed dumped so C is smuggled everywhere. Mitigation: H-R identity is Frame §1A; C is a node; MODE not locked.  
 12. **Sensitivity theater** — Slice B/C run only when helpful to one side. Mitigation: pre-register; run all or none.  
 13. **Comparanda abuse** — grief visions treated as typically generating the full locked record without cost.  
 14. **Underdetermination honesty collapse** — treating `≈` as failure and forcing a winner.  
@@ -629,7 +622,7 @@ Distinct from OLD failure bans:
 19. **Mega-ledger bloat** — caps on attack ledger and thin checklist.  
 20. **Two-hyp truncation misread** — Excluded third options named; H-V is not a dumpster for all non-H-R options.  
 21. **G collapsed into C** — theism-only node erased.  
-22. **MF brand confusion** — MF = ART-04/05 lock only.  
+22. **MF brand confusion** — MF = Evidence §§2A–2B lock only.  
 23. **Stage-4 abstention (1.1 primary repair target)** — unpaid auxiliaries cited as automatic `insuf`; clear ordinal differences withheld.
 
 ---
@@ -647,19 +640,19 @@ Not a fourth hyp argument. Not self-graded by the seat that wrote soft language.
 | N0b | **Hard success: Fairest criteria** | Stage 1 timestamp before Stage 3; literature-derived; symmetric; ordinal; shared mechanisms cancel; discriminating rows explicit; weighting challenges recorded; **not cooked** to privilege either hyp; no new criteria in audit |
 | N0c | **Hard success: No relevant-data omission** | Dossier includes strongest H-R *and* H-V scholarship, comparanda, Jewish categories, miracle epistemology; gaps named; tomb/group/Paul/James appear testable; **no cherry-pick / pad** |
 | N0d | **Anti-abstention** | Stage 4 compares outstanding burdens; clear ordinal differences labeled `H-R+`/`H-V+`/`≈`; `insuf` only after compare when warrant missing or deadlocked; unpaid auxiliaries alone ≠ automatic insuf |
-| 1 | Dual steelman (ops) | ART-01 + ART-06a/b show transformed-body H-R (no swoon) and costed-correlate H-V with losing conditions |
-| 2 | Criteria before builds | Timestamp(ART-02 lock) < Timestamp(Stage 3 start) |
-| 3 | Slim tree live | ART-03 has required **B, T, G, C**; A and C− absent; G not optional |
-| 4 | C live, MODE unlocked | ART-03 prior usable; audit can produce H-R ahead under C if warranted; bodily MODE not locked by C |
+| 1 | Dual steelman (ops) | Frame §1A + Stage 3 H-R/H-V memos show transformed-body H-R (no swoon) and costed-correlate H-V with losing conditions |
+| 2 | Criteria before builds | Timestamp(Frame §1B lock) < Timestamp(Stage 3 start) |
+| 3 | Slim tree live | Frame §1C has required **B, T, G, C**; A and C− absent; G not optional |
+| 4 | C live, MODE unlocked | Frame §1C prior usable; audit can produce H-R ahead under C if warranted; bodily MODE not locked by C |
 | 5 | C not automatic/circular | Stage 4 C line shows independent prior, not tomb/visions/list-derived |
 | 6 | H-R-favorable evidence present | Empty tomb, group, Paul, James in Record; Slice B/C exist as registered |
-| 7 | No hidden naturalism / TI at B | ART-03 B forbids both; B cells do not cite creatio-ban / T strain |
+| 7 | No hidden naturalism / TI at B | Frame §1C B forbids both; B cells do not cite creatio-ban / T strain |
 | 8 | Publishable prompts | Launch packet and locks printable as-is; no secret side instructions |
-| 9 | Total-evidence discipline | ART-05 completeness Pass (N0c) |
+| 9 | Total-evidence discipline | Evidence §2B completeness Pass (N0c) |
 | 10 | No hidden destination | Underdetermination, H-V ahead, and H-R ahead all legitimate; destinations are ceilings |
 | 11 | Symmetric standards | Same packet, criteria, templates for both hyps |
 | 12 | No tier laundering | Contested stays Contested unless owner promotes |
-| 13 | Research seat did not crown | ART-05 has zero ranking sentences |
+| 13 | Research seat did not crown | Evidence §2B has zero ranking sentences |
 | 14 | Auditor ≠ constructor | Role map honored (sterile thread / third seat) |
 | 15 | Shared mechanisms cancel | Scorecard marks ordinary telling as cancel |
 | 16 | Hostile Slice C available | Hostile-to-H-V tomb/group grant defined; failed C does not erase earned A at that node |
@@ -679,10 +672,10 @@ Not a fourth hyp argument. Not self-graded by the seat that wrote soft language.
 
 **Master Prompt rules:**
 
-- One screen + file pointers to `ART-01`…`ART-08` and this runbook.  
+- One screen + file pointers to the five stage entries under `stages/` and this runbook.  
 - Points at locks by **reference**; never restates criteria/tree/hyps.  
 - Does **not** override locked stage artifacts.  
-- Version-pinned to `HVHR-IBE-RB-1.3`. **If conflict, runbook + locked artifacts win.**  
+- Version-pinned to `HVHR-IBE-RB-1.4`. **If conflict, runbook + locked artifacts win.**  
 - Optional **“next stage only”** mode.  
 - No hyp-favoring examples inside the prompt.  
 - Change runbook → bump version → re-issue prompt. Never edit prompt mid-run as a side constitution.
@@ -708,9 +701,9 @@ Underdetermination, H-V ahead, and H-R ahead are legitimate *possible outputs of
 
 ## 16. Launch sequence (ops)
 
-1. Owner accepts this runbook as `HVHR-IBE-RB-1.3` (or merges then locks).  
+1. Owner accepts this runbook as `HVHR-IBE-RB-1.4` (or merges then locks).  
 2. Run Neutrality Gate on the *protocol* (incl. N0d anti-abstention).  
-3. Issue stage-routed Master Prompt v1.3.  
+3. Issue stage-routed Master Prompt v1.4.  
 4. Execute Stages 1–2; freeze; hash if available.  
 5. Open three fresh constructor threads with identical lock bundle.  
 6. Freeze Stage 3 memos.  
@@ -759,7 +752,7 @@ Underdetermination, H-V ahead, and H-R ahead are legitimate *possible outputs of
 
 ## Appendix C — Tree dangers (method flags; slim tree fixed)
 
-Adversarial notes for ART-03 semantics — tree is the **1.1 slim set**:
+Adversarial notes for Frame §1C semantics — tree is the **1.1 slim set**:
 
 - **MF shared** — MF sits on B, T, G, and C; nodes differ by worldview layer only.
 - **B gloss** — metaphysical agnosticism + MF; never omit agnosticism; never imply MF is only on B.
@@ -768,19 +761,19 @@ Adversarial notes for ART-03 semantics — tree is the **1.1 slim set**:
 - **Bodily MODE not locked** — C must not be read as forcing transformed-body over truthful non-bodily vindication.  
 - **T label-only** — no creatio-ban footnote regime; do not weaponize TI at B.  
 - **G unstable by design** — expect `≈`; not protocol failure; do not collapse G into C.  
-- **MF brand confusion** — MF = ART-04/05 only.  
+- **MF brand confusion** — MF = Evidence §§2A–2B only.  
 - **Two-hyp truncation** — name Excluded options; don’t dump them into H-V.  
 - **“No named school”** — blocks identity-sneaks; mechanisms still usable.  
 - **A / C− retired** — do not reintroduce without version bump.
 
 ---
 
-*End of runbook `HVHR-IBE-RB-1.3`. Method only. No hypothesis verdict.*
+*End of runbook `HVHR-IBE-RB-1.4`. Method only. No hypothesis verdict.*
 
 ---
 ## FREEZE RECORD
 
-**Status:** v1.3 five-stage reorganization authorized by Owner, 2026-09-29 (America/Chicago).
-**Supersedes:** v1.2 for new runs. Existing runs remain pinned to their original version.
-**Scope:** stage consolidation only; existing hypothesis atomics, C1–C8, weights, courts, nodes, and substantive safeguards retained. Mandatory receipts and deterministic enforcement continue under the five-stage schema.
-**No mid-run edit** without version bump + re-issue of Master Prompt.
+**Version:** `HVHR-IBE-RB-1.4`; file consolidation authorized by Owner on 2026-09-29 (America/Chicago).
+**Supersedes:** v1.3 for new runs. Old runs remain pinned to their original version; retrieve their files from Git history.
+**Scope:** combine stage components into Frame and Evidence, isolate the three construction memos, rename Compare and Judge, remove superseded files, and update receipt paths/schema. Hypotheses, criteria, and substantive safeguards are retained.
+**No mid-run edit** without version bump and reissued launcher.

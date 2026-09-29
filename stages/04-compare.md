@@ -1,13 +1,6 @@
----
-protocol: HVHR-IBE-RB-1.3
-artifact: ART-07-audit.md
-status: EMPTY SHELL (fill at Stage 4; anti-abstention required; two courts)
-seat: Auditor (third / sterile; ≠ any constructor)
----
+# Stage 4 — Compare and challenge
 
-# ART-07 — Comparative Audit (shell)
-
-**Protocol pin:** `HVHR-IBE-RB-1.3`  
+**Protocol pin:** `HVHR-IBE-RB-1.4`  
 **Nodes:** **B / T / G / C** only. **Two pairwise courts** — not a single three-way blended winner.
 
 Stage 3 builds **H-R**, **H-A**, and **H-V**. Stage 4 scores:
@@ -64,7 +57,7 @@ Fill once per node for Slice A (base). Add sensitivity rows for registered Slice
 
 **T:** “T treated as OpenTI (… Will ≠ God; T ≠ G). Causation-in-phenomena? YES/NO. Classical H-R well-typed under T? MUST BE NO. H-A / H-V-style pathways well-typed? YES expected where licensed. Creatio-ban footnotes used? MUST BE NO for base scoring.”
 
-**C:** “Authorization + expected vindication prior used: {quote from ART-03}. Circular-from-record? YES/NO. Bodily MODE locked by node? MUST BE NO.”
+**C:** “Authorization + expected vindication prior used: {quote from Frame §1C}. Circular-from-record? YES/NO. Bodily MODE locked by node? MUST BE NO.”
 
 ## Aggregation lenses (required after equal-weight profile) — per court
 
@@ -117,4 +110,3 @@ Same cells; lenses ≠ new criteria; anti-abstention still fills cells. **Equal 
 - [ ] Auditor did not rewrite hyps or criteria; ceiling language only
 
 **Fail:** abstention; unpaid bridges alone as auto-`insuf`; omitting Equal/C3-heavy/C1-heavy for either court; treating C3-heavy decisive under SMUGGLED or C1-heavy under SLOGAN-FIT; blended overall / three-way winner.
-
