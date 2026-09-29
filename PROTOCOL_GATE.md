@@ -1,6 +1,6 @@
-# Deterministic Protocol Gate — HVHR-IBE-RB-1.3
+# Deterministic Protocol Gate — HVHR-IBE-RB-1.4
 
-This document adds a **cross-stage procedural enforcement layer** to the existing stage-gated H-R / H-A / H-V IBE method. It does **not** change the hypotheses, criteria, worldview nodes, record policy, steelman requirements, or comparative IBE rules in `HVHR-IBE-RB-1.3`.
+This document adds a **cross-stage procedural enforcement layer** to the existing stage-gated H-R / H-A / H-V IBE method. It does **not** change the hypotheses, criteria, worldview nodes, record policy, steelman requirements, or comparative IBE rules in `HVHR-IBE-RB-1.4`.
 
 ## Purpose
 
@@ -16,9 +16,9 @@ Three layers must remain separate:
 
 The protocol gate does not decide whether H-R, H-A, or H-V is better supported. It does not decide whether a philosophical claim is true. It checks ordering, provenance, lock continuity, artifact integrity, role separation, required coverage, and gate completion.
 
-## 1.3 constitutional rule
+## 1.4 constitutional rule
 
-Under `HVHR-IBE-RB-1.3`, Stage 5 is blocked until both conditions are true:
+Under `HVHR-IBE-RB-1.4`, Stage 5 is blocked until both conditions are true:
 
 - the live-run Neutrality Gate returns `PASS`; and
 - `validation/protocol-gate/protocol_gate.R` returns `PASS` with `stage5_allowed: true`.
@@ -31,15 +31,12 @@ A live run should contain the philosophical artifacts plus a `receipts/` directo
 
 ```text
 run/
-  ART-01-hypotheses.md
-  ART-02-criteria-lock.md
-  ART-03-presupposition-tree.md
-  ART-04-record-lock.md
-  ART-05-dossier.md
-  ART-06a-HR-memo.md
-  ART-06b-HV-memo.md
-  ART-06c-HA-memo.md
-  ART-07-audit.md
+  stages/01-frame.md
+  stages/02-evidence.md
+  stages/03-construct/HR.md
+  stages/03-construct/HV.md
+  stages/03-construct/HA.md
+  stages/04-compare.md
   NEUTRALITY_GATE.md
   receipts/
     stage01.json
@@ -61,7 +58,8 @@ Each receipt records at minimum:
 - `protocol_version`
 - `stage`
 - `status`
-- `artifacts`: an ordered array of component objects, each with `component`, `artifact_path`, and `artifact_md5`
+- `artifact_path` and `artifact_md5`: the consolidated stage file and its fingerprint
+- `completed_components`: ordered names of all approved sections
 - lock timestamp
 - locking seat / owner
 - `unresolved_fail_items`
@@ -85,7 +83,7 @@ The gate cannot prove that a model never saw an unofficial side channel. That re
 
 ### Stage 4 — comparative audit
 
-Stage 4 retains the human-readable `ART-07-audit.md` and adds a machine-readable companion, `receipts/stage04-audit-matrix.json`.
+Stage 4 retains the human-readable `stages/04-compare.md` and adds a machine-readable companion, `receipts/stage04-audit-matrix.json`.
 
 The companion must cover:
 
@@ -147,7 +145,7 @@ A valid run produces:
 
 ```json
 {
-  "protocol_version": "HVHR-IBE-RB-1.3",
+  "protocol_version": "HVHR-IBE-RB-1.4",
   "result": "PASS",
   "stage5_allowed": true,
   "failures": []
@@ -158,9 +156,11 @@ Any failed invariant produces `FAIL`, `stage5_allowed: false`, a non-zero exit s
 
 ## Version rule
 
-`HVHR-IBE-RB-1.3` consolidates eight stages into five while retaining the existing substantive rules and deterministic enforcement. Any later change to philosophical content, criteria, worldview nodes, court structure, or audit logic requires a further protocol version bump.
+`HVHR-IBE-RB-1.4` consolidates the working files under the five stages while retaining the existing substantive rules and deterministic enforcement. Any later change to philosophical content, criteria, worldview nodes, court structure, or audit logic requires a further protocol version bump.
 
 
-## v1.3 grouped lock receipts
+## v1.4 consolidated stage receipts
 
-ART identifiers remain stable and are not stage numbers. Stage 1 requires exactly three ordered components: `hypotheses`, `criteria`, `presuppositions`. Stage 2 requires exactly two: `record`, `dossier`. Each component is a separate object in `artifacts`, with its path and MD5. The stage receipt records the collective lock time after all component gates pass. Stage 1 must lock before Stage 2; both must lock before construction. Live receipts are stage01.json through stage04.json, plus stage04-audit-matrix.json and neutrality.json. Stage 5 is the gated owner judgment. Old v1.2 receipts are not accepted as v1.3 runs.
+Stage 1 fingerprints `stages/01-frame.md` once and declares `completed_components: ["hypotheses", "criteria", "presuppositions"]`. Stage 2 fingerprints `stages/02-evidence.md` once and declares `completed_components: ["record", "dossier"]`. Each section must pass its component gate before the collective stage lock. The R gate verifies the required component names and full-file integrity; component completion is an attestation, not a machine judgment of philosophical quality.
+
+Stage 1 must lock before Stage 2; both must lock before construction. Live receipts are stage01.json through stage04.json, plus stage04-audit-matrix.json and neutrality.json. Stage 5 is the gated owner judgment. Previous-version receipts are not accepted as v1.4 runs. Earlier schemas remain in Git history.

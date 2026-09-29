@@ -1,20 +1,14 @@
 {
-  "protocol_version": "HVHR-IBE-RB-1.3",
+  "protocol_version": "HVHR-IBE-RB-1.4",
   "stage": 2,
   "status": "LOCKED",
   "locked_at": "2026-09-16T01:00:00Z",
   "locked_by": "Owner",
   "unresolved_fail_items": 0,
-  "artifacts": [
-    {
-      "component": "record",
-      "artifact_path": "ART-04-record-lock.md",
-      "artifact_md5": "REPLACE_WITH_MD5"
-    },
-    {
-      "component": "dossier",
-      "artifact_path": "ART-05-dossier.md",
-      "artifact_md5": "REPLACE_WITH_MD5"
-    }
+  "artifact_path": "stages/02-evidence.md",
+  "artifact_md5": "REPLACE_WITH_MD5",
+  "completed_components": [
+    "record",
+    "dossier"
   ]
 }

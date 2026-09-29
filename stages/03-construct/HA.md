@@ -1,21 +1,14 @@
----
-protocol: HVHR-IBE-RB-1.3
-artifact: ART-06c-HA-memo.md
-status: EMPTY SHELL (blind H-A construction; fill at Stage 3)
-seat: Constructor-HA
----
+# Stage 3 — Construct H-A
 
-# ART-06c — H-A Construction Memo (shell)
+**Blind build.** Do not see Stage 3 H-R memo / Stage 3 H-V memo before freeze. Three-hypothesis Stage 3 (H-R, H-A, H-V). Identical packet: stages/01-frame.md + stages/02-evidence.md + runbook + Master Prompt.
 
-**Blind build.** Do not see ART-06a / ART-06b before freeze. Three-hypothesis Stage 3 (H-R, H-A, H-V). Identical packet: ART-01…ART-05 + runbook + Master Prompt.
-
-## 1. Exact hypothesis text (from ART-01)
+## 1. Exact hypothesis text (from Frame §1A)
 
 > *(paste locked H-A atomic)*
 
 ## 2. Pre-registered appearance subpaths (frozen before scoring)
 
-List admissible subpaths frozen in advance (not an open “or otherwise”). Examples from ART-01: ordinary perceptual / misperception; internally generated hallucinatory / visionary (non-veridical); veridical extra-mental apparition (H-V); mixed appearance model. Fraud / deception only if separately registered.
+List admissible subpaths frozen in advance (not an open “or otherwise”). Examples from Frame §1A: ordinary perceptual / misperception; internally generated hallucinatory / visionary (non-veridical); veridical extra-mental apparition (H-V); mixed appearance model. Fraud / deception only if separately registered.
 
 | Subpath ID | Description | Registered? |
 |---|---|---|
@@ -31,7 +24,7 @@ Appearance-type pathway(s) → interpretation → social formation → extant re
 
 ## 4. Evidence fit (locked record items)
 
-| ART-04 ID | Fit under H-A (named subpath) |
+| Evidence §2A ID | Fit under H-A (named subpath) |
 |---|---|
 | | |
 
@@ -87,7 +80,6 @@ Generic rival-type self-contrast OK; not a prosecution file. Do not dump every n
 
 - [ ] Complete template; parity, specificity, self-risk present
 - [ ] Pre-registered subpaths frozen; no ad hoc pathway switching without cost disclosure
-- [ ] No peeking / cross-reference to ART-06a / ART-06b
+- [ ] No peeking / cross-reference to Stage 3 H-R memo / Stage 3 H-V memo
 - [ ] No fraud cartoon as whole of H-A unless registered
 - [ ] No unlocked criteria; no side constitution; no named metaphysics in identity
-

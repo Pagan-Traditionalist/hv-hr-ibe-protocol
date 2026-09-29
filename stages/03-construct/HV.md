@@ -1,15 +1,8 @@
----
-protocol: HVHR-IBE-RB-1.3
-artifact: ART-06b-HV-memo.md
-status: EMPTY SHELL (blind H-V construction; fill at Stage 3)
-seat: Constructor-HV (DeepSeek)
----
+# Stage 3 — Construct H-V
 
-# ART-06b — H-V Construction Memo (shell)
+**Blind build.** Do not see Stage 3 H-R memo / Stage 3 H-A memo before freeze. Three-hypothesis Stage 3 (H-R, H-A, H-V). Identical packet: stages/01-frame.md + stages/02-evidence.md + runbook + Master Prompt.
 
-**Blind build.** Do not see ART-06a / ART-06c before freeze. Three-hypothesis Stage 3 (H-R, H-A, H-V). Identical packet: ART-01…ART-05 + runbook + Master Prompt.
-
-## 1. Exact hypothesis text (from ART-01)
+## 1. Exact hypothesis text (from Frame §1A)
 
 > *(paste locked H-V atomic)*
 
@@ -21,7 +14,7 @@ Apparitions (phenomenally actual, veridical content with costed extra-mental cor
 
 ## 3. Evidence fit (locked record items)
 
-| ART-04 ID | Fit under H-V |
+| Evidence §2A ID | Fit under H-V |
 |---|---|
 | | |
 
@@ -78,7 +71,6 @@ Generic rival-type self-contrast OK; not a prosecution file. Do not dump every n
 ## Exit checklist
 
 - [ ] Complete template; parity, specificity, self-risk present
-- [ ] No peeking / cross-reference to ART-06a / ART-06c
+- [ ] No peeking / cross-reference to Stage 3 H-R memo / Stage 3 H-A memo
 - [ ] Costed nonempty correlate (no empty-correlate collapse)
 - [ ] No unlocked criteria; no side constitution
-
