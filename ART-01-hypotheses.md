@@ -1,12 +1,12 @@
 ---
-protocol: HVHR-IBE-RB-1.1
+protocol: HVHR-IBE-RB-1.3
 artifact: ART-01-hypotheses.md
-status: PACK BASELINE (for new runs under 1.1)
+status: PACK BASELINE (for new runs under 1.3)
 ---
 
 # ART-01 — Hypothesis Formulation (pack baseline)
 
-**Protocol pin:** `HVHR-IBE-RB-1.1`  
+**Protocol pin:** `HVHR-IBE-RB-1.3`  
 **Role:** Three locked identities for new runs — **H-R**, **H-A**, **H-V**. No scores. Stage 1 locks quoted atomics; file is READ-ONLY for the remainder of a run unless owner version-bumps.
 
 ## Locked H-R (quoted atomic)
@@ -25,7 +25,7 @@ status: PACK BASELINE (for new runs under 1.1)
 
 ## Two courts (required)
 
-Stage 7 scores **two pairwise courts**, not a single three-way blended winner:
+Stage 4 scores **two pairwise courts**, not a single three-way blended winner:
 
 1. **Court 1: H-R vs H-A** — Do we need bodily resurrection at all?
 2. **Court 2: H-R vs H-V** — Even granting extra-mental veridical visionary appearance, is raised body better?
@@ -36,7 +36,7 @@ Ordinal labels are court-specific (see ART-02). Anti-abstention and the three we
 
 Encounter **mode** is not causal **source**. H-R may include visionary encounters *caused by* the bodily risen Jesus. Appearance or visionary phenomenology alone does not decide for H-A or H-V.
 
-## Stage-6 placeholders (filled at construction)
+## Stage-3 placeholders (filled at construction)
 
 | Model | Auxiliaries | Losing conditions |
 |---|---|---|
@@ -50,3 +50,4 @@ Encounter **mode** is not causal **source**. H-R may include visionary encounter
 - H-A / H-V atomics parallel except appearance-range vs visionary+veridical-correlate.
 - H-V correlate: unspecified but substantively nonempty; sincerity ≠ veridicality.
 - No named metaphysics in H-A / H-V identities.
+
