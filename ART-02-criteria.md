@@ -1,12 +1,12 @@
 ---
-protocol: HVHR-IBE-RB-1.1
+protocol: HVHR-IBE-RB-1.3
 artifact: ART-02-criteria.md
-status: PACK BASELINE (for new runs under 1.1)
+status: PACK BASELINE (for new runs under 1.3)
 ---
 
 # ART-02 — Abductive Criteria (pack baseline)
 
-**Protocol pin:** `HVHR-IBE-RB-1.1`  
+**Protocol pin:** `HVHR-IBE-RB-1.3`  
 **Role:** Concise C1–C8 lock for new runs. No H-R / H-A / H-V scores here. Fuller literature crosswalk and hostile-reader table: live-run `ART-02-criteria-lock.md` when present; essentials below.
 
 ## Criteria (C1–C8)
@@ -26,7 +26,7 @@ status: PACK BASELINE (for new runs under 1.1)
 
 ## Ordinal scale — two pairwise courts
 
-**Not a single three-way blended winner.** Stage 7 scores two courts with court-specific ordinal labels:
+**Not a single three-way blended winner.** Stage 4 scores two courts with court-specific ordinal labels:
 
 | Court | Pair | Ordinal labels |
 |---|---|---|
@@ -35,9 +35,9 @@ status: PACK BASELINE (for new runs under 1.1)
 
 No probabilities. Shared downstream telling cancels. Mode ≠ source (see ART-01). Do not blend Court 1 and Court 2 into one overall crown.
 
-## Stage 7 aggregation lenses (owner lock for new runs)
+## Stage 4 aggregation lenses (owner lock for new runs)
 
-Scorecards stay **C1–C8** with the **equal-weight primary profile**. After filling cells, Stage 7 **must also publish two sensitivity aggregations over the same cells** (do **not** cook criteria; do **not** invent new families) — **per court**:
+Scorecards stay **C1–C8** with the **equal-weight primary profile**. After filling cells, Stage 4 **must also publish two sensitivity aggregations over the same cells** (do **not** cook criteria; do **not** invent new families) — **per court**:
 
 1. **Equal** — default; all `w = 1` (primary).
 2. **C3-heavy** — total-evidence coherence weighted strongest (`w(C3) = 3`; others `1`).
@@ -45,7 +45,7 @@ Scorecards stay **C1–C8** with the **equal-weight primary profile**. After fil
 
 **Lenses are aggregations, not new criteria.** Anti-abstention still applies to filling cells **per court**: unpaid bridges ≠ auto-`insuf`; assign the court-appropriate `H-R+` / `H-A+` or `H-R+` / `H-V+` / `≈` when ordinal difference is clear; `insuf` only after compare when warrant missing or deadlocked. **Equal-weight remains primary** in each court.
 
-### Owner Stage-7 honesty checks (aggregation lenses)
+### Owner Stage-4 honesty checks (aggregation lenses)
 
 When publishing **C3-heavy**, require an explicit **per-node** tag (per court):
 
@@ -63,7 +63,8 @@ If **SLOGAN-FIT**, **C1-heavy must not be treated as decisive**.
 
 ## Essentials (anti-cooking)
 
-- Lock criteria before Stage 6 builds; timestamp; READ-ONLY thereafter.
-- Unit of assessment = complete Stage 6 model (locked hyp + disclosed auxiliaries).
+- Lock criteria before Stage 3 builds; timestamp; READ-ONLY thereafter.
+- Unit of assessment = complete Stage 3 model (locked hyp + disclosed auxiliaries).
 - No duplicate reasons across families; independence is access discipline, not a ninth criterion.
 - Weight changes after lock need owner version bump + symmetrical reapplication.
+

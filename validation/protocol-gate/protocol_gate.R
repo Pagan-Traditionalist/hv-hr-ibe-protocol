@@ -2,7 +2,7 @@
 
 suppressPackageStartupMessages(library(jsonlite))
 
-EXPECTED_PROTOCOL <- "HVHR-IBE-RB-1.2"
+EXPECTED_PROTOCOL <- "HVHR-IBE-RB-1.3"
 
 args <- commandArgs(trailingOnly = TRUE)
 if (length(args) != 1) {
@@ -86,9 +86,9 @@ check_protocol <- function(rec, label) {
   TRUE
 }
 
-# ---- Stages 1-5: locked artifacts ----
-lock_times <- vector("list", 5)
-for (stage in 1:5) {
+# ---- Stages 1-2: locked artifacts ----
+lock_times <- vector("list", 2)
+for (stage in 1:2) {
   rel <- sprintf("receipts/stage%02d.json", stage)
   rec <- read_json_rel(rel, paste0("Stage ", stage, " receipt"))
   if (is.null(rec)) next
@@ -106,99 +106,112 @@ for (stage in 1:5) {
   if (!nzchar(as.character(rec$locked_by %||% ""))) {
     add_fail(paste0("Stage ", stage, " locked_by is missing"))
   }
-  check_file_hash(rec$artifact_path, rec$artifact_md5, paste0("Stage ", stage, " artifact"))
+  expected_components <- if (stage == 1L) c("hypotheses", "criteria", "presuppositions") else c("record", "dossier")
+  artifacts <- rec$artifacts %||% list()
+  components <- vapply(artifacts, function(x) as.character(x$component %||% ""), character(1))
+  if (!identical(unname(components), expected_components)) {
+    add_fail(paste0("Stage ", stage, " must include all required components in order"))
+  }
+  for (artifact in artifacts) {
+    check_file_hash(artifact$artifact_path, artifact$artifact_md5,
+                    paste0("Stage ", stage, " ", artifact$component %||% "component"))
+  }
   lock_times[[stage]] <- parse_utc(rec$locked_at, paste0("Stage ", stage, " locked_at"))
 }
 
-# ---- Stage 6: independent constructions ----
-stage6 <- read_json_rel("receipts/stage06.json", "Stage 6 receipt")
+if (all(vapply(lock_times, function(x) !is.null(x) && !is.na(x), logical(1)))) {
+  if (lock_times[[2]] < lock_times[[1]]) add_fail("Stage 2 locked before Stage 1")
+}
+
+# ---- Stage 3: independent constructions ----
+stage3 <- read_json_rel("receipts/stage03.json", "Stage 3 receipt")
 constructor_ids <- character()
 freeze_times <- as.POSIXct(character(), tz = "UTC")
-stage6_start <- as.POSIXct(NA)
+stage3_start <- as.POSIXct(NA)
 
-if (!is.null(stage6)) {
-  check_protocol(stage6, "Stage 6")
-  if (!identical(as.integer(stage6$stage %||% -1), 6L)) add_fail("Stage 6 receipt has wrong stage number")
-  if (!(as.character(stage6$status %||% "") %in% c("FROZEN", "PASS"))) add_fail("Stage 6 status must be FROZEN or PASS")
-  if (!is_zero(stage6$unresolved_fail_items)) add_fail("Stage 6 unresolved_fail_items must be 0")
+if (!is.null(stage3)) {
+  check_protocol(stage3, "Stage 3")
+  if (!identical(as.integer(stage3$stage %||% -1), 3L)) add_fail("Stage 3 receipt has wrong stage number")
+  if (!(as.character(stage3$status %||% "") %in% c("FROZEN", "PASS"))) add_fail("Stage 3 status must be FROZEN or PASS")
+  if (!is_zero(stage3$unresolved_fail_items)) add_fail("Stage 3 unresolved_fail_items must be 0")
 
-  stage6_start <- parse_utc(stage6$stage_started_at, "Stage 6 stage_started_at")
-  check_file_hash(stage6$packet_manifest_path, stage6$packet_manifest_md5, "Stage 6 packet manifest")
+  stage3_start <- parse_utc(stage3$stage_started_at, "Stage 3 stage_started_at")
+  check_file_hash(stage3$packet_manifest_path, stage3$packet_manifest_md5, "Stage 3 packet manifest")
 
-  constructions <- stage6$constructions %||% list()
-  if (length(constructions) != 3) add_fail("Stage 6 must contain exactly three constructions")
+  constructions <- stage3$constructions %||% list()
+  if (length(constructions) != 3) add_fail("Stage 3 must contain exactly three constructions")
 
   hypotheses <- vapply(constructions, function(x) as.character(x$hypothesis %||% ""), character(1))
   if (!setequal(hypotheses, c("H-R", "H-A", "H-V"))) {
-    add_fail("Stage 6 constructions must contain H-R, H-A, and H-V exactly once")
+    add_fail("Stage 3 constructions must contain H-R, H-A, and H-V exactly once")
   }
-  if (anyDuplicated(hypotheses)) add_fail("Stage 6 hypothesis entries must be unique")
+  if (anyDuplicated(hypotheses)) add_fail("Stage 3 hypothesis entries must be unique")
 
   constructor_ids <- vapply(constructions, function(x) as.character(x$constructor_id %||% ""), character(1))
-  if (any(!nzchar(constructor_ids))) add_fail("Every Stage 6 construction needs constructor_id")
-  if (anyDuplicated(constructor_ids)) add_fail("Stage 6 constructor identities must be distinct")
+  if (any(!nzchar(constructor_ids))) add_fail("Every Stage 3 construction needs constructor_id")
+  if (anyDuplicated(constructor_ids)) add_fail("Stage 3 constructor identities must be distinct")
 
   packet_hashes <- vapply(constructions, function(x) as.character(x$packet_manifest_md5 %||% ""), character(1))
-  if (any(!nzchar(packet_hashes))) add_fail("Every Stage 6 construction must declare packet_manifest_md5")
-  if (length(unique(tolower(packet_hashes))) != 1) add_fail("All Stage 6 constructors must use the same official packet fingerprint")
-  if (nzchar(as.character(stage6$packet_manifest_md5 %||% "")) &&
-      any(tolower(packet_hashes) != tolower(as.character(stage6$packet_manifest_md5)))) {
-    add_fail("Constructor packet fingerprints must match the Stage 6 packet manifest fingerprint")
+  if (any(!nzchar(packet_hashes))) add_fail("Every Stage 3 construction must declare packet_manifest_md5")
+  if (length(unique(tolower(packet_hashes))) != 1) add_fail("All Stage 3 constructors must use the same official packet fingerprint")
+  if (nzchar(as.character(stage3$packet_manifest_md5 %||% "")) &&
+      any(tolower(packet_hashes) != tolower(as.character(stage3$packet_manifest_md5)))) {
+    add_fail("Constructor packet fingerprints must match the Stage 3 packet manifest fingerprint")
   }
 
   for (i in seq_along(constructions)) {
     x <- constructions[[i]]
-    label <- paste0("Stage 6 ", x$hypothesis %||% paste0("construction ", i))
+    label <- paste0("Stage 3 ", x$hypothesis %||% paste0("construction ", i))
     check_file_hash(x$artifact_path, x$artifact_md5, paste0(label, " artifact"))
     if (!isTRUE(x$blind_first_pass_attested)) add_fail(paste0(label, " blind_first_pass_attested must be true"))
     ft <- parse_utc(x$frozen_at, paste0(label, " frozen_at"))
     freeze_times <- c(freeze_times, ft)
-    if (!is.na(ft) && !is.na(stage6_start) && ft < stage6_start) add_fail(paste0(label, " frozen_at precedes Stage 6 start"))
+    if (!is.na(ft) && !is.na(stage3_start) && ft < stage3_start) add_fail(paste0(label, " frozen_at precedes Stage 3 start"))
   }
 
-  for (stage in 1:5) {
+  for (stage in 1:2) {
     lt <- lock_times[[stage]]
-    if (!is.null(lt) && !is.na(lt) && !is.na(stage6_start) && lt > stage6_start) {
-      add_fail(paste0("Stage ", stage, " was locked after Stage 6 began"))
+    if (!is.null(lt) && !is.na(lt) && !is.na(stage3_start) && lt > stage3_start) {
+      add_fail(paste0("Stage ", stage, " was locked after Stage 3 began"))
     }
   }
 }
 
-# ---- Stage 7: sterile comparative audit ----
-stage7 <- read_json_rel("receipts/stage07.json", "Stage 7 receipt")
-stage7_done <- as.POSIXct(NA)
+# ---- Stage 4: sterile comparative audit ----
+stage4 <- read_json_rel("receipts/stage04.json", "Stage 4 receipt")
+stage4_done <- as.POSIXct(NA)
 
-if (!is.null(stage7)) {
-  check_protocol(stage7, "Stage 7")
-  if (!identical(as.integer(stage7$stage %||% -1), 7L)) add_fail("Stage 7 receipt has wrong stage number")
-  if (!(as.character(stage7$status %||% "") %in% c("FROZEN", "PASS"))) add_fail("Stage 7 status must be FROZEN or PASS")
-  if (!is_zero(stage7$unresolved_fail_items)) add_fail("Stage 7 unresolved_fail_items must be 0")
+if (!is.null(stage4)) {
+  check_protocol(stage4, "Stage 4")
+  if (!identical(as.integer(stage4$stage %||% -1), 4L)) add_fail("Stage 4 receipt has wrong stage number")
+  if (!(as.character(stage4$status %||% "") %in% c("FROZEN", "PASS"))) add_fail("Stage 4 status must be FROZEN or PASS")
+  if (!is_zero(stage4$unresolved_fail_items)) add_fail("Stage 4 unresolved_fail_items must be 0")
 
-  auditor_id <- as.character(stage7$auditor_id %||% "")
-  if (!nzchar(auditor_id)) add_fail("Stage 7 auditor_id is missing")
-  if (nzchar(auditor_id) && auditor_id %in% constructor_ids) add_fail("Stage 7 auditor must not be a Stage 6 constructor")
+  auditor_id <- as.character(stage4$auditor_id %||% "")
+  if (!nzchar(auditor_id)) add_fail("Stage 4 auditor_id is missing")
+  if (nzchar(auditor_id) && auditor_id %in% constructor_ids) add_fail("Stage 4 auditor must not be a Stage 3 constructor")
 
-  audit_start <- parse_utc(stage7$audit_started_at, "Stage 7 audit_started_at")
-  stage7_done <- parse_utc(stage7$completed_at, "Stage 7 completed_at")
-  if (!is.na(audit_start) && !is.na(stage7_done) && stage7_done < audit_start) add_fail("Stage 7 completed_at precedes audit_started_at")
+  audit_start <- parse_utc(stage4$audit_started_at, "Stage 4 audit_started_at")
+  stage4_done <- parse_utc(stage4$completed_at, "Stage 4 completed_at")
+  if (!is.na(audit_start) && !is.na(stage4_done) && stage4_done < audit_start) add_fail("Stage 4 completed_at precedes audit_started_at")
   if (length(freeze_times) == 3 && all(!is.na(freeze_times)) && !is.na(audit_start) && audit_start < max(freeze_times)) {
-    add_fail("Stage 7 began before all Stage 6 constructions were frozen")
+    add_fail("Stage 4 began before all Stage 3 constructions were frozen")
   }
 
-  check_file_hash(stage7$artifact_path, stage7$artifact_md5, "Stage 7 audit artifact")
-  check_file_hash(stage7$matrix_path, stage7$matrix_md5, "Stage 7 structured audit matrix")
+  check_file_hash(stage4$artifact_path, stage4$artifact_md5, "Stage 4 audit artifact")
+  check_file_hash(stage4$matrix_path, stage4$matrix_md5, "Stage 4 structured audit matrix")
 
-  matrix <- read_json_rel(as.character(stage7$matrix_path %||% ""), "Stage 7 structured audit matrix")
+  matrix <- read_json_rel(as.character(stage4$matrix_path %||% ""), "Stage 4 structured audit matrix")
   if (!is.null(matrix)) {
-    check_protocol(matrix, "Stage 7 matrix")
+    check_protocol(matrix, "Stage 4 matrix")
 
     expected_criteria <- paste0("C", 1:8)
     matrix_criteria <- unlist(matrix$criteria %||% list(), use.names = FALSE)
-    if (!setequal(as.character(matrix_criteria), expected_criteria)) add_fail("Stage 7 matrix criteria must be exactly C1-C8")
+    if (!setequal(as.character(matrix_criteria), expected_criteria)) add_fail("Stage 4 matrix criteria must be exactly C1-C8")
 
     cells <- matrix$cells %||% list()
     cell_keys <- vapply(cells, function(x) paste(x$court %||% "", x$node %||% "", x$criterion %||% "", sep = "|"), character(1))
-    if (anyDuplicated(cell_keys)) add_fail("Stage 7 matrix contains duplicate court/node/criterion cells")
+    if (anyDuplicated(cell_keys)) add_fail("Stage 4 matrix contains duplicate court/node/criterion cells")
 
     for (court in c("Court1", "Court2")) {
       legal <- if (court == "Court1") c("H-R+", "H-A+", "≈", "insuf") else c("H-R+", "H-V+", "≈", "insuf")
@@ -207,7 +220,7 @@ if (!is.null(stage7)) {
           key <- paste(court, node, criterion, sep = "|")
           hits <- which(cell_keys == key)
           if (length(hits) != 1) {
-            add_fail(paste0("Stage 7 matrix missing required cell: ", key))
+            add_fail(paste0("Stage 4 matrix missing required cell: ", key))
           } else {
             label <- as.character(cells[[hits]]$label %||% "")
             if (!(label %in% legal)) add_fail(paste0("Illegal ordinal label in ", key, ": ", label))
@@ -218,7 +231,7 @@ if (!is.null(stage7)) {
 
     aggs <- matrix$aggregations %||% list()
     agg_keys <- vapply(aggs, function(x) paste(x$court %||% "", x$node %||% "", x$lens %||% "", sep = "|"), character(1))
-    if (anyDuplicated(agg_keys)) add_fail("Stage 7 matrix contains duplicate aggregation rows")
+    if (anyDuplicated(agg_keys)) add_fail("Stage 4 matrix contains duplicate aggregation rows")
 
     for (court in c("Court1", "Court2")) {
       legal_net <- if (court == "Court1") c("H-R ahead", "H-A ahead", "underdetermined") else c("H-R ahead", "H-V ahead", "underdetermined")
@@ -227,7 +240,7 @@ if (!is.null(stage7)) {
           key <- paste(court, node, lens, sep = "|")
           hits <- which(agg_keys == key)
           if (length(hits) != 1) {
-            add_fail(paste0("Stage 7 matrix missing required aggregation: ", key))
+            add_fail(paste0("Stage 4 matrix missing required aggregation: ", key))
           } else {
             row <- aggs[[hits]]
             net <- as.character(row$net %||% "")
@@ -255,15 +268,15 @@ if (!is.null(neutrality)) {
 
   reader_id <- as.character(neutrality$independent_reader_id %||% "")
   if (!nzchar(reader_id)) add_fail("Neutrality independent_reader_id is missing")
-  auditor_id <- as.character(stage7$auditor_id %||% "")
+  auditor_id <- as.character(stage4$auditor_id %||% "")
   if (nzchar(reader_id) && (reader_id %in% constructor_ids || identical(reader_id, auditor_id))) {
-    add_fail("Neutrality reader must be independent of Stage 6 constructors and the Stage 7 auditor")
+    add_fail("Neutrality reader must be independent of Stage 3 constructors and the Stage 4 auditor")
   }
 
   check_file_hash(neutrality$artifact_path, neutrality$artifact_md5, "Neutrality Gate artifact")
   checked_at <- parse_utc(neutrality$checked_at, "Neutrality checked_at")
-  if (!is.na(stage7_done) && !is.na(checked_at) && checked_at < stage7_done) {
-    add_fail("Neutrality Gate completed before Stage 7 completed")
+  if (!is.na(stage4_done) && !is.na(checked_at) && checked_at < stage4_done) {
+    add_fail("Neutrality Gate completed before Stage 4 completed")
   }
 }
 
@@ -271,7 +284,7 @@ result <- if (length(failures) == 0) "PASS" else "FAIL"
 status <- list(
   protocol_version = EXPECTED_PROTOCOL,
   result = result,
-  stage8_allowed = identical(result, "PASS"),
+  stage5_allowed = identical(result, "PASS"),
   checked_at = format(Sys.time(), "%Y-%m-%dT%H:%M:%SZ", tz = "UTC"),
   failures = unname(failures)
 )
@@ -285,5 +298,6 @@ if (length(failures) > 0) {
   quit(save = "no", status = 1)
 }
 
-cat("Stage 8 allowed: true\n")
+cat("Stage 5 allowed: true\n")
 quit(save = "no", status = 0)
+

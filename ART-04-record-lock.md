@@ -1,12 +1,12 @@
 ---
-protocol: HVHR-IBE-RB-1.1
+protocol: HVHR-IBE-RB-1.3
 artifact: ART-04-record-lock.md
-status: EMPTY SHELL (fill at Stage 4; not a live-run dump)
+status: EMPTY SHELL (fill at Stage 2; not a live-run dump)
 ---
 
 # ART-04 — Record Lock (shell)
 
-**Protocol pin:** `HVHR-IBE-RB-1.1`  
+**Protocol pin:** `HVHR-IBE-RB-1.3`  
 **Role:** Lock the shared evidential record (tiers + sensitivity slices). No hypothesis scores. ART-01…ART-03 remain read-only when locked.
 
 ## Tier semantics (1.1)
@@ -65,3 +65,4 @@ Pre-register slices here. Run all registered slices or none.
 | Lock timestamp | |
 | Drafter | |
 | Owner lock | PENDING |
+

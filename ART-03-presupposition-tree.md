@@ -1,13 +1,13 @@
 ---
-protocol: HVHR-IBE-RB-1.1
+protocol: HVHR-IBE-RB-1.3
 artifact: ART-03-presupposition-tree.md
-status: EMPTY SHELL (fill at Stage 3; not a live-run dump)
+status: EMPTY SHELL (fill at Stage 1; not a live-run dump)
 ---
 
 # ART-03 — Presupposition Lock (shell)
 
-**Protocol pin:** `HVHR-IBE-RB-1.1`  
-**Role:** Lock the slim worldview tree for a fresh run. No hypothesis scores. No Stage 4–8 content.
+**Protocol pin:** `HVHR-IBE-RB-1.3`  
+**Role:** Lock the slim worldview tree for a fresh run. No hypothesis scores. No Stage 2–5 content.
 
 ## Required slim tree (1.1)
 
@@ -84,10 +84,11 @@ B   metaphysical agnosticism + MF   (thin seat)
 
 **Fail:** missing/inert C; missing G; B contaminated; collapsing T into B or G into C; MF exclusive to B; uniqueness from empty tomb; adding A/C−/S-brand without version bump.
 
-## Lock block (fill at Stage 3)
+## Lock block (fill at Stage 1)
 
 | Field | Value |
 |---|---|
 | Lock timestamp | |
 | Drafter | |
 | Owner lock | PENDING |
+

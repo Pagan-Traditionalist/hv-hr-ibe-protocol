@@ -1,12 +1,12 @@
 ---
-protocol: HVHR-IBE-RB-1.1
+protocol: HVHR-IBE-RB-1.3
 artifact: ART-05-dossier.md
-status: EMPTY SHELL (fill at Stage 5; not a live-run dump)
+status: EMPTY SHELL (fill at Stage 2; not a live-run dump)
 ---
 
 # ART-05 — Shared Dossier (shell)
 
-**Protocol pin:** `HVHR-IBE-RB-1.1`  
+**Protocol pin:** `HVHR-IBE-RB-1.3`  
 **Role:** Neutral shared evidence + background for both constructors. **Zero ranking sentences.** No winner. Cap ~6–10k words principal dossier; ledgers outside (`ART-05-thin-ledgers.md` stub).
 
 **Research / effort split:** thin **B**/**G**; concentrate Deep Research on **T** (OpenTI entailments) and **C** (fair Christian worldview presuppositions).
@@ -47,3 +47,4 @@ See `ART-05-thin-ledgers.md` (Evidence · Background · Source-dependence · Ter
 | Lock timestamp | |
 | Drafter | |
 | Owner completeness lock | PENDING |
+

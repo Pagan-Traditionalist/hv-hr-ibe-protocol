@@ -1,5 +1,5 @@
 ---
-protocol: HVHR-IBE-RB-1.1
+protocol: HVHR-IBE-RB-1.3
 artifact: ART-05-thin-ledgers.md
 status: EMPTY SHELL (companion to ART-05-dossier.md)
 ---
@@ -38,7 +38,7 @@ Keep thin. Principal narrative lives in `ART-05-dossier.md`.
 |---|---|
 | C1–C8 | See ART-02 |
 
-## Auxiliaries ledger (placeholders until Stage 6)
+## Auxiliaries ledger (placeholders until Stage 3)
 
 | Side | Auxiliary | Cost note |
 |---|---|---|
@@ -56,3 +56,4 @@ Keep thin. Principal narrative lives in `ART-05-dossier.md`.
 | # | Objection | Side pressured | Disposition |
 |---|---|---|---|
 | | | | |
+

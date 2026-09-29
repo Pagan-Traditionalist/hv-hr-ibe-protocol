@@ -2,35 +2,32 @@
 
 These receipts are **procedural evidence**, not philosophical arguments.
 
-For a live `HVHR-IBE-RB-1.2` run, create a `receipts/` directory inside the run root with these exact live filenames:
+For a live `HVHR-IBE-RB-1.3` run, create a `receipts/` directory inside the run root with these exact live filenames:
 
 ```text
 stage01.json
 stage02.json
 stage03.json
 stage04.json
-stage05.json
-stage06.json
-stage07.json
-stage07-audit-matrix.json
+stage04-audit-matrix.json
 neutrality.json
 ```
 
 Use the `.example.json` files in this directory as shapes. Do not treat example timestamps, hashes, identities, or results as live evidence.
 
-## Stages 1–5
+## Stages 1–2
 
-Copy `stage-lock.example.json` and adjust `stage`, paths, fingerprints, timestamps, and seat identity. The gate accepts `LOCKED`, `FROZEN`, or `PASS` as the stage status, requires `unresolved_fail_items` to be zero, and verifies the referenced artifact fingerprint.
+Use `stage-lock.example.json` for Stage 1 and `stage02-lock.example.json` for Stage 2; adjust `stage`, paths, fingerprints, timestamps, and seat identity. The gate accepts `LOCKED`, `FROZEN`, or `PASS` as the stage status, requires `unresolved_fail_items` to be zero, and verifies the referenced artifact fingerprint.
 
-## Stage 6
+## Stage 3
 
-`stage06.example.json` records the official packet fingerprint and all three blind constructions. All three constructors must declare the same packet fingerprint. Constructor identities must be distinct. Blind-first-pass status is an **attestation**; the gate can verify its presence but cannot independently prove absence of side-channel exposure.
+`stage03.example.json` records the official packet fingerprint and all three blind constructions. All three constructors must declare the same packet fingerprint. Constructor identities must be distinct. Blind-first-pass status is an **attestation**; the gate can verify its presence but cannot independently prove absence of side-channel exposure.
 
-## Stage 7
+## Stage 4
 
-`stage07.example.json` records the auditor, audit artifact, structured matrix, and timing. The auditor must be distinct from all Stage-6 constructors, and the audit must start only after all three construction memos were frozen.
+`stage04.example.json` records the auditor, audit artifact, structured matrix, and timing. The auditor must be distinct from all Stage-3 constructors, and the audit must start only after all three construction memos were frozen.
 
-`stage07-audit-matrix.example.json` is the machine-readable companion to the prose audit. A real run must contain all 64 court/node/criterion cells and all 24 court/node/lens aggregations.
+`stage04-audit-matrix.example.json` is the machine-readable companion to the prose audit. A real run must contain all 64 court/node/criterion cells and all 24 court/node/lens aggregations.
 
 ## Neutrality
 
@@ -39,3 +36,8 @@ Copy `stage-lock.example.json` and adjust `stage`, paths, fingerprints, timestam
 ## Fingerprints
 
 The reference gate uses `tools::md5sum()` so it can run with base R plus `jsonlite`. The MD5 here is a content-integrity fingerprint, not a cryptographic signature or identity proof.
+
+
+## v1.3 grouped lock receipts
+
+ART identifiers remain stable and are not stage numbers. Stage 1 requires exactly three ordered components: `hypotheses`, `criteria`, `presuppositions`. Stage 2 requires exactly two: `record`, `dossier`. Each component is a separate object in `artifacts`, with its path and MD5. The stage receipt records the collective lock time after all component gates pass. Stage 1 must lock before Stage 2; both must lock before construction. Live receipts are stage01.json through stage04.json, plus stage04-audit-matrix.json and neutrality.json. Stage 5 is the gated owner judgment. Old v1.2 receipts are not accepted as v1.3 runs.

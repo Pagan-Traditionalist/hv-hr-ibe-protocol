@@ -1,16 +1,16 @@
 ---
-protocol: HVHR-IBE-RB-1.1
+protocol: HVHR-IBE-RB-1.3
 artifact: ART-07-audit.md
-status: EMPTY SHELL (fill at Stage 7; anti-abstention required; two courts)
+status: EMPTY SHELL (fill at Stage 4; anti-abstention required; two courts)
 seat: Auditor (third / sterile; ≠ any constructor)
 ---
 
 # ART-07 — Comparative Audit (shell)
 
-**Protocol pin:** `HVHR-IBE-RB-1.1`  
+**Protocol pin:** `HVHR-IBE-RB-1.3`  
 **Nodes:** **B / T / G / C** only. **Two pairwise courts** — not a single three-way blended winner.
 
-Stage 6 builds **H-R**, **H-A**, and **H-V**. Stage 7 scores:
+Stage 3 builds **H-R**, **H-A**, and **H-V**. Stage 4 scores:
 
 1. **Court 1: H-R vs H-A** — labels `H-R+` / `H-A+` / `≈` / `insuf`
 2. **Court 2: H-R vs H-V** — labels `H-R+` / `H-V+` / `≈` / `insuf`
@@ -117,3 +117,4 @@ Same cells; lenses ≠ new criteria; anti-abstention still fills cells. **Equal 
 - [ ] Auditor did not rewrite hyps or criteria; ceiling language only
 
 **Fail:** abstention; unpaid bridges alone as auto-`insuf`; omitting Equal/C3-heavy/C1-heavy for either court; treating C3-heavy decisive under SMUGGLED or C1-heavy under SLOGAN-FIT; blended overall / three-way winner.
+

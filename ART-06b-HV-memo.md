@@ -1,13 +1,13 @@
 ---
-protocol: HVHR-IBE-RB-1.1
+protocol: HVHR-IBE-RB-1.3
 artifact: ART-06b-HV-memo.md
-status: EMPTY SHELL (blind H-V construction; fill at Stage 6)
+status: EMPTY SHELL (blind H-V construction; fill at Stage 3)
 seat: Constructor-HV (DeepSeek)
 ---
 
 # ART-06b — H-V Construction Memo (shell)
 
-**Blind build.** Do not see ART-06a / ART-06c before freeze. Three-hypothesis Stage 6 (H-R, H-A, H-V). Identical packet: ART-01…ART-05 + runbook + Master Prompt.
+**Blind build.** Do not see ART-06a / ART-06c before freeze. Three-hypothesis Stage 3 (H-R, H-A, H-V). Identical packet: ART-01…ART-05 + runbook + Master Prompt.
 
 ## 1. Exact hypothesis text (from ART-01)
 
@@ -81,3 +81,4 @@ Generic rival-type self-contrast OK; not a prosecution file. Do not dump every n
 - [ ] No peeking / cross-reference to ART-06a / ART-06c
 - [ ] Costed nonempty correlate (no empty-correlate collapse)
 - [ ] No unlocked criteria; no side constitution
+
