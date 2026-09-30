@@ -1,6 +1,6 @@
 # Five-stage abductive inquiry
 
-**Version:** `HVHR-IBE-RB-1.4` — H-R / H-A / H-V, two pairwise courts. This repository contains the method and templates, not a resurrection verdict.
+**Version:** `HVHR-IBE-RB-1.5` — H-R / H-V, one H-R vs H-V comparison. This repository contains the method and templates, not a resurrection verdict.
 
 ## Start here
 
@@ -10,13 +10,13 @@ Use the [Master Prompt](hv-hr-master-prompt.md) with the [runbook](hv-hr-stage-g
 |---|---|---|
 | **1. Frame** | [01-frame.md](stages/01-frame.md) | Your existing hypotheses, C1–C8 abductive criteria, and worldview assumptions |
 | **2. Establish the evidence** | [02-evidence.md](stages/02-evidence.md) | Record lock, shared dossier, and supporting ledgers |
-| **3. Construct explanations** | [03-construct/](stages/03-construct/) | Separate [H-R](stages/03-construct/HR.md), [H-A](stages/03-construct/HA.md), and [H-V](stages/03-construct/HV.md) memos |
-| **4. Compare and challenge** | [04-compare.md](stages/04-compare.md) | Both pairwise comparisons, locked criteria, and sensitivity tests |
+| **3. Construct explanations** | [03-construct/](stages/03-construct/) | Separate [H-R](stages/03-construct/HR.md) and [H-V](stages/03-construct/HV.md) memos |
+| **4. Compare and challenge** | [04-compare.md](stages/04-compare.md) | H-R versus H-V, locked criteria, and sensitivity tests |
 | **5. Judge** | [05-judge.md](stages/05-judge.md) | Owner judgment and keep/cut after both gates pass |
 
-Stage 3 needs three files because builders must not see each other's drafts. Give each builder the same frozen Frame/Evidence packet plus only its own construction template. Do not send the full working construction folder to a builder.
+Stage 3 needs two files because builders must not see each other's drafts. Give each builder the same frozen Frame/Evidence packet plus only its own construction template. Do not send the full working construction folder to a builder.
 
-The H-R, H-A, and H-V atomics and all C1–C8 definitions, weights, ordinal rules, and aggregation lenses are preserved. Frame still requires separate approvals for hypotheses, criteria, and presuppositions; Evidence still requires record and dossier approval.
+The H-R and H-V atomics and all C1–C8 definitions, weights, ordinal rules, and aggregation lenses are preserved. Frame still requires separate approvals for hypotheses, criteria, and presuppositions; Evidence still requires record and dossier approval.
 
 ## Required support
 
@@ -29,4 +29,4 @@ The runbook, procedural gate, and locked live-run artifacts govern the launcher.
 
 ## Version continuity
 
-Version 1.4 consolidates the working files to match the five-stage method. Superseded ART files, version-marker files, and merge notes have been removed from the current tree; earlier versions remain in Git history. Start new runs with v1.4. Do not relabel old receipts as new evidence.
+Version 1.5 limits the five-stage method to H-R versus H-V, with exactly two construction memos and one comparison. Superseded ART files, version-marker files, and merge notes have been removed from the current tree; earlier versions remain in Git history. Start new runs with v1.5. Do not relabel old receipts as new evidence.

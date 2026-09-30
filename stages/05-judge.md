@@ -1,6 +1,6 @@
 # Stage 5 — Judge
 
-**Protocol pin:** `HVHR-IBE-RB-1.4`  
+**Protocol pin:** `HVHR-IBE-RB-1.5`  
 **Role:** Owner keep/cut of audit cells that violate locks (including abstention). No blended overall winner as protocol output. Ceiling language only.
 
 ## Per-node keep/cut

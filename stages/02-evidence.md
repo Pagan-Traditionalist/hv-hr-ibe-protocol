@@ -1,6 +1,6 @@
 # Stage 2 — Establish the evidence
 
-**Protocol:** `HVHR-IBE-RB-1.4`
+**Protocol:** `HVHR-IBE-RB-1.5`
 **Status:** empty live-run template.
 
 Complete and approve 2A → 2B in order. Lock the record section before completing the dossier; then freeze the whole file and emit `receipts/stage02.json`. The supporting ledgers belong in this file. Builders receive the same frozen Frame and Evidence files.
@@ -70,7 +70,7 @@ Pre-register slices here. Run all registered slices or none.
 
 ## 2B. Shared dossier
 
-**Role:** Neutral shared evidence + background for all three constructors. **Zero ranking sentences.** No winner. Cap ~6–10k words principal dossier; ledgers outside (`stages/02-evidence.md` stub).
+**Role:** Neutral shared evidence + background for both constructors. **Zero ranking sentences.** No winner. Cap ~6–10k words principal dossier; ledgers outside (`stages/02-evidence.md` stub).
 
 **Research / effort split:** thin **B**/**G**; concentrate Deep Research on **T** (OpenTI entailments) and **C** (fair Christian worldview presuppositions).
 

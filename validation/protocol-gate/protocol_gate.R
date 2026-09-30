@@ -2,7 +2,7 @@
 
 suppressPackageStartupMessages(library(jsonlite))
 
-EXPECTED_PROTOCOL <- "HVHR-IBE-RB-1.4"
+EXPECTED_PROTOCOL <- "HVHR-IBE-RB-1.5"
 
 args <- commandArgs(trailingOnly = TRUE)
 if (length(args) != 1) {
@@ -135,11 +135,11 @@ if (!is.null(stage3)) {
   check_file_hash(stage3$packet_manifest_path, stage3$packet_manifest_md5, "Stage 3 packet manifest")
 
   constructions <- stage3$constructions %||% list()
-  if (length(constructions) != 3) add_fail("Stage 3 must contain exactly three constructions")
+  if (length(constructions) != 2) add_fail("Stage 3 must contain exactly two constructions")
 
   hypotheses <- vapply(constructions, function(x) as.character(x$hypothesis %||% ""), character(1))
-  if (!setequal(hypotheses, c("H-R", "H-A", "H-V"))) {
-    add_fail("Stage 3 constructions must contain H-R, H-A, and H-V exactly once")
+  if (!setequal(hypotheses, c("H-R", "H-V"))) {
+    add_fail("Stage 3 constructions must contain H-R and H-V exactly once")
   }
   if (anyDuplicated(hypotheses)) add_fail("Stage 3 hypothesis entries must be unique")
 
@@ -190,7 +190,7 @@ if (!is.null(stage4)) {
   audit_start <- parse_utc(stage4$audit_started_at, "Stage 4 audit_started_at")
   stage4_done <- parse_utc(stage4$completed_at, "Stage 4 completed_at")
   if (!is.na(audit_start) && !is.na(stage4_done) && stage4_done < audit_start) add_fail("Stage 4 completed_at precedes audit_started_at")
-  if (length(freeze_times) == 3 && all(!is.na(freeze_times)) && !is.na(audit_start) && audit_start < max(freeze_times)) {
+  if (length(freeze_times) == 2 && all(!is.na(freeze_times)) && !is.na(audit_start) && audit_start < max(freeze_times)) {
     add_fail("Stage 4 began before all Stage 3 constructions were frozen")
   }
 
@@ -206,11 +206,15 @@ if (!is.null(stage4)) {
     if (!setequal(as.character(matrix_criteria), expected_criteria)) add_fail("Stage 4 matrix criteria must be exactly C1-C8")
 
     cells <- matrix$cells %||% list()
+    if (length(cells) != 32) add_fail("Stage 4 matrix must contain exactly 32 comparison cells")
+    if (any(vapply(cells, function(x) !identical(as.character(x$court %||% ""), "HR-HV"), logical(1)))) {
+      add_fail("Stage 4 matrix contains an unexpected comparison")
+    }
     cell_keys <- vapply(cells, function(x) paste(x$court %||% "", x$node %||% "", x$criterion %||% "", sep = "|"), character(1))
     if (anyDuplicated(cell_keys)) add_fail("Stage 4 matrix contains duplicate court/node/criterion cells")
 
-    for (court in c("Court1", "Court2")) {
-      legal <- if (court == "Court1") c("H-R+", "H-A+", "≈", "insuf") else c("H-R+", "H-V+", "≈", "insuf")
+    for (court in "HR-HV") {
+      legal <- c("H-R+", "H-V+", "≈", "insuf")
       for (node in c("B", "T", "G", "C")) {
         for (criterion in expected_criteria) {
           key <- paste(court, node, criterion, sep = "|")
@@ -226,11 +230,15 @@ if (!is.null(stage4)) {
     }
 
     aggs <- matrix$aggregations %||% list()
+    if (length(aggs) != 12) add_fail("Stage 4 matrix must contain exactly 12 aggregations")
+    if (any(vapply(aggs, function(x) !identical(as.character(x$court %||% ""), "HR-HV"), logical(1)))) {
+      add_fail("Stage 4 aggregations contain an unexpected comparison")
+    }
     agg_keys <- vapply(aggs, function(x) paste(x$court %||% "", x$node %||% "", x$lens %||% "", sep = "|"), character(1))
     if (anyDuplicated(agg_keys)) add_fail("Stage 4 matrix contains duplicate aggregation rows")
 
-    for (court in c("Court1", "Court2")) {
-      legal_net <- if (court == "Court1") c("H-R ahead", "H-A ahead", "underdetermined") else c("H-R ahead", "H-V ahead", "underdetermined")
+    for (court in "HR-HV") {
+      legal_net <- c("H-R ahead", "H-V ahead", "underdetermined")
       for (node in c("B", "T", "G", "C")) {
         for (lens in c("Equal", "C3-heavy", "C1-heavy")) {
           key <- paste(court, node, lens, sep = "|")

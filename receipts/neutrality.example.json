@@ -1,5 +1,5 @@
 {
-  "protocol_version": "HVHR-IBE-RB-1.4",
+  "protocol_version": "HVHR-IBE-RB-1.5",
   "status": "PASS",
   "independent_reader_id": "Neutrality-Reader",
   "artifact_path": "NEUTRALITY_GATE.md",
