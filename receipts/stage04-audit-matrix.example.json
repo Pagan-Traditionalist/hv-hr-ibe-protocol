@@ -1,5 +1,5 @@
 {
-  "protocol_version": "HVHR-IBE-RB-1.6",
+  "protocol_version": "HVHR-IBE-RB-1.7",
   "criteria": [
     "C1",
     "C2",
@@ -46,5 +46,5 @@
       "honesty_tag": "EVIDENCE-BRIDGE"
     }
   ],
-  "example_note": "Shape only. A live file must contain all 32 court/node/criterion cells and all 12 court/node/lens aggregations."
+  "example_note": "Shape only. A live file must contain all 32 court/node/criterion cells and all 12 court/node/lens aggregations. Each net is a reasoned diagnostic summary, not a vote tally. The fingerprinted Stage 4 artifact must include the reasons ledger, dependence and strength assessments, per-node synthesis, counterreasons, and reversal conditions."
 }

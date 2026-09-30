@@ -1,6 +1,6 @@
 # Stage 4 — Compare and challenge
 
-**Protocol pin:** `HVHR-IBE-RB-1.6`  
+**Protocol pin:** `HVHR-IBE-RB-1.7`  
 **Nodes:** **B / T / G / C** only. **One comparison: H-R vs H-V**; no blended verdict across nodes.
 
 Stage 3 builds **H-R** and **H-V**. Stage 4 scores:
@@ -70,6 +70,25 @@ Same cells; lenses ≠ new criteria; anti-abstention still fills cells. **Equal 
 |---|---|---|
 | | EVIDENCE-BRIDGE / SLOGAN-FIT | |
 
+## Reasons and dependence (required)
+
+| Reason ID | Supporting evidence / reasoning | Favors which model, under which node? | Criteria using this reason | Overlap with other reasons | Differential strength, explanation, and uncertainty |
+|---|---|---|---|---|---|
+| | | | | | |
+
+Use stable reason IDs in each scorecard's Basis cell. Reuse an ID for repeated support; explain any independent contribution. Labels show direction, not magnitude. Do not convert this ledger into another points system.
+
+## Reasoned synthesis (required per node)
+
+| Node | Strongest nonduplicated reasons and explained strength | Strongest opposing reason and response | Judgment and why the balance warrants it | Reversal conditions |
+|---|---|---|---|---|
+| B | | | | |
+| T | | | | |
+| G | | | | |
+| C | | | | |
+
+C1–C8 are questions, not eight independent votes. One strong discriminator may outweigh several weak or overlapping advantages, but explain why. Equal is the diagnostic baseline; all three lenses are sensitivity profiles, not voting rules. Interpret each lens with reference to the reasons ledger; explain any change from the baseline judgment. Neither a count of favorable labels nor a weighted total warrants a verdict.
+
 ## Thin application / attack ledger (cap N)
 
 | # | Defect flagged | Side | Court | Disposition |
@@ -81,8 +100,9 @@ Same cells; lenses ≠ new criteria; anti-abstention still fills cells. **Equal 
 - [ ] Scorecards complete for B, T, G, C under **H-R vs H-V**; ordinal only; no blend across nodes
 - [ ] Shared mechanisms cancel; Contested as sensitivity; no post-hoc criteria
 - [ ] Equal / C3-heavy / C1-heavy aggregations published **per node**; Equal primary
+- [ ] Reasons ledger and per-node synthesis complete; overlap and differential strength explained; strongest opposing reason and reversal conditions stated; no verdict by criterion count or weighted total
 - [ ] Honesty tags present; SMUGGLED/SLOGAN-FIT → lens not decisive
 - [ ] Anti-abstention honored per node (no abstention Fail)
 - [ ] Auditor did not rewrite hyps or criteria; ceiling language only
 
-**Fail:** abstention; unpaid bridges alone as auto-`insuf`; omitting Equal/C3-heavy/C1-heavy for the comparison; treating C3-heavy decisive under SMUGGLED or C1-heavy under SLOGAN-FIT; blended overall winner across nodes.
+**Fail:** missing reasons ledger or per-node synthesis; unaddressed duplicate support; verdict by criterion counts or weighted totals; abstention; unpaid bridges alone as auto-`insuf`; omitting Equal/C3-heavy/C1-heavy for the comparison; treating C3-heavy decisive under SMUGGLED or C1-heavy under SLOGAN-FIT; blended overall winner across nodes.

@@ -1,6 +1,6 @@
-# Deterministic Protocol Gate — HVHR-IBE-RB-1.6
+# Deterministic Protocol Gate — HVHR-IBE-RB-1.7
 
-This document adds a **cross-stage procedural enforcement layer** to the existing stage-gated H-R / H-V IBE method. It does **not** change the hypotheses, criteria, worldview nodes, record policy, steelman requirements, or comparative IBE rules in `HVHR-IBE-RB-1.6`.
+This document adds a **cross-stage procedural enforcement layer** to the existing stage-gated H-R / H-V IBE method. It does **not** change the hypotheses, criteria, worldview nodes, record policy, steelman requirements, or comparative IBE rules in `HVHR-IBE-RB-1.7`.
 
 ## Purpose
 
@@ -16,9 +16,9 @@ Three layers must remain separate:
 
 The protocol gate does not decide whether H-R or H-V is better supported. It does not decide whether a philosophical claim is true. It checks ordering, provenance, lock continuity, artifact integrity, role separation, required coverage, and gate completion.
 
-## 1.6 constitutional rule
+## 1.7 constitutional rule
 
-Under `HVHR-IBE-RB-1.6`, Stage 5 is blocked until both conditions are true:
+Under `HVHR-IBE-RB-1.7`, Stage 5 is blocked until both conditions are true:
 
 - the live-run Neutrality Gate returns `PASS`; and
 - `validation/protocol-gate/protocol_gate.R` returns `PASS` with `stage5_allowed: true`.
@@ -144,7 +144,7 @@ A valid run produces:
 
 ```json
 {
-  "protocol_version": "HVHR-IBE-RB-1.6",
+  "protocol_version": "HVHR-IBE-RB-1.7",
   "result": "PASS",
   "stage5_allowed": true,
   "failures": []
@@ -153,13 +153,17 @@ A valid run produces:
 
 Any failed invariant produces `FAIL`, `stage5_allowed: false`, a non-zero exit status, and explicit failure messages.
 
+## Limits of mechanical checks
+
+The matrix's `aggregations[].net` records a reasoned diagnostic summary, not a calculated vote total. The Stage 4 artifact must contain the reasons ledger and per-node synthesis required by Frame §1B. The independent Neutrality Gate reviews dependence, evidential strength, and whether the judgment follows from the reasons. The R gate verifies coverage, integrity, and the gate receipt; it does not evaluate the quality of philosophical reasoning.
+
 ## Version rule
 
-`HVHR-IBE-RB-1.6` uses two constructors and one H-R vs H-V comparison under the five stages while retaining the existing substantive rules and deterministic enforcement. Any later change to philosophical content, criteria, worldview nodes, court structure, or audit logic requires a further protocol version bump.
+`HVHR-IBE-RB-1.7` uses two constructors and one H-R vs H-V comparison under the five stages while retaining the existing substantive rules and deterministic enforcement. Any later change to philosophical content, criteria, worldview nodes, court structure, or audit logic requires a further protocol version bump.
 
 
-## v1.6 consolidated stage receipts
+## v1.7 consolidated stage receipts
 
 Stage 1 fingerprints `stages/01-frame.md` once and declares `completed_components: ["hypotheses", "criteria", "presuppositions"]`. Stage 2 fingerprints `stages/02-evidence.md` once and declares `completed_components: ["record", "dossier"]`. Each section must pass its component gate before the collective stage lock. The R gate verifies the required component names and full-file integrity; component completion is an attestation, not a machine judgment of philosophical quality.
 
-Stage 1 must lock before Stage 2; both must lock before construction. Live receipts are stage01.json through stage04.json, plus stage04-audit-matrix.json and neutrality.json. Stage 5 is the gated owner judgment. Previous-version receipts are not accepted as v1.6 runs. Earlier schemas remain in Git history.
+Stage 1 must lock before Stage 2; both must lock before construction. Live receipts are stage01.json through stage04.json, plus stage04-audit-matrix.json and neutrality.json. Stage 5 is the gated owner judgment. Previous-version receipts are not accepted as v1.7 runs. Earlier schemas remain in Git history.
