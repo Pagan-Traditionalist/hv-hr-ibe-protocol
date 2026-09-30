@@ -1,13 +1,13 @@
 # Stage 4 — Compare and challenge
 
-**Protocol pin:** `HVHR-IBE-RB-1.7`  
+**Protocol pin:** `HVHR-IBE-RB-1.8`  
 **Nodes:** **B / T / G / C** only. **One comparison: H-R vs H-V**; no blended verdict across nodes.
 
 Stage 3 builds **H-R** and **H-V**. Stage 4 scores:
 
 **H-R vs H-V** — labels `H-R+` / `H-V+` / `≈` / `insuf`
 
-Anti-abstention + three weight lenses (Equal / C3-heavy / C1-heavy) apply **per node**.
+Anti-abstention and reasoned synthesis apply **per node**.
 
 ## Constitutive: anti-abstention / comparative IBE
 
@@ -24,16 +24,16 @@ Fill once per node for Slice A (base). Add sensitivity rows for registered Slice
 
 ### Node: {B | T | G | C} — H-R vs H-V
 
-| Criterion | H-R vs H-V ordinal | Weight (equal primary) | Evidence IDs | Sensitivity | Basis (show burden compare if `insuf`) | Cancel? | Limitation |
-|---|---|---|---|---|---|---|---|
-| C1 | | 1 | | A | | | |
-| C2 | | 1 | | A | | | |
-| C3 | | 1 | | A | | | |
-| C4 | | 1 | | A | | | |
-| C5 | | 1 | | A | | | |
-| C6 | | 1 | | A | | | |
-| C7 | | 1 | | A | | | |
-| C8 | | 1 | | A | | | |
+| Criterion | H-R vs H-V ordinal | Evidence IDs | Sensitivity | Basis (show burden compare if `insuf`) | Cancel? | Limitation |
+|---|---|---|---|---|---|---|
+| C1 | | | A | | | |
+| C2 | | | A | | | |
+| C3 | | | A | | | |
+| C4 | | | A | | | |
+| C5 | | | A | | | |
+| C6 | | | A | | | |
+| C7 | | | A | | | |
+| C8 | | | A | | | |
 
 **Anti-abstention line (required):** For each `insuf` cell: compared outstanding burdens? YES/NO. Clear ordinal difference withheld? YES/NO (YES = Fail).
 
@@ -43,32 +43,9 @@ Fill once per node for Slice A (base). Add sensitivity rows for registered Slice
 
 **C:** “Authorization + expected vindication prior used: {quote from Frame §1C}. Circular-from-record? YES/NO. Bodily MODE locked by node? MUST BE NO.”
 
-## Aggregation lenses (required after equal-weight profile) — per node
+### Checks on assumptions and evidence
 
-Same cells; lenses ≠ new criteria; anti-abstention still fills cells. **Equal remains primary.** Publish for H-R vs H-V under each node.
-
-### H-R vs H-V
-
-| Lens | Weights | Per-node ordinal picture | Honesty tags |
-|---|---|---|---|
-| **Equal** (primary) | all w=1 | B: … / T: … / G: … / C: … | — |
-| **C3-heavy** | w(C3)=3; others 1 | B: … / T: … / G: … / C: … | Per node: **ARGUED+LOCKED** or **SMUGGLED** (SMUGGLED → C3-heavy not decisive) |
-| **C1-heavy** | w(C1)=3; others 1 | B: … / T: … / G: … / C: … | Per criterion-or-node: **EVIDENCE-BRIDGE** or **SLOGAN-FIT** (SLOGAN-FIT → C1-heavy not decisive) |
-
-### C3-heavy honesty tags (repeat per node)
-
-| Node | Tag | C3-heavy treated as decisive? |
-|---|---|---|
-| B | ARGUED+LOCKED / SMUGGLED | |
-| T | ARGUED+LOCKED / SMUGGLED | |
-| G | ARGUED+LOCKED / SMUGGLED | |
-| C | ARGUED+LOCKED / SMUGGLED | |
-
-### C1-heavy honesty tags (repeat per node)
-
-| Node / criterion | Tag | C1-heavy treated as decisive? |
-|---|---|---|
-| | EVIDENCE-BRIDGE / SLOGAN-FIT | |
+For C3, identify the relevant worldview assumptions and verify that the node licenses them; imported assumptions cannot support that node's judgment. For C1, explain why the evidence is more expected under one complete model than its rival; a label or slogan is not an evidential bridge. Apply these checks directly to every assessment, without special tags or weighted profiles.
 
 ## Reasons and dependence (required)
 
@@ -87,7 +64,7 @@ Use stable reason IDs in each scorecard's Basis cell. Reuse an ID for repeated s
 | G | | | | |
 | C | | | | |
 
-C1–C8 are questions, not eight independent votes. One strong discriminator may outweigh several weak or overlapping advantages, but explain why. Equal is the diagnostic baseline; all three lenses are sensitivity profiles, not voting rules. Interpret each lens with reference to the reasons ledger; explain any change from the baseline judgment. Neither a count of favorable labels nor a weighted total warrants a verdict.
+C1–C8 are questions, not eight independent votes. One strong discriminator may outweigh several weak or overlapping advantages, but explain why. Test changes in disputed evidence, source dependence, and worldview assumptions; explain their effects on the judgment. Neither a count of favorable labels nor a weighted total warrants a verdict.
 
 ## Thin application / attack ledger (cap N)
 
@@ -99,10 +76,9 @@ C1–C8 are questions, not eight independent votes. One strong discriminator may
 
 - [ ] Scorecards complete for B, T, G, C under **H-R vs H-V**; ordinal only; no blend across nodes
 - [ ] Shared mechanisms cancel; Contested as sensitivity; no post-hoc criteria
-- [ ] Equal / C3-heavy / C1-heavy aggregations published **per node**; Equal primary
 - [ ] Reasons ledger and per-node synthesis complete; overlap and differential strength explained; strongest opposing reason and reversal conditions stated; no verdict by criterion count or weighted total
-- [ ] Honesty tags present; SMUGGLED/SLOGAN-FIT → lens not decisive
+- [ ] Worldview assumptions licensed by the node; expectedness claims supported by explicit evidential bridges
 - [ ] Anti-abstention honored per node (no abstention Fail)
 - [ ] Auditor did not rewrite hyps or criteria; ceiling language only
 
-**Fail:** missing reasons ledger or per-node synthesis; unaddressed duplicate support; verdict by criterion counts or weighted totals; abstention; unpaid bridges alone as auto-`insuf`; omitting Equal/C3-heavy/C1-heavy for the comparison; treating C3-heavy decisive under SMUGGLED or C1-heavy under SLOGAN-FIT; blended overall winner across nodes.
+**Fail:** missing reasons ledger or per-node synthesis; unaddressed duplicate support; verdict by criterion counts or weighted totals; abstention; unpaid bridges alone as auto-`insuf`; blended overall winner across nodes.

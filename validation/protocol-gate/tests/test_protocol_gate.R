@@ -34,24 +34,10 @@ make_matrix <- function() {
     }
   }
 
-  aggs <- list()
-  k <- 1
-  for (court in "HR-HV") {
-    for (node in c("B", "T", "G", "C")) {
-      aggs[[k]] <- list(court = court, node = node, lens = "Equal", net = "H-R ahead")
-      k <- k + 1
-      aggs[[k]] <- list(court = court, node = node, lens = "C3-heavy", net = "H-R ahead", honesty_tag = "ARGUED+LOCKED")
-      k <- k + 1
-      aggs[[k]] <- list(court = court, node = node, lens = "C1-heavy", net = "H-R ahead", honesty_tag = "EVIDENCE-BRIDGE")
-      k <- k + 1
-    }
-  }
-
   list(
-    protocol_version = "HVHR-IBE-RB-1.7",
+    protocol_version = "HVHR-IBE-RB-1.8",
     criteria = as.list(paste0("C", 1:8)),
-    cells = cells,
-    aggregations = aggs
+    cells = cells
   )
 }
 
@@ -65,7 +51,7 @@ make_valid_run <- function() {
   for (stage in 1:2) {
     components <- if (stage == 1) c("hypotheses", "criteria", "presuppositions") else c("record", "dossier")
     rec <- list(
-      protocol_version = "HVHR-IBE-RB-1.7", stage = stage, status = "LOCKED",
+      protocol_version = "HVHR-IBE-RB-1.8", stage = stage, status = "LOCKED",
       artifact_path = artifact_paths[[stage]], artifact_md5 = md5_rel(root, artifact_paths[[stage]]),
       completed_components = as.list(components),
       locked_at = sprintf("2026-09-16T01:%02d:00Z", stage),
@@ -102,7 +88,7 @@ make_valid_run <- function() {
   }
 
   stage3 <- list(
-    protocol_version = "HVHR-IBE-RB-1.7",
+    protocol_version = "HVHR-IBE-RB-1.8",
     stage = 3,
     status = "FROZEN",
     stage_started_at = "2026-09-16T02:00:00Z",
@@ -119,7 +105,7 @@ make_valid_run <- function() {
   write_json_file(matrix, file.path(root, matrix_rel))
 
   stage4 <- list(
-    protocol_version = "HVHR-IBE-RB-1.7",
+    protocol_version = "HVHR-IBE-RB-1.8",
     stage = 4,
     status = "PASS",
     auditor_id = "Auditor-Sterile",
@@ -135,7 +121,7 @@ make_valid_run <- function() {
 
   write_text(file.path(root, "NEUTRALITY_GATE.md"), "Synthetic Neutrality Gate PASS")
   neutrality <- list(
-    protocol_version = "HVHR-IBE-RB-1.7",
+    protocol_version = "HVHR-IBE-RB-1.8",
     status = "PASS",
     independent_reader_id = "Neutrality-Reader",
     artifact_path = "NEUTRALITY_GATE.md",
@@ -182,11 +168,11 @@ res3 <- run_gate(run3)
 stopifnot(res3$code != 0L)
 stopifnot(any(grepl("auditor must not be a Stage 3 constructor", res3$status$failures, fixed = TRUE)))
 
-# FAIL: missing one required Stage-4 aggregation, with receipt hash updated so failure is structural
+# FAIL: missing one required Stage-4 criterion cell, with receipt hash updated so failure is structural
 run4 <- make_valid_run()
 matrix_path <- file.path(run4, "receipts", "stage04-audit-matrix.json")
 matrix <- fromJSON(matrix_path, simplifyVector = FALSE)
-matrix$aggregations <- matrix$aggregations[-length(matrix$aggregations)]
+matrix$cells <- matrix$cells[-length(matrix$cells)]
 write_json_file(matrix, matrix_path)
 stage4_path <- file.path(run4, "receipts", "stage04.json")
 stage4 <- fromJSON(stage4_path, simplifyVector = FALSE)
@@ -194,7 +180,7 @@ stage4$matrix_md5 <- md5_rel(run4, "receipts/stage04-audit-matrix.json")
 write_json_file(stage4, stage4_path)
 res4 <- run_gate(run4)
 stopifnot(res4$code != 0L)
-stopifnot(any(grepl("missing required aggregation", res4$status$failures, fixed = TRUE)))
+stopifnot(any(grepl("missing required cell", res4$status$failures, fixed = TRUE)))
 
 # FAIL: consolidation must not allow a missing criterion lock.
 run5 <- make_valid_run()
@@ -220,7 +206,7 @@ stopifnot(any(grepl("Stage 2 locked before Stage 1", res6$status$failures, fixed
 run7 <- make_valid_run()
 lock_path <- file.path(run7, "receipts", "stage01.json")
 rec <- fromJSON(lock_path, simplifyVector = FALSE)
-rec$protocol_version <- "HVHR-IBE-RB-1.6"
+rec$protocol_version <- "HVHR-IBE-RB-1.7"
 write_json_file(rec, lock_path)
 res7 <- run_gate(run7)
 stopifnot(res7$code != 0L)
@@ -246,9 +232,6 @@ matrix <- fromJSON(matrix_path, simplifyVector = FALSE)
 extra <- matrix$cells[[1]]
 extra$court <- "UNREGISTERED"
 matrix$cells[[length(matrix$cells) + 1]] <- extra
-extra <- matrix$aggregations[[1]]
-extra$court <- "UNREGISTERED"
-matrix$aggregations[[length(matrix$aggregations) + 1]] <- extra
 write_json_file(matrix, matrix_path)
 audit_path <- file.path(run9, "receipts", "stage04.json")
 rec <- fromJSON(audit_path, simplifyVector = FALSE)

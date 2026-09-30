@@ -1,6 +1,6 @@
 # Five-stage abductive inquiry
 
-**Version:** `HVHR-IBE-RB-1.7` — H-R / H-V, one H-R vs H-V comparison. This repository contains the method and templates, not a resurrection verdict.
+**Version:** `HVHR-IBE-RB-1.8` — H-R / H-V, one H-R vs H-V comparison. This repository contains the method and templates, not a resurrection verdict.
 
 ## Start here
 
@@ -16,9 +16,9 @@ Use the [Master Prompt](hv-hr-master-prompt.md) with the [runbook](hv-hr-stage-g
 
 Stage 3 needs two files because builders must not see each other's drafts. Give each builder the same frozen Frame/Evidence packet plus only its own construction template. Do not send the full working construction folder to a builder.
 
-H-V uses the owner’s revised spiritual-presence wording in Frame §1A. H-R and all C1–C8 definitions, weights, ordinal rules, and aggregation lenses are preserved. Frame still requires separate approvals for hypotheses, criteria, and presuppositions; Evidence still requires record and dossier approval.
+H-V uses the owner’s revised spiritual-presence wording in Frame §1A. H-R and all C1–C8 definitions and ordinal rules are preserved. Frame still requires separate approvals for hypotheses, criteria, and presuppositions; Evidence still requires record and dossier approval.
 
-C1–C8 are eight explanatory questions, not independent votes. Every advantage must identify its support, overlap with other reasons, and explained evidential strength. The final judgment weighs nonduplicated reasons and addresses counterevidence and reversal conditions. Equal/C3-heavy/C1-heavy are diagnostic sensitivity profiles; no verdict follows automatically from counts or weighted totals.
+C1–C8 are eight explanatory questions, not independent votes. Every advantage must identify its support, overlap with other reasons, and explained evidential strength. The final judgment weighs nonduplicated reasons and addresses counterevidence and reversal conditions. No numerical weighting profiles are required. Test disputed evidence and assumptions directly; no verdict follows from counts or weighted totals.
 
 ## Required support
 
@@ -31,4 +31,4 @@ The runbook, procedural gate, and locked live-run artifacts govern the launcher.
 
 ## Version continuity
 
-Version 1.7 requires reason-based synthesis across the criteria, with explicit dependence and evidential strength. It preserves both hypotheses. It retains the five-stage method for H-R versus H-V, with exactly two construction memos and one comparison. Superseded ART files, version-marker files, and merge notes have been removed from the current tree; earlier versions remain in Git history. Start new runs with v1.7. Do not relabel old receipts as new evidence.
+Version 1.8 removes mandatory numerical weighting profiles and their receipt requirements. Reason-based synthesis retains explicit dependence, evidential strength, and sensitivity to disputed evidence and assumptions. It preserves both hypotheses. It retains the five-stage method for H-R versus H-V, with exactly two construction memos and one comparison. Superseded ART files, version-marker files, and merge notes have been removed from the current tree; earlier versions remain in Git history. Start new runs with v1.8. Do not relabel old receipts as new evidence.
