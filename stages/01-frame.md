@@ -1,6 +1,6 @@
 # Stage 1 — Frame
 
-**Protocol:** `HVHR-IBE-RB-1.8`
+**Protocol:** `HVHR-IBE-RB-1.9`
 **Status:** current hypothesis and criterion pack baselines below; complete the presupposition section and all component gates for each new run.
 
 Complete and approve 1A → 1B → 1C in order. A component lock freezes that section's substantive contents while the remaining sections are completed. After all three pass, freeze this whole file and emit `receipts/stage01.json`. Any supporting criteria crosswalk belongs within §1B. No extra ART files are needed.
@@ -103,14 +103,7 @@ B   metaphysical agnosticism + MF   (thin seat)
             (authorization / expected vindication; bodily MODE not locked)
 ```
 
-**MF shared on every node.** Nodes differ by worldview layer only. **T ≠ G** (Will ≠ God).
-
-#### Dropped / retired (do not reintroduce without version bump)
-
-- **A** (archetypal primacy)
-- **C−** (Christian-ish without uniqueness)
-- **T0** label (renamed **B**)
-- **S** / “Schopenhauerian TI” as TI brand (use **T** / **OpenTI**)
+**Use the same historical evidence at every node; vary only the stated worldview assumptions. OpenTI does not assume a personal creator God.**
 
 ### Node stubs (fill permitted / forbidden scoring rules)
 
@@ -160,13 +153,12 @@ B   metaphysical agnosticism + MF   (thin seat)
 ### Exit checklist (Pass when all true)
 
 - [ ] Nodes named exactly **B, T, G, C**; each has permitted/forbidden rules
-- [ ] A and C− absent (or marked retired)
 - [ ] Per-node scoring; no blended overall winner
 - [ ] B uncontaminated; G not collapsed into C; T ≠ G
 - [ ] C prior operational, independent, usable; bodily MODE unlocked
 - [ ] T is OpenTI + MF; Will ≠ God; classical H-R not well-typed under T
 
-**Fail:** missing/inert C; missing G; B contaminated; collapsing T into B or G into C; MF exclusive to B; uniqueness from empty tomb; adding A/C−/S-brand without version bump.
+**Fail:** missing/inert C; missing G; B contaminated; collapsing T into B or G into C; MF exclusive to B; uniqueness from empty tomb.
 
 ### Lock block (fill at Stage 1)
 

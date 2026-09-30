@@ -1,5 +1,5 @@
 ---
-protocol: HVHR-IBE-RB-1.8
+protocol: HVHR-IBE-RB-1.9
 artifact: NEUTRALITY_GATE.md
 status: EMPTY SHELL (fill after protocol merge and/or after Stage 4 of a live run)
 ---
@@ -18,7 +18,7 @@ This file remains the **substantive/fairness gate**. It asks questions that requ
 
 Neither gate substitutes for the other.
 
-For a live 1.8 run, after this checklist is completed, create `receipts/neutrality.json` with the independent reader identity, this artifact's fingerprint, completion time, overall result, and unresolved Fail count. Stage 5 remains blocked unless this Neutrality Gate is `PASS` **and** the Deterministic Protocol Gate returns `PASS` with `stage5_allowed: true`.
+For a live 1.9 run, after this checklist is completed, create `receipts/neutrality.json` with the independent reader identity, this artifact's fingerprint, completion time, overall result, and unresolved Fail count. Stage 5 remains blocked unless this Neutrality Gate is `PASS` **and** the Deterministic Protocol Gate returns `PASS` with `stage5_allowed: true`.
 
 ## Scope of this fill
 
@@ -35,7 +35,7 @@ For a live 1.8 run, after this checklist is completed, create `receipts/neutrali
 | N0d | **Anti-abstention** | Stage 4 compares burdens in the H-R vs H-V comparison; clear ordinals labeled; unpaid auxiliaries alone ≠ auto-`insuf`; abstention = Fail | | |
 | 1 | Dual steelman (ops) | Frame §1A + both Stage 3 memos preserve transformed-body H-R and costed-correlate H-V | | |
 | 2 | Criteria before builds | Timestamp(Frame §1B) < Timestamp(Stage 3 start) | | |
-| 3 | Slim tree live | Frame §1C has **B, T, G, C**; A and C− absent; G not optional | | |
+| 3 | Slim tree live | Frame §1C has exactly **B, T, G, C**; G not optional | | |
 | 4 | C live, MODE unlocked | Prior usable; bodily MODE not locked by C | | |
 | 5 | C not automatic/circular | Stage 4 C line: independent prior, not tomb/visions/list-derived | | |
 | 6 | H-R-favorable evidence present | Tomb/group/Paul/James in Record; Slices B/C registered | | |

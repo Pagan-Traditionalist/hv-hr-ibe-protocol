@@ -4,16 +4,16 @@
 **Concept name (DA-locked):** stage-gated method  
 **Launcher name (DA-locked):** stage-routed Master Prompt  
 
-**Version:** `HVHR-IBE-RB-1.8`  
+**Version:** `HVHR-IBE-RB-1.9`  
 **Status:** METHOD ONLY — no hypothesis / resurrection verdict in this document  
 **Conflict rule:** If the Master Prompt and this runbook disagree, **runbook + locked stage artifacts win**.  
 **Version pin:** change runbook → bump version → re-issue Master Prompt. Never hot-patch the prompt mid-run as a side constitution.
 
 ---
 
-## 0. v1.8 comparison scope
+## 0. v1.9 comparison scope
 
-This version uses only H-R and H-V. Stage 3 requires two isolated blind construction memos; Stage 4 compares H-R versus H-V under each B/T/G/C node using the same C1–C8 criteria and a reasoned synthesis per node. Both hypothesis texts remain unchanged. Version 1.8 removes numerical criterion weights and mandatory aggregation profiles. C1–C8 remain explanatory questions, with reason dependence and evidential strength explicit in each node's judgment. The five-stage layout and existing fairness and procedural safeguards remain. The structured matrix contains exactly 32 comparison cells using comparison ID `HR-HV`.
+This version uses only H-R and H-V. Stage 3 requires two isolated blind construction memos; Stage 4 compares H-R versus H-V under each B/T/G/C node using the same C1–C8 criteria and a reasoned synthesis per node. Both hypothesis texts remain unchanged. Version 1.9 removes obsolete worldview-label reminders and states the shared-evidence rule directly. Numerical criterion weights and mandatory aggregation profiles remain absent. C1–C8 remain explanatory questions, with reason dependence and evidential strength explicit in each node's judgment. The five-stage layout and existing fairness and procedural safeguards remain. The structured matrix contains exactly 32 comparison cells using comparison ID `HR-HV`.
 
 ### Retained 1.1 method history
 
@@ -23,7 +23,7 @@ This version uses only H-R and H-V. Stage 3 requires two isolated blind construc
 
 1. **Neutrality clarified** — (a) do not cook C1–C8 to privilege H-R or H-V; (b) do not cherry-pick or pad the record for either. Neutrality ≠ abstaining from comparative labels when ordinal difference is clear.
 2. **Anti-abstention (Stage 4 / IBE)** — spell **abstention** explicitly. **Neutrality ≠ abstention.** Stage 4 must perform **comparative IBE**: unpaid auxiliaries / unpaid bridges do **not** auto-`insuf`; compare outstanding burdens; assign `H-R+` / `H-V+` / `≈` when ordinal difference is clear; reserve `insuf` only after comparing, when warrant is missing or deadlocked. **Abstention is a protocol Fail.** Use the word **abstention** (not “extension”).
-3. **Slim presupposition tree** — required nodes: **B / T / G / C** (NOT B/S/G/C; former S seat is now T / OpenTI). **MF (minimal facts) is SHARED on every node**; nodes differ by worldview layer only. **B** = metaphysical agnosticism + MF (renames 1.0 T0). **T** = OpenTI + MF (open transcendental idealism: noumenal disclosure — Will, aesthetic intuition; not Kant-closed; Schopenhauer ancestry/gloss only; Will ≠ God). Brand is **OpenTI / T**, not “Schopenhauerian TI.” **G** = God + MF. **C** = God + MF + Christian worldview presuppositions (authorization / expected vindication; bodily MODE not locked). Drop **A** and **C−**. T ≠ G.
+3. **Slim presupposition tree** — required nodes: **B / T / G / C**. **MF (minimal facts) is SHARED on every node**; nodes differ by worldview layer only. **B** = metaphysical agnosticism + MF. **T** = OpenTI + MF (open transcendental idealism: noumenal disclosure — Will, aesthetic intuition; not Kant-closed; Schopenhauer ancestry/gloss only; Will ≠ God). **G** = God + MF. **C** = God + MF + Christian worldview presuppositions (authorization / expected vindication; bodily MODE not locked). T ≠ G.
 4. **Research / effort split** — **B** and **G** are **thin seats** (no Deep Research budget to “discover” agnosticism or bare God). Concentrate research on **T** (OpenTI entailments) and **C** (fair Christian worldview presuppositions).
 5. **T / OpenTI owner lock (vs H-R / H-V)** — under T: Will ≠ God; causation in phenomena, not creatio-style cause into phenomena; visions / spirit-seeing / manifestations of Will can be well-typed; classical H-R (personal creator God raising a corpse) is **not** well-typed under T; H-V-style appearance pathways can be. Shared phenomenal MF (death, reports, proclamation, etc.) can appear under both as representation-level. **T ≠ G**. G label stays **God + MF**.
 6. **Dual steelman H-R vs H-V** remains the default construction posture.
@@ -47,7 +47,7 @@ This document is the **protocol runbook** (method constitution) for a **stage-ga
 
 ### 2.1 Locked comparison
 
-The existing `stages/01-frame.md` supplies the authoritative H-R / H-V identities, unchanged in v1.8. `stages/01-frame.md` supplies the unchanged C1–C8 definitions and ordinal labels; v1.8 removes weighted profiles while retaining reasoned synthesis.
+The existing `stages/01-frame.md` supplies the authoritative H-R / H-V identities, unchanged in v1.9. `stages/01-frame.md` supplies the unchanged C1–C8 definitions and ordinal labels; v1.9 simplifies worldview guidance while retaining reasoned synthesis.
 
 - **Comparison:** H-R vs H-V (machine ID `HR-HV`).
 - **Question:** Which complete model makes the locked record + background more expected under each worldview node, at no greater unpaid auxiliary cost?
@@ -226,17 +226,16 @@ B   metaphysical agnosticism + MF
     └── C   God + MF + Christian worldview presuppositions
             (authorization / expected vindication; bodily MODE not locked)
 
-MF (minimal facts) is SHARED on every node. Nodes differ by worldview layer only. T ≠ G (Will ≠ God). NOT B/S/G/C (S brand retired).
+Use the same historical evidence at every node; vary only the stated worldview assumptions. OpenTI does not assume a personal creator God.
 ```
 
-**Dropped from 1.0:** **A** (archetypal primacy). **C−** (Christian-ish without uniqueness). **Renamed:** T0 → **B** (Baseline). **TI seat brand:** former **S** / “Schopenhauerian TI” → **T** / **OpenTI** (Schopenhauer ancestry/gloss only). Do not reintroduce A/C−, the T0 label, or S-as-TI-brand without a version bump. NOT O.
 
 **MF (minimal facts)** = the locked Stage 2 record + Stage 2 background dossier package — **not** Habermas brand, **not** “natural-only residue.” **MF is SHARED on every node** (B, T, G, and C). Nodes differ by **worldview layer only**; do not treat MF as exclusive to B.
 
 **Node definitions (1.1):**
 
-- **B:** **Metaphysical agnosticism + MF.** No theism, TI, or Christian package assumed. Metaphysics unsettled. Forbids lean-TI, Christian uniqueness/authorization package, and hidden naturalism. **B replaces 1.0’s T0-label.** MF here is the same shared MF as on T/G/C.  
-- **T:** **OpenTI + MF** (open transcendental idealism: noumenal disclosure — Will, aesthetic intuition; not Kant-closed; Schopenhauer ancestry/gloss only; Will ≠ God). Not Kant-closed TI. Brand is **OpenTI / T**, not “Schopenhauerian TI.” No creatio-ban footnotes; no mandatory creatio/direct-cause strain essay as a scoring weapon. Strain, if claimed, is a costed node-typing note under T only — not smuggled into B. **T ≠ G** (Will ≠ God).
+- **B:** **Metaphysical agnosticism + MF.** No theism, TI, or Christian package assumed. Metaphysics unsettled. Forbids lean-TI, Christian uniqueness/authorization package, and hidden naturalism. MF here is the same shared MF as on T/G/C.  
+- **T:** **OpenTI + MF** (open transcendental idealism: noumenal disclosure — Will, aesthetic intuition; not Kant-closed; Schopenhauer ancestry/gloss only; Will ≠ God). Not Kant-closed TI. No creatio-ban footnotes; no mandatory creatio/direct-cause strain essay as a scoring weapon. Strain, if claimed, is a costed node-typing note under T only — not smuggled into B. **T ≠ G** (Will ≠ God).
 - **G:** **God + MF**. Personal creator God available; **not** the full Christian specialness package. Agnostic on whether God acts in this particular history beyond bare theism. Expect many `≈` cells; that is not protocol failure. **G is required.** **T ≠ G** (Will ≠ God). Label stays **God + MF**.
 - **C:** **God + MF + Christian worldview presuppositions** (on G): authorization + expected vindication of this person (independent prior on grounds other than post-mortem signs already in the shared record). Prior must be pre-data indexed. **Bodily MODE is not locked** by C — mode competition remains an IBE question under C. If the prior cannot be specified independently, C is not yet a legal node — owner repairs the prior, does not quietly drop C.
 
@@ -255,7 +254,6 @@ Score **H-R vs H-V at each node** (B, T, G, C). No blended overall winner. Const
 **Exit — Pass when all true:**
 
 - Four required nodes named exactly: **B, T, G, C**; every node has permitted/forbidden scoring rules.  
-- A and C− absent (or explicitly marked retired).  
 - Per-node scoring; no blended overall winner.  
 - B uncontaminated.  
 - G present as God + MF (not collapsed into C); T ≠ G.  
@@ -263,7 +261,7 @@ Score **H-R vs H-V at each node** (B, T, G, C). No blended overall winner. Const
 - T is OpenTI + MF (noumenal disclosure — Will, aesthetic intuition; not Kant-closed; Schopenhauer ancestry/gloss only); Will ≠ God; T ≠ G.  
 - “No blended overall winner” restated as scoring law.
 
-**Fail:** missing/inert C; missing G; B contaminated; collapsing T into B; collapsing G into C; treating MF as exclusive to B; uniqueness from empty tomb; adding A or C− or S-as-TI-brand without version bump; declaring metaphysics “non-operative.”
+**Fail:** missing/inert C; missing G; B contaminated; collapsing T into B; collapsing G into C; treating MF as exclusive to B; uniqueness from empty tomb; declaring metaphysics “non-operative.”
 
 ---
 
@@ -411,7 +409,7 @@ Unpaid auxiliaries / **unpaid bridges** do **not** by themselves auto-`insuf`.
 
 **Required special lines:**
 
-- **T:** “T treated as OpenTI (noumenal disclosure — Will, aesthetic intuition; not Kant-closed; Schopenhauer ancestry/gloss only). Brand not ‘Schopenhauerian TI’. Will ≠ God; T ≠ G. Causation-in-phenomena (not creatio-into-phenomena)? YES/NO. Classical H-R (personal creator God raising a corpse) treated as well-typed under T? MUST BE NO. H-V-style appearance / vision / spirit-seeing / Will-manifestation pathways allowed as well-typed? YES expected. Creatio-ban footnotes used? YES/NO (must be NO for base scoring).”  
+- **T:** “T treated as OpenTI (noumenal disclosure — Will, aesthetic intuition; not Kant-closed; Schopenhauer ancestry/gloss only). Will ≠ God; T ≠ G. Causation-in-phenomena (not creatio-into-phenomena)? YES/NO. Classical H-R (personal creator God raising a corpse) treated as well-typed under T? MUST BE NO. H-V-style appearance / vision / spirit-seeing / Will-manifestation pathways allowed as well-typed? YES expected. Creatio-ban footnotes used? YES/NO (must be NO for base scoring).”  
 - **C:** “Authorization + expected vindication prior used: {quote from Frame §1C}. Circular-from-record? YES/NO. Bodily MODE locked by node? MUST BE NO. If circular YES, C cell is invalid.”  
 - **Anti-abstention:** “For each `insuf` cell: compared outstanding burdens? YES/NO. Clear ordinal difference withheld? YES/NO (YES = Fail).”
 
@@ -507,7 +505,7 @@ The pack contains hypothesis/criteria baselines and unfilled templates, not a co
 | **Veridicality bootstrapping** | “They had visions ⇒ extra-mental object” | Ban; visions are data, veridicality is hyp |
 | **Mass-hallucination dump** | Label used as refutation without mechanism | Strike; demand pathway |
 | **Resuscitation cartoon** | H-R as revived corpse / ordinary biology | Fail H-R memo |
-| **Presupposition smuggling** | T or uniqueness in B; inert/circular C; G collapsed into C; A/C− reintroduced | Invalid cells; repair tree |
+| **Presupposition smuggling** | T or uniqueness in B; inert/circular C; G collapsed into C; unregistered worldview node | Invalid cells; repair tree |
 | **Bodily-MODE lock via C** | C treated as forcing transformed body | Strike; mode remains IBE under C |
 | **Shared-mechanism double count** | Ordinary preaching scored as unique win | Mark cancel |
 | **Secret sources** | Constructor cites material not in Evidence §2B | Add to dossier for both or strike |
@@ -516,7 +514,7 @@ The pack contains hypothesis/criteria baselines and unfilled templates, not a co
 | **Ledger bloat** | Attack ledger unbounded | Cap at strongest N per side |
 | **Abstention** | `insuf` used to avoid clear ordinal labels; unpaid auxiliaries alone cited as automatic insuf | Rescore under anti-abstention rule; Neutrality / Stage-4 Fail |
 
-**Hard bans (compact):** H-V emptied into internal-only vision · H-V = named school on B · visions prove extra-mental · circular C uniqueness · H-R as crude resuscitation · “one cause” = automatic parsimony · majority vote · clinical diagnosis of ancients · James psychologized beyond sources · mass hallucination label · silent hyp rewrite · blended verdict across nodes · mid-run prompt as side constitution · **Stage-4 abstention** (unpaid bridges auto-`insuf`) · classical H-R well-typed under T · creatio-ban footnote regime under T · Deep Research inventing B/G · reintroducing A or C− without version bump.
+**Hard bans (compact):** H-V emptied into internal-only vision · H-V = named school on B · visions prove extra-mental · circular C uniqueness · H-R as crude resuscitation · “one cause” = automatic parsimony · majority vote · clinical diagnosis of ancients · James psychologized beyond sources · mass hallucination label · silent hyp rewrite · blended verdict across nodes · mid-run prompt as side constitution · **Stage-4 abstention** (unpaid bridges auto-`insuf`) · classical H-R well-typed under T · creatio-ban footnote regime under T · Deep Research inventing B/G.
 
 ---
 
@@ -549,7 +547,6 @@ The pack contains hypothesis/criteria baselines and unfilled templates, not a co
 - Mid-run prompt edits as side constitution.  
 - Cardinal Bayesian theater as default (optional appendix only, owner-opt-in, after locks).  
 - **Abstention-as-neutrality** (1.1).  
-- **A-node** and **C−-node** as required seats (1.1 slim tree).  
 - Creatio-ban footnote scoring under T (1.1).
 
 ---
@@ -629,7 +626,7 @@ Not a fourth hyp argument. Not self-graded by the seat that wrote soft language.
 | N0e | Reasons, not votes | Stage 4 explains reason dependence and differential strength, synthesizes nonduplicated support per node, addresses the strongest counterreason and reversal conditions, and does not decide by counts or weighted totals |
 | 1 | Dual steelman (ops) | Frame §1A + Stage 3 H-R/H-V memos show transformed-body H-R (no swoon) and costed-correlate H-V with losing conditions |
 | 2 | Criteria before builds | Timestamp(Frame §1B lock) < Timestamp(Stage 3 start) |
-| 3 | Slim tree live | Frame §1C has required **B, T, G, C**; A and C− absent; G not optional |
+| 3 | Slim tree live | Frame §1C has required exactly **B, T, G, C**; G not optional |
 | 4 | C live, MODE unlocked | Frame §1C prior usable; audit can produce H-R ahead under C if warranted; bodily MODE not locked by C |
 | 5 | C not automatic/circular | Stage 4 C line shows independent prior, not tomb/visions/list-derived |
 | 6 | H-R-favorable evidence present | Empty tomb, group, Paul, James in Record; Slice B/C exist as registered |
@@ -662,7 +659,7 @@ Not a fourth hyp argument. Not self-graded by the seat that wrote soft language.
 - One screen + file pointers to the five stage entries under `stages/` and this runbook.  
 - Points at locks by **reference**; never restates criteria/tree/hyps.  
 - Does **not** override locked stage artifacts.  
-- Version-pinned to `HVHR-IBE-RB-1.8`. **If conflict, runbook + locked artifacts win.**  
+- Version-pinned to `HVHR-IBE-RB-1.9`. **If conflict, runbook + locked artifacts win.**  
 - Optional **“next stage only”** mode.  
 - No hyp-favoring examples inside the prompt.  
 - Change runbook → bump version → re-issue prompt. Never edit prompt mid-run as a side constitution.
@@ -688,9 +685,9 @@ Underdetermination, H-V ahead, and H-R ahead are legitimate *possible outputs of
 
 ## 16. Launch sequence (ops)
 
-1. Owner accepts this runbook as `HVHR-IBE-RB-1.8` (or merges then locks).  
+1. Owner accepts this runbook as `HVHR-IBE-RB-1.9` (or merges then locks).  
 2. Run Neutrality Gate on the *protocol* (incl. N0d anti-abstention).  
-3. Issue stage-routed Master Prompt v1.8.  
+3. Issue stage-routed Master Prompt v1.9.  
 4. Execute Stages 1–2; freeze; hash if available.  
 5. Open two fresh constructor threads with identical lock bundle.  
 6. Freeze Stage 3 memos.  
@@ -722,7 +719,7 @@ Underdetermination, H-V ahead, and H-R ahead are legitimate *possible outputs of
 | Social formation | Downstream group processes that produce the record | A third competing hyp |
 | B | Metaphysical agnosticism + shared MF | Theism, TI, or Christian package; MF exclusive to B |
 | MF | Shared minimal-facts package on **every** node | Habermas brand; naturalism; “only on B” |
-| T | OpenTI + shared MF (noumenal disclosure — Will, aesthetic intuition; not Kant-closed; Schopenhauer ancestry/gloss only; Will ≠ God; causation in phenomena; H-V-style appearance/vision/spirit-seeing/Will-manifestation well-typed; classical H-R not well-typed) | God / theism (that is G); Kant-closed TI; “Schopenhauerian TI” as brand; creatio-style cause into phenomena; classical H-R under T |
+| T | OpenTI + shared MF (noumenal disclosure — Will, aesthetic intuition; not Kant-closed; Schopenhauer ancestry/gloss only; Will ≠ God; causation in phenomena; H-V-style appearance/vision/spirit-seeing/Will-manifestation well-typed; classical H-R not well-typed) | God / theism (that is G); Kant-closed TI; creatio-style cause into phenomena; classical H-R under T |
 | G | God + shared MF | Christian authorization/vindication package (that is C) |
 | C | God + shared MF + Christian worldview presuppositions | Automatic bodily MODE lock |
 | Contested | Sensitivity only | Deleted |
@@ -733,7 +730,7 @@ Underdetermination, H-V ahead, and H-R ahead are legitimate *possible outputs of
 | Stage-gated method | Concept: lock each stage before the next | The launcher alone |
 | Stage-gated protocol | Runbook + artifacts + Master Prompt | “Master Prompt” as the whole |
 | Stage-routed Master Prompt | Thin launcher by reference | Mega-prompt / side constitution |
-| Slim tree (1.1) | Required **B/T/G/C**; MF shared on every node | Optional G; A; C−; MF-only-on-B |
+| Slim tree (1.1) | Required **B/T/G/C**; MF shared on every node | Optional G; unregistered worldview nodes; MF-only-on-B |
 
 ---
 
@@ -751,16 +748,15 @@ Adversarial notes for Frame §1C semantics — tree is the **1.1 slim set**:
 - **MF brand confusion** — MF = Evidence §§2A–2B only.  
 - **Two-hyp truncation** — name Excluded options; don’t dump them into H-V.  
 - **“No named school”** — blocks identity-sneaks; mechanisms still usable.  
-- **A / C− retired** — do not reintroduce without version bump.
 
 ---
 
-*End of runbook `HVHR-IBE-RB-1.8`. Method only. No hypothesis verdict.*
+*End of runbook `HVHR-IBE-RB-1.9`. Method only. No hypothesis verdict.*
 
 ---
 ## FREEZE RECORD
 
-**Version:** `HVHR-IBE-RB-1.8`; removal of mandatory weighting profiles authorized by Owner on 2026-09-29 (America/Chicago).
-**Supersedes:** v1.7 for new runs. Old runs remain pinned to their original version; retrieve their files from Git history.
-**Scope:** retain H-R and H-V only, with two blind construction memos and one comparative audit. Both hypotheses, C1–C8 definitions, ordinal labels, and worldview nodes remain unchanged. Numerical weights and mandatory aggregation profiles are removed. Require explicit reason dependence, evidential strength, and reasoned synthesis; no verdict by criterion counts or weighted totals.
+**Version:** `HVHR-IBE-RB-1.9`; worldview-label cleanup and shared-evidence wording authorized by Owner on 2026-09-29 (America/Chicago).
+**Supersedes:** v1.8 for new runs. Old runs remain pinned to their original version; retrieve their files from Git history.
+**Scope:** retain H-R and H-V only, with two blind construction memos and one comparative audit. Both hypotheses, C1–C8 definitions, ordinal labels, and worldview nodes remain unchanged. Retired worldview labels and their reminders are removed; the shared-evidence rule is stated directly. Numerical weights and mandatory aggregation profiles remain absent. Require explicit reason dependence, evidential strength, and reasoned synthesis; no verdict by criterion counts or weighted totals.
 **No mid-run edit** without version bump and reissued launcher.

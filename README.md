@@ -1,6 +1,6 @@
 # Five-stage abductive inquiry
 
-**Version:** `HVHR-IBE-RB-1.8` — H-R / H-V, one H-R vs H-V comparison. This repository contains the method and templates, not a resurrection verdict.
+**Version:** `HVHR-IBE-RB-1.9` — H-R / H-V, one H-R vs H-V comparison. This repository contains the method and templates, not a resurrection verdict.
 
 ## Start here
 
@@ -31,4 +31,4 @@ The runbook, procedural gate, and locked live-run artifacts govern the launcher.
 
 ## Version continuity
 
-Version 1.8 removes mandatory numerical weighting profiles and their receipt requirements. Reason-based synthesis retains explicit dependence, evidential strength, and sensitivity to disputed evidence and assumptions. It preserves both hypotheses. It retains the five-stage method for H-R versus H-V, with exactly two construction memos and one comparison. Superseded ART files, version-marker files, and merge notes have been removed from the current tree; earlier versions remain in Git history. Start new runs with v1.8. Do not relabel old receipts as new evidence.
+Version 1.9 removes obsolete worldview-label reminders and simplifies the shared-evidence guidance. Mandatory numerical weighting profiles and their receipt requirements remain absent. Reason-based synthesis retains explicit dependence, evidential strength, and sensitivity to disputed evidence and assumptions. It preserves both hypotheses. It retains the five-stage method for H-R versus H-V, with exactly two construction memos and one comparison. Superseded ART files, version-marker files, and merge notes have been removed from the current tree; earlier versions remain in Git history. Start new runs with v1.9. Do not relabel old receipts as new evidence.

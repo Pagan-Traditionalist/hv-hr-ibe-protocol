@@ -35,7 +35,7 @@ make_matrix <- function() {
   }
 
   list(
-    protocol_version = "HVHR-IBE-RB-1.8",
+    protocol_version = "HVHR-IBE-RB-1.9",
     criteria = as.list(paste0("C", 1:8)),
     cells = cells
   )
@@ -51,7 +51,7 @@ make_valid_run <- function() {
   for (stage in 1:2) {
     components <- if (stage == 1) c("hypotheses", "criteria", "presuppositions") else c("record", "dossier")
     rec <- list(
-      protocol_version = "HVHR-IBE-RB-1.8", stage = stage, status = "LOCKED",
+      protocol_version = "HVHR-IBE-RB-1.9", stage = stage, status = "LOCKED",
       artifact_path = artifact_paths[[stage]], artifact_md5 = md5_rel(root, artifact_paths[[stage]]),
       completed_components = as.list(components),
       locked_at = sprintf("2026-09-16T01:%02d:00Z", stage),
@@ -88,7 +88,7 @@ make_valid_run <- function() {
   }
 
   stage3 <- list(
-    protocol_version = "HVHR-IBE-RB-1.8",
+    protocol_version = "HVHR-IBE-RB-1.9",
     stage = 3,
     status = "FROZEN",
     stage_started_at = "2026-09-16T02:00:00Z",
@@ -105,7 +105,7 @@ make_valid_run <- function() {
   write_json_file(matrix, file.path(root, matrix_rel))
 
   stage4 <- list(
-    protocol_version = "HVHR-IBE-RB-1.8",
+    protocol_version = "HVHR-IBE-RB-1.9",
     stage = 4,
     status = "PASS",
     auditor_id = "Auditor-Sterile",
@@ -121,7 +121,7 @@ make_valid_run <- function() {
 
   write_text(file.path(root, "NEUTRALITY_GATE.md"), "Synthetic Neutrality Gate PASS")
   neutrality <- list(
-    protocol_version = "HVHR-IBE-RB-1.8",
+    protocol_version = "HVHR-IBE-RB-1.9",
     status = "PASS",
     independent_reader_id = "Neutrality-Reader",
     artifact_path = "NEUTRALITY_GATE.md",
@@ -206,7 +206,7 @@ stopifnot(any(grepl("Stage 2 locked before Stage 1", res6$status$failures, fixed
 run7 <- make_valid_run()
 lock_path <- file.path(run7, "receipts", "stage01.json")
 rec <- fromJSON(lock_path, simplifyVector = FALSE)
-rec$protocol_version <- "HVHR-IBE-RB-1.7"
+rec$protocol_version <- "HVHR-IBE-RB-1.8"
 write_json_file(rec, lock_path)
 res7 <- run_gate(run7)
 stopifnot(res7$code != 0L)

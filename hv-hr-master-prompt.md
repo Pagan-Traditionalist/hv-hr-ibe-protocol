@@ -4,7 +4,7 @@
 **Package:** stage-gated protocol = substantive runbook + procedural addendum + stage artifacts + this launcher  
 **Concept:** stage-gated method  
 
-**Version pin:** `HVHR-IBE-RB-1.8`  
+**Version pin:** `HVHR-IBE-RB-1.9`  
 **Conflict rule:** If this prompt disagrees with the substantive runbook, `PROTOCOL_GATE.md`, or locked live-run artifacts, **runbook + procedural addendum + locked artifacts win**.  
 **Status:** METHOD ROUTER ONLY — no hyp verdict, no hyp-favoring examples, no restated constitution.
 
@@ -25,14 +25,14 @@ You are seat: {ROLE}
 Protocol package: stage-gated protocol
 Substantive runbook: hv-hr-stage-gated-protocol.md
 Procedural enforcement addendum: PROTOCOL_GATE.md
-Version pin: HVHR-IBE-RB-1.8
+Version pin: HVHR-IBE-RB-1.9
 Conflict rule: substantive runbook + PROTOCOL_GATE.md + locked live-run artifacts WIN over this launcher.
 Mode: NEXT STAGE ONLY — do Stage {STAGE} only; do not advance past its exit gate.
 Method only. Do NOT issue an H-R / H-V / resurrection verdict except where Stage 4 is explicitly performing the locked comparative IBE under named nodes.
 No blended verdict across worldview nodes. H-R vs H-V only. Ceiling language only (more/less expected; underdetermined; ahead under a node).
 Publishable: no secret side instructions. No peeking across blind seats.
 
-Substantive locks for 1.8 (hypotheses and C1–C8 definitions retained; reasoned synthesis required):
+Substantive locks for 1.9 (hypotheses and C1–C8 definitions retained; reasoned synthesis required):
   Two locked identities: H-R (transformed-bodily resurrection), H-V (real spiritual presence with psychologically shaped Jesus identification).
   Required comparison (machine ID: HR-HV):
     H-R vs H-V — compare the complete models; spiritual presence does not establish accurate Jesus identification. Labels: H-R+ / H-V+ / ≈ / insuf
@@ -42,8 +42,8 @@ Substantive locks for 1.8 (hypotheses and C1–C8 definitions retained; reasoned
   Anti-abstention / comparative IBE (Stage 4): unpaid auxiliaries / unpaid bridges do NOT auto-insuf;
     compare outstanding burdens; assign court-appropriate ordinals when difference is clear;
     insuf only after compare when warrant missing or deadlocked.
-  Slim tree (required): B / T / G / C — DROP A and C−.
-    MF (minimal facts) is SHARED on every node; nodes differ by worldview layer only.
+  Slim tree (required): B / T / G / C.
+    Use the same historical evidence at every node; vary only the stated worldview assumptions. OpenTI does not assume a personal creator God.
     B = metaphysical agnosticism + MF.  (thin seat — no Deep Research to discover agnosticism)
     T = OpenTI + MF (open transcendental idealism: noumenal disclosure — Will, aesthetic intuition; not Kant-closed; Schopenhauer ancestry/gloss only; Will ≠ God). T ≠ G.
     Node hygiene / T entailments (owner lock): T ≠ G — Will ≠ God; causation in phenomena, not creatio-style cause into phenomena;
@@ -66,7 +66,7 @@ Working files (read by reference; no duplicated constitution):
   NGATE: NEUTRALITY_GATE.md
   PGATE: PROTOCOL_GATE.md
 
-Procedural 1.8 requirements:
+Procedural 1.9 requirements:
   Every completed Stage 1–4 must emit the required machine-readable receipt under receipts/.
   Every locked/frozen artifact named by a receipt must include its integrity fingerprint.
   Stages 1–2 must be locked before Stage 3 begins.
@@ -148,8 +148,8 @@ Never edit this prompt mid-run as a side constitution.
 
 ## FREEZE RECORD
 
-**Status:** FROZEN for `HVHR-IBE-RB-1.8`  
+**Status:** FROZEN for `HVHR-IBE-RB-1.9`  
 **Substantive inheritance:** both hypotheses and C1–C8 definitions retained; reason dependence, evidential strength, and justified synthesis required; no mandatory numerical weighting profiles; five-stage layout preserved.  
 **Enforcement retained:** mandatory receipts + artifact fingerprints + Stage-4 structured audit companion + deterministic R Protocol Gate + Stage-5 block unless Neutrality Gate and Protocol Gate both PASS.  
-**Supersedes:** `HVHR-IBE-RB-1.7` for new runs.  
+**Supersedes:** `HVHR-IBE-RB-1.8` for new runs.  
 **No mid-run edit** without version bump + re-issue of Master Prompt.
