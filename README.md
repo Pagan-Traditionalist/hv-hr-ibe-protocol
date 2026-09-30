@@ -1,6 +1,6 @@
 # Five-stage abductive inquiry
 
-**Version:** `HVHR-IBE-RB-1.5` — H-R / H-V, one H-R vs H-V comparison. This repository contains the method and templates, not a resurrection verdict.
+**Version:** `HVHR-IBE-RB-1.6` — H-R / H-V, one H-R vs H-V comparison. This repository contains the method and templates, not a resurrection verdict.
 
 ## Start here
 
@@ -16,7 +16,7 @@ Use the [Master Prompt](hv-hr-master-prompt.md) with the [runbook](hv-hr-stage-g
 
 Stage 3 needs two files because builders must not see each other's drafts. Give each builder the same frozen Frame/Evidence packet plus only its own construction template. Do not send the full working construction folder to a builder.
 
-The H-R and H-V atomics and all C1–C8 definitions, weights, ordinal rules, and aggregation lenses are preserved. Frame still requires separate approvals for hypotheses, criteria, and presuppositions; Evidence still requires record and dossier approval.
+H-V uses the owner’s revised spiritual-presence wording in Frame §1A. H-R and all C1–C8 definitions, weights, ordinal rules, and aggregation lenses are preserved. Frame still requires separate approvals for hypotheses, criteria, and presuppositions; Evidence still requires record and dossier approval.
 
 ## Required support
 
@@ -29,4 +29,4 @@ The runbook, procedural gate, and locked live-run artifacts govern the launcher.
 
 ## Version continuity
 
-Version 1.5 limits the five-stage method to H-R versus H-V, with exactly two construction memos and one comparison. Superseded ART files, version-marker files, and merge notes have been removed from the current tree; earlier versions remain in Git history. Start new runs with v1.5. Do not relabel old receipts as new evidence.
+Version 1.6 revises H-V to real spiritual presence with psychologically shaped Jesus identification. It retains the five-stage method for H-R versus H-V, with exactly two construction memos and one comparison. Superseded ART files, version-marker files, and merge notes have been removed from the current tree; earlier versions remain in Git history. Start new runs with v1.6. Do not relabel old receipts as new evidence.

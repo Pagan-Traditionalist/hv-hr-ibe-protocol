@@ -33,7 +33,7 @@ A failed invariant returns a non-zero process exit code and blocks Stage 5.
 
 The gate checks, among other things:
 
-- exact protocol version (`HVHR-IBE-RB-1.5`);
+- exact protocol version (`HVHR-IBE-RB-1.6`);
 - artifact existence and MD5 integrity fingerprints;
 - Stages 1–2 lock ordering before Stage 3;
 - identical declared official packet fingerprint across all Stage-3 constructors;

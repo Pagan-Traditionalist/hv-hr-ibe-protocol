@@ -4,16 +4,16 @@
 **Concept name (DA-locked):** stage-gated method  
 **Launcher name (DA-locked):** stage-routed Master Prompt  
 
-**Version:** `HVHR-IBE-RB-1.5`  
+**Version:** `HVHR-IBE-RB-1.6`  
 **Status:** METHOD ONLY — no hypothesis / resurrection verdict in this document  
 **Conflict rule:** If the Master Prompt and this runbook disagree, **runbook + locked stage artifacts win**.  
 **Version pin:** change runbook → bump version → re-issue Master Prompt. Never hot-patch the prompt mid-run as a side constitution.
 
 ---
 
-## 0. v1.5 comparison scope
+## 0. v1.6 comparison scope
 
-This version uses only H-R and H-V. Stage 3 requires two isolated blind construction memos; Stage 4 compares H-R versus H-V under each B/T/G/C node using the same C1–C8 criteria and three aggregation lenses. The H-R and H-V atomics are unchanged. The five-stage layout and existing fairness and procedural safeguards remain. The structured matrix contains exactly 32 comparison cells and 12 aggregation rows, all using comparison ID `HR-HV`.
+This version uses only H-R and H-V. Stage 3 requires two isolated blind construction memos; Stage 4 compares H-R versus H-V under each B/T/G/C node using the same C1–C8 criteria and three aggregation lenses. H-V now uses the owner’s spiritual-presence wording in Frame §1A; H-R remains unchanged. The five-stage layout and existing fairness and procedural safeguards remain. The structured matrix contains exactly 32 comparison cells and 12 aggregation rows, all using comparison ID `HR-HV`.
 
 ### Retained 1.1 method history
 
@@ -47,7 +47,7 @@ This document is the **protocol runbook** (method constitution) for a **stage-ga
 
 ### 2.1 Locked comparison
 
-The existing `stages/01-frame.md` supplies the authoritative H-R / H-V identities, unchanged by this reorganization. `stages/01-frame.md` supplies the unchanged C1–C8 definitions, weights, ordinal labels, and aggregation rules.
+The existing `stages/01-frame.md` supplies the authoritative H-R / H-V identities; v1.6 revises H-V only. `stages/01-frame.md` supplies the unchanged C1–C8 definitions, weights, ordinal labels, and aggregation rules.
 
 - **Comparison:** H-R vs H-V (machine ID `HR-HV`).
 - **Question:** Which complete model makes the locked record + background more expected under each worldview node, at no greater unpaid auxiliary cost?
@@ -99,7 +99,7 @@ The thin Neutrality Gate (§12) **must check these three explicitly**, plus anti
 ### 2.5 Symmetric steelman (default)
 
 - **H-R:** transformed bodily resurrection (not resuscitation cartoon); divine action; continuity; tomb/group/Paul/James as the evidence warrants; same downstream social processes; auxiliaries and losing conditions explicit.  
-- **H-V:** complete veridical-apparition social-formation (not empty-correlate escape; not fraud cartoon; not “mass hallucination” label); bounded group pathway; interpretive bridge; positive support for extra-mental correlate stated and **costed**; auxiliaries and losing conditions explicit; no named metaphysics as scoring premise.
+- **H-V:** real spiritual presence with psychologically shaped Jesus identification and social formation (not empty-correlate escape; not fraud cartoon; not “mass hallucination” label); bounded group pathway; interpretive bridge; support for the spiritual posit assessed and its assumptions **costed**; auxiliaries and losing conditions explicit; no named metaphysics as scoring premise.
 
 Neither side is weakened to help the other. Neutrality ≠ stacking for H-V; steelman H-V ≠ stacking against Christianity. Dual steelman is the default posture of Stage 3.
 
@@ -174,7 +174,7 @@ Complete components 1A, 1B, and 1C in order; all must pass before Stage 2.
 
 - Both hypotheses complete, specific, and equally vulnerable.  
 - H-R includes: God raised Jesus; transformed bodily continuity; encounters caused by risen Jesus; ordinary telling downstream.  
-- H-V includes: veridical-apparition social-formation; bounded group pathway; interpretive bridge; positive extra-mental correlate marked *unspecified but not empty* (must later be costed); no named metaphysics as scoring premise.  
+- H-V includes: real spiritual presence in some experiences, psychologically shaped Jesus identification, ordinary psychological experiences, and social formation; bounded group pathway; interpretive bridge; spiritual presence marked *real, with nature and enabling conditions unspecified* (must later be costed); no named metaphysics as scoring premise.  
 - Neither side is fraud, resuscitation, empty-correlate escape, or mass-hallucination cartoon.  
 - Each side has explicit auxiliaries placeholders and explicit losing-condition placeholders (filled at Stage 3).  
 - Atomic texts quoted; hypothesis section READ-ONLY for remainder of run. Mid-build reword = fail / restart Stage 1.
@@ -365,7 +365,8 @@ Pre-register slices in `Evidence §2A`. Run all registered slices or none (no on
 - Complete model meeting template; parity, specificity, self-risk present.  
 - No cross-reference to other memo; no peeking language.  
 - No unlocked criteria; no hidden prompt/side constitution.  
-- H-V extra-mental correlate specified as a **costed posit**, not “whatever we need.”  
+- H-V real spiritual presence treated as a **costed posit**, not “whatever we need.” Its nature and enabling conditions remain unspecified; state support, explanatory work, assumptions, and limits without silently adding a mechanism.
+- H-V requires spiritual presence in some experiences, not every encounter. Veridicality concerns that presence, not accurate Jesus identification or Jesus-related content. Jesus’s continued personal existence and bodily resurrection are not required. Historical evidence may leave the source unresolved; distinguish historical support from worldview-based plausibility.  
 - H-R is transformed-bodily, not swoon.  
 - After both first drafts complete, coordinator labels AI1/AI2; only then may cross-review occur (via auditor at Stage 4).
 
@@ -674,7 +675,7 @@ Not a fourth hyp argument. Not self-graded by the seat that wrote soft language.
 - One screen + file pointers to the five stage entries under `stages/` and this runbook.  
 - Points at locks by **reference**; never restates criteria/tree/hyps.  
 - Does **not** override locked stage artifacts.  
-- Version-pinned to `HVHR-IBE-RB-1.5`. **If conflict, runbook + locked artifacts win.**  
+- Version-pinned to `HVHR-IBE-RB-1.6`. **If conflict, runbook + locked artifacts win.**  
 - Optional **“next stage only”** mode.  
 - No hyp-favoring examples inside the prompt.  
 - Change runbook → bump version → re-issue prompt. Never edit prompt mid-run as a side constitution.
@@ -700,9 +701,9 @@ Underdetermination, H-V ahead, and H-R ahead are legitimate *possible outputs of
 
 ## 16. Launch sequence (ops)
 
-1. Owner accepts this runbook as `HVHR-IBE-RB-1.5` (or merges then locks).  
+1. Owner accepts this runbook as `HVHR-IBE-RB-1.6` (or merges then locks).  
 2. Run Neutrality Gate on the *protocol* (incl. N0d anti-abstention).  
-3. Issue stage-routed Master Prompt v1.5.  
+3. Issue stage-routed Master Prompt v1.6.  
 4. Execute Stages 1–2; freeze; hash if available.  
 5. Open two fresh constructor threads with identical lock bundle.  
 6. Freeze Stage 3 memos.  
@@ -729,7 +730,7 @@ Underdetermination, H-V ahead, and H-R ahead are legitimate *possible outputs of
 
 | Term | Means here | Does not mean |
 |---|---|---|
-| Veridical apparition | Experience with an extra-mental correlate (kind unspecified until Stage 3 costs it) | Proof that the correlate is a transformed body |
+| Veridicality under H-V | A real spiritual presence in some experiences; its nature and enabling conditions remain unspecified and the posit must be costed | Accurate Jesus identification, true Jesus-related content, continued personal existence, or transformed bodily resurrection |
 | Transformed body | H-R’s risen Jesus as bodily, continuous, transformed | Resuscitated corpse |
 | Social formation | Downstream group processes that produce the record | A third competing hyp |
 | B | Metaphysical agnosticism + shared MF | Theism, TI, or Christian package; MF exclusive to B |
@@ -767,12 +768,12 @@ Adversarial notes for Frame §1C semantics — tree is the **1.1 slim set**:
 
 ---
 
-*End of runbook `HVHR-IBE-RB-1.5`. Method only. No hypothesis verdict.*
+*End of runbook `HVHR-IBE-RB-1.6`. Method only. No hypothesis verdict.*
 
 ---
 ## FREEZE RECORD
 
-**Version:** `HVHR-IBE-RB-1.5`; two-hypothesis scope authorized by Owner on 2026-09-29 (America/Chicago).
-**Supersedes:** v1.4 for new runs. Old runs remain pinned to their original version; retrieve their files from Git history.
-**Scope:** retain H-R and H-V only, with two blind construction memos and one comparative audit. The two surviving hypothesis atomics, C1–C8 criteria, weights, nodes, lenses, and substantive safeguards remain unchanged.
+**Version:** `HVHR-IBE-RB-1.6`; H-V spiritual-presence wording authorized by Owner on 2026-09-30 (UTC).
+**Supersedes:** v1.5 for new runs. Old runs remain pinned to their original version; retrieve their files from Git history.
+**Scope:** retain H-R and H-V only, with two blind construction memos and one comparative audit. H-V is revised to the owner’s exact spiritual-presence wording. H-R, C1–C8 criteria, weights, nodes, lenses, and fairness safeguards remain unchanged.
 **No mid-run edit** without version bump and reissued launcher.

@@ -1,5 +1,5 @@
 ---
-protocol: HVHR-IBE-RB-1.5
+protocol: HVHR-IBE-RB-1.6
 artifact: NEUTRALITY_GATE.md
 status: EMPTY SHELL (fill after protocol merge and/or after Stage 4 of a live run)
 ---
@@ -18,7 +18,7 @@ This file remains the **substantive/fairness gate**. It asks questions that requ
 
 Neither gate substitutes for the other.
 
-For a live 1.5 run, after this checklist is completed, create `receipts/neutrality.json` with the independent reader identity, this artifact's fingerprint, completion time, overall result, and unresolved Fail count. Stage 5 remains blocked unless this Neutrality Gate is `PASS` **and** the Deterministic Protocol Gate returns `PASS` with `stage5_allowed: true`.
+For a live 1.6 run, after this checklist is completed, create `receipts/neutrality.json` with the independent reader identity, this artifact's fingerprint, completion time, overall result, and unresolved Fail count. Stage 5 remains blocked unless this Neutrality Gate is `PASS` **and** the Deterministic Protocol Gate returns `PASS` with `stage5_allowed: true`.
 
 ## Scope of this fill
 
