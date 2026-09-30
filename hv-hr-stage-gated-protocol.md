@@ -4,16 +4,16 @@
 **Concept name (DA-locked):** stage-gated method  
 **Launcher name (DA-locked):** stage-routed Master Prompt  
 
-**Version:** `HVHR-IBE-RB-1.7`  
+**Version:** `HVHR-IBE-RB-1.8`  
 **Status:** METHOD ONLY — no hypothesis / resurrection verdict in this document  
 **Conflict rule:** If the Master Prompt and this runbook disagree, **runbook + locked stage artifacts win**.  
 **Version pin:** change runbook → bump version → re-issue Master Prompt. Never hot-patch the prompt mid-run as a side constitution.
 
 ---
 
-## 0. v1.7 comparison scope
+## 0. v1.8 comparison scope
 
-This version uses only H-R and H-V. Stage 3 requires two isolated blind construction memos; Stage 4 compares H-R versus H-V under each B/T/G/C node using the same C1–C8 criteria and three aggregation lenses. Both hypothesis texts remain unchanged. Version 1.7 makes C1–C8 explanatory questions rather than independent votes, with reason dependence and evidential strength explicit in the judgment. The five-stage layout and existing fairness and procedural safeguards remain. The structured matrix contains exactly 32 comparison cells and 12 aggregation rows, all using comparison ID `HR-HV`.
+This version uses only H-R and H-V. Stage 3 requires two isolated blind construction memos; Stage 4 compares H-R versus H-V under each B/T/G/C node using the same C1–C8 criteria and a reasoned synthesis per node. Both hypothesis texts remain unchanged. Version 1.8 removes numerical criterion weights and mandatory aggregation profiles. C1–C8 remain explanatory questions, with reason dependence and evidential strength explicit in each node's judgment. The five-stage layout and existing fairness and procedural safeguards remain. The structured matrix contains exactly 32 comparison cells using comparison ID `HR-HV`.
 
 ### Retained 1.1 method history
 
@@ -47,7 +47,7 @@ This document is the **protocol runbook** (method constitution) for a **stage-ga
 
 ### 2.1 Locked comparison
 
-The existing `stages/01-frame.md` supplies the authoritative H-R / H-V identities, unchanged in v1.7. `stages/01-frame.md` supplies the unchanged C1–C8 definitions, diagnostic weights, and ordinal labels; v1.7 clarifies the synthesis rules.
+The existing `stages/01-frame.md` supplies the authoritative H-R / H-V identities, unchanged in v1.8. `stages/01-frame.md` supplies the unchanged C1–C8 definitions and ordinal labels; v1.8 removes weighted profiles while retaining reasoned synthesis.
 
 - **Comparison:** H-R vs H-V (machine ID `HR-HV`).
 - **Question:** Which complete model makes the locked record + background more expected under each worldview node, at no greater unpaid auxiliary cost?
@@ -62,7 +62,7 @@ Apply the inherited pairwise safeguards below to H-R versus H-V under each world
 4. **Compare and challenge** — compare the H-R vs H-V comparison, apply the locked criteria, and run sensitivity and fairness checks.
 5. **Judge** — Owner interpretation and keep/cut, only after both gates pass.
 
-Stage 1 contains three mandatory component locks within Frame; Stage 2 contains two within Evidence. Consolidation does not remove any component gate or change the criteria, weights, hypotheses, worldview nodes, or single-comparison structure.
+Stage 1 contains three mandatory component locks within Frame; Stage 2 contains two within Evidence. Consolidation does not remove any component gate or change the criteria, hypotheses, worldview nodes, or single-comparison structure.
 
 ### 2.3 Owner Neutrality Lock (10) — 1.1 clarified
 
@@ -91,7 +91,7 @@ Continuing locks:
 The protocol fails design review unless it guarantees all three:
 
 1. **Dual steelman** — H-V and H-R each get full academic strength (parity, specificity, self-risk, matched downstream social mechanisms). Neither cartooned, emptied, or softened.  
-2. **Fairest abductive criteria** — researched and frozen *before* builds; literature-derived; symmetric; ordinal; no post-hoc rulers; shared mechanisms cancel; discriminating rows explicit; weighting challenges recorded; hostile-reader Pass on the criteria themselves. Criteria must not be cooked to privilege either hyp.  
+2. **Fairest abductive criteria** — researched and frozen *before* builds; literature-derived; symmetric; ordinal; no post-hoc rulers; shared mechanisms cancel; discriminating rows explicit; challenges to evidential strength recorded; hostile-reader Pass on the criteria themselves. Criteria must not be cooked to privilege either hyp.  
 3. **No relevant-data omission** — total-evidence discipline: Christian historical record *and* relevant background (apparition/bereavement comparanda, Jewish categories, miracle epistemology, strongest H-R *and* H-V scholarship). Contested → Contested/sensitivity, never silent drop. Excluded needs an explicit reason. Gaps named. Tomb/group and other H-R-favorable claims must appear somewhere **testable**. Do not cherry-pick or pad for either side.
 
 The thin Neutrality Gate (§12) **must check these three explicitly**, plus anti-abstention.
@@ -193,7 +193,7 @@ Complete components 1A, 1B, and 1C in order; all must pass before Stage 2.
 **Candidate criterion families (proposal fodder; owner locks a thin discriminating set):**  
 Likelihood/fit · content-fit (raised / appeared / burial language) · parsimony / ontological economy · type-familiarity / analogy · explanatory scope · total-evidence coherence · auxiliary cost · precision / ad-hocness · causal unity · discriminating power · source independence · vulnerability (losing conditions) · robustness to contested data.
 
-**Scoring rule (locked here):** Ordinal direction labels only (`H-R+` / `H-V+` / `≈` / `insuf`); these do not measure the magnitude of an advantage. No cardinal probabilities unless owner later adds a *named optional* numeric appendix. Shared downstream telling (ordinary rumor, liturgy, memory, group reinforcement) **cancels**. Default **equal family weight** (`w=1`); any non-equal *criterion* change requires written challenge + owner lock **before Stage 3**. Pack baseline criteria: `stages/01-frame.md` (C1–C8). **Stage 4 aggregation lenses** (Equal / C3-heavy / C1-heavy) are required sensitivity aggregations over the *same* cells — they are **not** new criteria and do **not** cook the ruler (see Stage 4).
+**Scoring rule (locked here):** Ordinal direction labels only (`H-R+` / `H-V+` / `≈` / `insuf`); these do not measure the magnitude of an advantage. No cardinal probabilities unless owner later adds a *named optional* numeric appendix. Shared downstream telling (ordinary rumor, liturgy, memory, group reinforcement) **cancels**. Pack baseline criteria: `stages/01-frame.md` (C1–C8). No numerical criterion weights or mandatory aggregation profiles. Justify each node's conclusion from the nonduplicated reasons and their explained evidential strength (see Stage 4).
 
 **1.1 neutrality on criteria:** Do not cook families or scales to privilege H-R or H-V. Cooking criteria is a Neutrality Fail, distinct from honest discriminating power.
 
@@ -203,7 +203,7 @@ Likelihood/fit · content-fit (raised / appeared / burial language) · parsimony
 - Each criterion has scoring scale, evidence-access rule, shared-mechanism cancellation rule.  
 - Symmetric application to H-V and H-R.  
 - Discriminating vs canceling rows distinguished.  
-- Weighting rule frozen; challenges recorded.  
+- Synthesis rules frozen; challenges to evidential strength recorded.  
 - Hostile-reader Pass on the criteria themselves (hard success #2).  
 - Timestamped before Stage 3; criteria section READ-ONLY.
 
@@ -381,39 +381,19 @@ Pre-register slices in `Evidence §2A`. Run all registered slices or none (no on
 
 **Work:** Fill locked scorecard **once per node** (**B, T, G, C**). Base = evidence Slice A. Sensitivity = pre-registered evidence Slices B/C (slice letters ≠ worldview nodes). Thin attack/refutation ledger only for *criteria applications* (smuggle, cartoon, dropped losing condition) — capped at strongest **N** objections per side.
 
-#### Aggregation lenses (1.1 — required after equal-weight profile)
-
-Scorecards stay **C1–C8**. Primary profile = **equal weights** (`w=1`). After cells are filled, Stage 4 **must publish three aggregations over the same cells** (do **not** cook criteria; do **not** invent new families):
-
-1. **Equal** — default primary (`w(Ci)=1` all).
-2. **C3-heavy** — total-evidence coherence weighted strongest (`w(C3)=3`; others `1`).
-3. **C1-heavy** — content-fit weighted strongest (`w(C1)=3`; others `1`).
-
-**Lenses are aggregations, not new criteria.** Anti-abstention still governs cell-filling. Report each lens per node; no blended overall winner across nodes. **Equal-weight remains the primary profile.**
-
 ### Criteria are questions, not independent votes
 
-C1–C8 organize explanatory assessment; neither a count of favorable labels nor a weighted total determines the verdict. Ordinal labels indicate direction, not the size of an advantage. Equal weights do not establish independence or equal evidential strength.
+C1–C8 organize explanatory assessment; neither a count of favorable labels nor a weighted total determines the verdict. Ordinal labels indicate direction, not the size of an advantage.
 
 For every claimed advantage, identify (1) the evidence or reasoning supporting it, (2) whether that support also appears under another criterion, and (3) how strongly it distinguishes the complete models, with an explanation of that strength and its uncertainty. Give each underlying reason a stable ID. A reason may inform several criteria, but its repeated appearances supply no additional independent support. Explain any distinct contribution instead of assuming that differently named criteria provide new reasons.
 
 For each worldview node, synthesize the strongest nonduplicated reasons, address the strongest opposing reason, and explain why the balance supports H-R ahead, H-V ahead, or underdetermined. One well-supported discriminator can outweigh several modest or overlapping advantages; this must be argued, not assumed. State what disputed evidence or assumption could reverse the judgment.
 
-Equal / C3-heavy / C1-heavy remain required diagnostic sensitivity profiles using the existing weights. Equal is the baseline presentation, not a binding voting rule. Each lens needs a reasoned interpretation that respects dependence and evidential strength. Explain changes across lenses; numerical totals or counts of favorable criteria are never sufficient grounds for a verdict.
+Test whether the judgment survives admissible changes in disputed evidence, source dependence, and worldview assumptions. Explain any resulting change in the balance of reasons. No numerical criterion weights or aggregation profiles are required.
 
-#### Owner honesty checks (aggregation lenses)
+### Checks on assumptions and evidence
 
-**C3-heavy — per-node metaphysics tag (required):**
-
-- Tag each node **ARGUED+LOCKED** (metaphysics relevant to C3 is argued and locked for *this* node) or **SMUGGLED** (metaphysics imported without node-level lock/argument).
-- If **SMUGGLED**: **C3-heavy must not be treated as decisive** for that node — flag and downgrade commentary (Equal remains primary).
-
-**C1-heavy — per-criterion-or-node bridge tag (required):**
-
-- Tag each criterion-or-node **EVIDENCE-BRIDGE** (C1 rests on data → differential expectedness vs the steelman rival) or **SLOGAN-FIT** (slogan/label fit without that bridge).
-- If **SLOGAN-FIT**: **C1-heavy must not be treated as decisive** — flag and downgrade commentary (Equal remains primary).
-
-These tags do **not** alter anti-abstention cell-filling; they constrain how sensitivity lenses may be read.
+For C3, identify the relevant worldview assumptions and verify that the node licenses them; imported assumptions cannot support that node's judgment. For C1, explain why the evidence is more expected under one complete model than its rival; a label or slogan is not an evidential bridge. Apply these checks directly to every assessment, without special tags or weighted profiles.
 
 #### Anti-abstention rule (1.1 — constitutive for Stage 4 / IBE)
 
@@ -434,21 +414,17 @@ Unpaid auxiliaries / **unpaid bridges** do **not** by themselves auto-`insuf`.
 - **T:** “T treated as OpenTI (noumenal disclosure — Will, aesthetic intuition; not Kant-closed; Schopenhauer ancestry/gloss only). Brand not ‘Schopenhauerian TI’. Will ≠ God; T ≠ G. Causation-in-phenomena (not creatio-into-phenomena)? YES/NO. Classical H-R (personal creator God raising a corpse) treated as well-typed under T? MUST BE NO. H-V-style appearance / vision / spirit-seeing / Will-manifestation pathways allowed as well-typed? YES expected. Creatio-ban footnotes used? YES/NO (must be NO for base scoring).”  
 - **C:** “Authorization + expected vindication prior used: {quote from Frame §1C}. Circular-from-record? YES/NO. Bodily MODE locked by node? MUST BE NO. If circular YES, C cell is invalid.”  
 - **Anti-abstention:** “For each `insuf` cell: compared outstanding burdens? YES/NO. Clear ordinal difference withheld? YES/NO (YES = Fail).”
-- **C3-heavy honesty:** “Per node B/T/G/C: metaphysics for C3 = ARGUED+LOCKED / SMUGGLED. If SMUGGLED, C3-heavy not treated as decisive for that node? YES/NO.”
-- **C1-heavy honesty:** “Per criterion-or-node: C1 = EVIDENCE-BRIDGE / SLOGAN-FIT. If SLOGAN-FIT, C1-heavy not treated as decisive? YES/NO.”
 
 **Exit — Pass when all true:**
 
 - Scorecard complete for every required node (B, T, G, C) and both hypotheses; ordinal only.  
 - Shared mechanisms cancel; Contested as sensitivity; no post-hoc criteria; no blended overall winner.  
-- **Three aggregations published** after the equal-weight profile: Equal, C3-heavy, C1-heavy (same cells; lenses ≠ new criteria); Equal remains primary.  
-- **C3-heavy / C1-heavy honesty tags** present; SMUGGLED → C3-heavy not decisive for that node; SLOGAN-FIT → C1-heavy not decisive.  
-- Weighting challenges logged; reason IDs, cross-criterion dependencies, and explained evidential strength recorded. Each node has a reasoned synthesis addressing opposing support and reversal conditions; no verdict by criterion count or weighted total.  
+- Challenges to evidential strength logged; reason IDs, cross-criterion dependencies, and explained evidential strength recorded. Each node has a reasoned synthesis addressing opposing support and reversal conditions; no verdict by criterion count or weighted total.  
 - C can show H-R ahead if warranted; T can show H-V ahead where evidence warrants under OpenTI; B stays agnostic unless evidence strongly shifts under agnostic priors; G may often yield `≈`.  
 - Anti-abstention rule honored: clear ordinal differences labeled; `insuf` only after compare when warrant missing or deadlocked.  
 - Ceiling language only; auditor did not rewrite hyps or criteria.
 
-**Fail:** missing reasons ledger or per-node synthesis; unaddressed duplicate support; verdict by criterion counts or weighted totals; missing rows; invented criterion; blended winner; C inert; single B-only official court; **abstention** (protocol Fail); treating unpaid auxiliaries / unpaid bridges alone as automatic `insuf`; skipping comparative IBE; **omitting Equal / C3-heavy / C1-heavy aggregations**; treating **C3-heavy as decisive under SMUGGLED** or **C1-heavy as decisive under SLOGAN-FIT**.
+**Fail:** missing reasons ledger or per-node synthesis; unaddressed duplicate support; verdict by criterion counts or weighted totals; missing rows; invented criterion; blended winner; C inert; single B-only official court; **abstention** (protocol Fail); treating unpaid auxiliaries / unpaid bridges alone as automatic `insuf`; skipping comparative IBE.
 
 ---
 
@@ -459,7 +435,7 @@ Unpaid auxiliaries / **unpaid bridges** do **not** by themselves auto-`insuf`.
 **Who:** Owner. Coordinator may summarize *process* only.  
 **Artifact:** `stages/05-judge.md`
 
-**Work:** Keep/cut audit cells that violate locks (including abstention); record surviving weighting challenges; publish node-wise ordinal picture + sensitivity deltas; optional repair of specific cells (not rebuild-to-win). Optional personal synthesis must be labeled **`EXTRA-PROTOCOL`** (outside the protocol court).
+**Work:** Keep/cut audit cells that violate locks (including abstention); record surviving challenges to evidential strength; publish node-wise ordinal picture + sensitivity deltas; optional repair of specific cells (not rebuild-to-win). Optional personal synthesis must be labeled **`EXTRA-PROTOCOL`** (outside the protocol court).
 
 **Exit — Pass when all true:**
 
@@ -496,11 +472,11 @@ The pack contains hypothesis/criteria baselines and unfilled templates, not a co
 3. **Criterion ID** — from `Frame §1B`  
 4. **Criterion definition** — short  
 5. **Score** — ordinal (`--`/`-`/`0`/`+`/`++` or `H-R+`/`H-V+`/`≈`/`insuf`)  
-6. **Weight** — default locked; changes only by owner reopening criteria lock  
+6. **Differential strength** — explain the magnitude and uncertainty of the advantage; no numerical weight  
 7. **Evidence item IDs** — from `Evidence §2A` / `Evidence §2B`  
 8. **Sensitivity** — A / B / C / None  
 9. **Basis** — one-line reason (must show burden comparison when claiming `insuf`)  
-10. **Limitation / weighting challenge** — logged, not silently resolved  
+10. **Limitation / challenge to evidential strength** — logged, not silently resolved  
 11. **Cancel?** — shared-mechanism cancel mark  
 12. **Owner keep/cut** — Stage 5  
 
@@ -511,11 +487,11 @@ The pack contains hypothesis/criteria baselines and unfilled templates, not a co
 3. Same score on a row → `0` / `≈` = non-discriminating.  
 4. Score depends on Contested → sensitivity row.  
 5. Ordinal only (unless owner-approved optional numeric appendix).  
-6. Weighting challenges recorded; do not silently change weights.  
+6. Challenges to evidential strength recorded; justify differences in evidential strength; do not silently change criteria.  
 7. C may produce H-R ahead; T may produce H-V ahead; B stays agnostic unless evidence strongly shifts under agnostic priors; G often `≈`.  
-8. Under each node list: (i) base Slice-A equal-weight profile, (ii) discriminating families, (iii) sensitivity deltas, (iv) **Equal / C3-heavy / C1-heavy aggregations** over the same cells, with **C3-heavy ARGUED+LOCKED/SMUGGLED** and **C1-heavy EVIDENCE-BRIDGE/SLOGAN-FIT** tags.  
-9. Legal summary template: `Under {node}: strongest nonduplicated reasons {IDs and explained strength}; strongest counterreason {ID and response}; judgment {H-R ahead / H-V ahead / underdetermined}; reversal conditions {evidence/assumptions}.` Criterion counts are not a verdict. Repeat net under each aggregation lens; do not treat C3-heavy as decisive if SMUGGLED, or C1-heavy as decisive if SLOGAN-FIT.  
-10. **Anti-abstention:** do not replace a clear ordinal net with a wall of `insuf`. Lenses do not excuse unfilled cells.
+8. Under each node list: (i) base Slice-A criterion assessments, (ii) strongest nonduplicated discriminating reasons and explained strength, (iii) sensitivity to evidence Slices B/C and assumptions, (iv) the justified conclusion, strongest counterreason, and reversal conditions. Check that worldview assumptions are licensed and expectedness claims have explicit evidential bridges.  
+9. Legal summary template: `Under {node}: strongest nonduplicated reasons {IDs and explained strength}; strongest counterreason {ID and response}; judgment {H-R ahead / H-V ahead / underdetermined}; reversal conditions {evidence/assumptions}.` Criterion counts are not a verdict.  
+10. **Anti-abstention:** do not replace a clear ordinal net with a wall of `insuf`. Reasoned synthesis does not excuse unfilled cells.
 
 ---
 
@@ -647,7 +623,7 @@ Not a fourth hyp argument. Not self-graded by the seat that wrote soft language.
 | # | Check | Pass condition |
 |---|---|---|
 | N0a | **Hard success: Dual steelman** | Both memos meet full template: parity, specificity, self-risk, auxiliaries, losing conditions; neither cartooned/emptied/softened |
-| N0b | **Hard success: Fairest criteria** | Stage 1 timestamp before Stage 3; literature-derived; symmetric; ordinal; shared mechanisms cancel; discriminating rows explicit; weighting challenges recorded; **not cooked** to privilege either hyp; no new criteria in audit |
+| N0b | **Hard success: Fairest criteria** | Stage 1 timestamp before Stage 3; literature-derived; symmetric; ordinal; shared mechanisms cancel; discriminating rows explicit; challenges to evidential strength recorded; **not cooked** to privilege either hyp; no new criteria in audit |
 | N0c | **Hard success: No relevant-data omission** | Dossier includes strongest H-R *and* H-V scholarship, comparanda, Jewish categories, miracle epistemology; gaps named; tomb/group/Paul/James appear testable; **no cherry-pick / pad** |
 | N0d | **Anti-abstention** | Stage 4 compares outstanding burdens; clear ordinal differences labeled `H-R+`/`H-V+`/`≈`; `insuf` only after compare when warrant missing or deadlocked; unpaid auxiliaries alone ≠ automatic insuf |
 | N0e | Reasons, not votes | Stage 4 explains reason dependence and differential strength, synthesizes nonduplicated support per node, addresses the strongest counterreason and reversal conditions, and does not decide by counts or weighted totals |
@@ -686,7 +662,7 @@ Not a fourth hyp argument. Not self-graded by the seat that wrote soft language.
 - One screen + file pointers to the five stage entries under `stages/` and this runbook.  
 - Points at locks by **reference**; never restates criteria/tree/hyps.  
 - Does **not** override locked stage artifacts.  
-- Version-pinned to `HVHR-IBE-RB-1.7`. **If conflict, runbook + locked artifacts win.**  
+- Version-pinned to `HVHR-IBE-RB-1.8`. **If conflict, runbook + locked artifacts win.**  
 - Optional **“next stage only”** mode.  
 - No hyp-favoring examples inside the prompt.  
 - Change runbook → bump version → re-issue prompt. Never edit prompt mid-run as a side constitution.
@@ -712,9 +688,9 @@ Underdetermination, H-V ahead, and H-R ahead are legitimate *possible outputs of
 
 ## 16. Launch sequence (ops)
 
-1. Owner accepts this runbook as `HVHR-IBE-RB-1.7` (or merges then locks).  
+1. Owner accepts this runbook as `HVHR-IBE-RB-1.8` (or merges then locks).  
 2. Run Neutrality Gate on the *protocol* (incl. N0d anti-abstention).  
-3. Issue stage-routed Master Prompt v1.7.  
+3. Issue stage-routed Master Prompt v1.8.  
 4. Execute Stages 1–2; freeze; hash if available.  
 5. Open two fresh constructor threads with identical lock bundle.  
 6. Freeze Stage 3 memos.  
@@ -779,12 +755,12 @@ Adversarial notes for Frame §1C semantics — tree is the **1.1 slim set**:
 
 ---
 
-*End of runbook `HVHR-IBE-RB-1.7`. Method only. No hypothesis verdict.*
+*End of runbook `HVHR-IBE-RB-1.8`. Method only. No hypothesis verdict.*
 
 ---
 ## FREEZE RECORD
 
-**Version:** `HVHR-IBE-RB-1.7`; reason-based criteria synthesis authorized by Owner on 2026-09-29 (America/Chicago).
-**Supersedes:** v1.6 for new runs. Old runs remain pinned to their original version; retrieve their files from Git history.
-**Scope:** retain H-R and H-V only, with two blind construction memos and one comparative audit. Both hypotheses, C1–C8 definitions, diagnostic weights, nodes, and lenses remain unchanged. Require explicit reason dependence, evidential strength, and reasoned synthesis; no verdict by criterion counts or weighted totals.
+**Version:** `HVHR-IBE-RB-1.8`; removal of mandatory weighting profiles authorized by Owner on 2026-09-29 (America/Chicago).
+**Supersedes:** v1.7 for new runs. Old runs remain pinned to their original version; retrieve their files from Git history.
+**Scope:** retain H-R and H-V only, with two blind construction memos and one comparative audit. Both hypotheses, C1–C8 definitions, ordinal labels, and worldview nodes remain unchanged. Numerical weights and mandatory aggregation profiles are removed. Require explicit reason dependence, evidential strength, and reasoned synthesis; no verdict by criterion counts or weighted totals.
 **No mid-run edit** without version bump and reissued launcher.

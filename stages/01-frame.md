@@ -1,6 +1,6 @@
 # Stage 1 — Frame
 
-**Protocol:** `HVHR-IBE-RB-1.7`
+**Protocol:** `HVHR-IBE-RB-1.8`
 **Status:** current hypothesis and criterion pack baselines below; complete the presupposition section and all component gates for each new run.
 
 Complete and approve 1A → 1B → 1C in order. A component lock freezes that section's substantive contents while the remaining sections are completed. After all three pass, freeze this whole file and emit `receipts/stage01.json`. Any supporting criteria crosswalk belongs within §1B. No extra ART files are needed.
@@ -20,7 +20,7 @@ Complete and approve 1A → 1B → 1C in order. A component lock freezes that se
 
 ### Required comparison
 
-Stage 4 compares **H-R vs H-V** under each worldview node. Ordinal labels are `H-R+` / `H-V+` / `≈` / `insuf` (see Frame §1B). Anti-abstention and the three weight lenses apply to this comparison. The machine-readable comparison ID is `HR-HV`.
+Stage 4 compares **H-R vs H-V** under each worldview node. Ordinal labels are `H-R+` / `H-V+` / `≈` / `insuf` (see Frame §1B). Anti-abstention and reasoned synthesis apply to this comparison. The machine-readable comparison ID is `HR-HV`.
 
 ### Mode ≠ source
 
@@ -60,56 +60,32 @@ Encounter **mode** is not causal **source**. H-R may include visionary encounter
 | **C7** | Discriminating power / vulnerability | Capacity to distinguish possible records and expose the model to identifiable adverse evidence. |
 | **C8** | Robustness to contested data | Stability of warranted adequacy across admissible changes in contested claims, dependence, and auxiliaries. |
 
-**Diagnostic profile weights (not votes):** `w(C1) = … = w(C8) = 1` (equal). Subfunctions get no extra weights.
-
 ### Ordinal scale — H-R vs H-V
 
 Stage 4 applies `H-R+` / `H-V+` / `≈` / `insuf` to the H-R vs H-V comparison under each B/T/G/C node.
 
 No probabilities. Shared downstream telling cancels. Mode ≠ source (see Frame §1A). Do not blend worldview nodes into one overall crown.
 
-### Stage 4 aggregation lenses (owner lock for new runs)
+### Checks on assumptions and evidence
 
-Scorecards stay **C1–C8** with the **equal-weight primary profile**. After filling cells, Stage 4 **must also publish two sensitivity aggregations over the same cells** (do **not** cook criteria; do **not** invent new families) — **per node**:
-
-1. **Equal** — default; all `w = 1` (primary).
-2. **C3-heavy** — total-evidence coherence weighted strongest (`w(C3) = 3`; others `1`).
-3. **C1-heavy** — content-fit weighted strongest (`w(C1) = 3`; others `1`).
-
-**Lenses are aggregations, not new criteria.** Anti-abstention still applies to filling cells **per node**: unpaid bridges ≠ auto-`insuf`; assign the court-appropriate `H-R+` / `H-V+` / `≈` when ordinal difference is clear; `insuf` only after compare when warrant missing or deadlocked. **Equal-weight remains primary** in the comparison.
-
-#### Owner Stage-4 honesty checks (aggregation lenses)
-
-When publishing **C3-heavy**, require an explicit **per-node** tag (per node):
-
-- **ARGUED+LOCKED** — the metaphysics relevant to C3 is argued and locked **for this node**, or
-- **SMUGGLED** — metaphysics is smuggled (imported without node-level lock/argument).
-
-If **SMUGGLED**, **C3-heavy must not be treated as decisive** for that node (flag / downgrade commentary).
-
-When publishing **C1-heavy**, require an explicit **per-criterion-or-node** tag (per node):
-
-- **EVIDENCE-BRIDGE** — C1 rests on a bridge from data → differential expectedness vs the steelman rival, or
-- **SLOGAN-FIT** — C1 is slogan-fit only (label / catchphrase without that bridge).
-
-If **SLOGAN-FIT**, **C1-heavy must not be treated as decisive**.
+For C3, identify the relevant worldview assumptions and verify that the node licenses them; imported assumptions cannot support that node's judgment. For C1, explain why the evidence is more expected under one complete model than its rival; a label or slogan is not an evidential bridge. Apply these checks directly to every assessment, without special tags or weighted profiles.
 
 ### Criteria are questions, not independent votes
 
-C1–C8 organize explanatory assessment; neither a count of favorable labels nor a weighted total determines the verdict. Ordinal labels indicate direction, not the size of an advantage. Equal weights do not establish independence or equal evidential strength.
+C1–C8 organize explanatory assessment; neither a count of favorable labels nor a weighted total determines the verdict. Ordinal labels indicate direction, not the size of an advantage.
 
 For every claimed advantage, identify (1) the evidence or reasoning supporting it, (2) whether that support also appears under another criterion, and (3) how strongly it distinguishes the complete models, with an explanation of that strength and its uncertainty. Give each underlying reason a stable ID. A reason may inform several criteria, but its repeated appearances supply no additional independent support. Explain any distinct contribution instead of assuming that differently named criteria provide new reasons.
 
 For each worldview node, synthesize the strongest nonduplicated reasons, address the strongest opposing reason, and explain why the balance supports H-R ahead, H-V ahead, or underdetermined. One well-supported discriminator can outweigh several modest or overlapping advantages; this must be argued, not assumed. State what disputed evidence or assumption could reverse the judgment.
 
-Equal / C3-heavy / C1-heavy remain required diagnostic sensitivity profiles using the existing weights. Equal is the baseline presentation, not a binding voting rule. Each lens needs a reasoned interpretation that respects dependence and evidential strength. Explain changes across lenses; numerical totals or counts of favorable criteria are never sufficient grounds for a verdict.
+Test whether the judgment survives admissible changes in disputed evidence, source dependence, and worldview assumptions. Explain any resulting change in the balance of reasons. No numerical criterion weights or aggregation profiles are required.
 
 ### Essentials (anti-cooking)
 
 - Lock criteria before Stage 3 builds; timestamp; READ-ONLY thereafter.
 - Unit of assessment = complete Stage 3 model (locked hyp + disclosed auxiliaries).
 - No duplicate reasons across families; independence is access discipline, not a ninth criterion.
-- Weight changes after lock need owner version bump + symmetrical reapplication.
+- Changes to the locked criteria or synthesis rules need owner version bump + symmetrical reapplication.
 
 ---
 

@@ -1,5 +1,5 @@
 ---
-protocol: HVHR-IBE-RB-1.7
+protocol: HVHR-IBE-RB-1.8
 artifact: NEUTRALITY_GATE.md
 status: EMPTY SHELL (fill after protocol merge and/or after Stage 4 of a live run)
 ---
@@ -18,7 +18,7 @@ This file remains the **substantive/fairness gate**. It asks questions that requ
 
 Neither gate substitutes for the other.
 
-For a live 1.7 run, after this checklist is completed, create `receipts/neutrality.json` with the independent reader identity, this artifact's fingerprint, completion time, overall result, and unresolved Fail count. Stage 5 remains blocked unless this Neutrality Gate is `PASS` **and** the Deterministic Protocol Gate returns `PASS` with `stage5_allowed: true`.
+For a live 1.8 run, after this checklist is completed, create `receipts/neutrality.json` with the independent reader identity, this artifact's fingerprint, completion time, overall result, and unresolved Fail count. Stage 5 remains blocked unless this Neutrality Gate is `PASS` **and** the Deterministic Protocol Gate returns `PASS` with `stage5_allowed: true`.
 
 ## Scope of this fill
 
@@ -50,6 +50,7 @@ For a live 1.7 run, after this checklist is completed, create `receipts/neutrali
 | 15 | Shared mechanisms cancel | Scorecard marks ordinary telling as cancel where shared | | |
 | 16 | Hostile Slice C available | Hostile-to-appearance-model tomb/group grant defined | | |
 | 17 | Neutrality ≠ abstention | Checklist/audit do not treat refusal to label as fairness | | |
+| 20 | Assumptions and evidence | C3 uses only licensed node assumptions; C1 explains differential expectedness from evidence; unsupported claims cannot support the verdict | | |
 | 19 | Reasons, not votes | Stage 4 records supporting evidence, reason IDs, overlap, and explained differential strength; each node addresses its strongest counterreason and reversal conditions; no verdict by counts or weighted totals | | |
 | 18 | Comparison complete | H-R vs H-V receives all required B/T/G/C node and C1–C8 criterion comparisons | | |
 

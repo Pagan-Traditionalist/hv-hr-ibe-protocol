@@ -1,5 +1,5 @@
 {
-  "protocol_version": "HVHR-IBE-RB-1.7",
+  "protocol_version": "HVHR-IBE-RB-1.8",
   "criteria": [
     "C1",
     "C2",
@@ -24,27 +24,5 @@
       "label": "insuf"
     }
   ],
-  "aggregations": [
-    {
-      "court": "HR-HV",
-      "node": "B",
-      "lens": "Equal",
-      "net": "underdetermined"
-    },
-    {
-      "court": "HR-HV",
-      "node": "B",
-      "lens": "C3-heavy",
-      "net": "underdetermined",
-      "honesty_tag": "ARGUED+LOCKED"
-    },
-    {
-      "court": "HR-HV",
-      "node": "B",
-      "lens": "C1-heavy",
-      "net": "H-R ahead",
-      "honesty_tag": "EVIDENCE-BRIDGE"
-    }
-  ],
-  "example_note": "Shape only. A live file must contain all 32 court/node/criterion cells and all 12 court/node/lens aggregations. Each net is a reasoned diagnostic summary, not a vote tally. The fingerprinted Stage 4 artifact must include the reasons ledger, dependence and strength assessments, per-node synthesis, counterreasons, and reversal conditions."
+  "example_note": "Shape only. A live file must contain all 32 court/node/criterion cells. The fingerprinted Stage 4 artifact must include the reasons ledger, dependence and strength assessments, per-node synthesis, counterreasons, reversal conditions, and evidence/assumption sensitivity."
 }

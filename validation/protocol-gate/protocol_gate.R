@@ -2,7 +2,7 @@
 
 suppressPackageStartupMessages(library(jsonlite))
 
-EXPECTED_PROTOCOL <- "HVHR-IBE-RB-1.7"
+EXPECTED_PROTOCOL <- "HVHR-IBE-RB-1.8"
 
 args <- commandArgs(trailingOnly = TRUE)
 if (length(args) != 1) {
@@ -229,37 +229,7 @@ if (!is.null(stage4)) {
       }
     }
 
-    aggs <- matrix$aggregations %||% list()
-    if (length(aggs) != 12) add_fail("Stage 4 matrix must contain exactly 12 aggregations")
-    if (any(vapply(aggs, function(x) !identical(as.character(x$court %||% ""), "HR-HV"), logical(1)))) {
-      add_fail("Stage 4 aggregations contain an unexpected comparison")
-    }
-    agg_keys <- vapply(aggs, function(x) paste(x$court %||% "", x$node %||% "", x$lens %||% "", sep = "|"), character(1))
-    if (anyDuplicated(agg_keys)) add_fail("Stage 4 matrix contains duplicate aggregation rows")
 
-    for (court in "HR-HV") {
-      legal_net <- c("H-R ahead", "H-V ahead", "underdetermined")
-      for (node in c("B", "T", "G", "C")) {
-        for (lens in c("Equal", "C3-heavy", "C1-heavy")) {
-          key <- paste(court, node, lens, sep = "|")
-          hits <- which(agg_keys == key)
-          if (length(hits) != 1) {
-            add_fail(paste0("Stage 4 matrix missing required aggregation: ", key))
-          } else {
-            row <- aggs[[hits]]
-            net <- as.character(row$net %||% "")
-            if (!(net %in% legal_net)) add_fail(paste0("Illegal aggregation net in ", key, ": ", net))
-            tag <- as.character(row$honesty_tag %||% "")
-            if (lens == "C3-heavy" && !(tag %in% c("ARGUED+LOCKED", "SMUGGLED"))) {
-              add_fail(paste0("C3-heavy aggregation missing legal honesty_tag in ", key))
-            }
-            if (lens == "C1-heavy" && !(tag %in% c("EVIDENCE-BRIDGE", "SLOGAN-FIT"))) {
-              add_fail(paste0("C1-heavy aggregation missing legal honesty_tag in ", key))
-            }
-          }
-        }
-      }
-    }
   }
 }
 

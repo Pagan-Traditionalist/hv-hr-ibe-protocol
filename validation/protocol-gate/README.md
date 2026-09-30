@@ -33,7 +33,7 @@ A failed invariant returns a non-zero process exit code and blocks Stage 5.
 
 The gate checks, among other things:
 
-- exact protocol version (`HVHR-IBE-RB-1.7`);
+- exact protocol version (`HVHR-IBE-RB-1.8`);
 - artifact existence and MD5 integrity fingerprints;
 - Stages 1–2 lock ordering before Stage 3;
 - identical declared official packet fingerprint across all Stage-3 constructors;
@@ -42,8 +42,6 @@ The gate checks, among other things:
 - all construction memos freeze before Stage 4 begins;
 - Stage-4 auditor is not a constructor;
 - all 32 required court/node/criterion cells are present with legal labels;
-- all 12 required court/node/lens aggregations are present;
-- required C3-heavy and C1-heavy honesty tags are present;
 - Neutrality Gate receipt is `PASS` and independent as declared;
 - unresolved fail counts are zero.
 
