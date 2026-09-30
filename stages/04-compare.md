@@ -1,6 +1,6 @@
 # Stage 4 — Compare and challenge
 
-**Protocol pin:** `HVHR-IBE-RB-1.8`  
+**Protocol pin:** `HVHR-IBE-RB-1.9`  
 **Nodes:** **B / T / G / C** only. **One comparison: H-R vs H-V**; no blended verdict across nodes.
 
 Stage 3 builds **H-R** and **H-V**. Stage 4 scores:
