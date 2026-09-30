@@ -1,6 +1,6 @@
 # Stage 2 — Establish the evidence
 
-**Protocol:** `HVHR-IBE-RB-1.5`
+**Protocol:** `HVHR-IBE-RB-1.6`
 **Status:** empty live-run template.
 
 Complete and approve 2A → 2B in order. Lock the record section before completing the dossier; then freeze the whole file and emit `receipts/stage02.json`. The supporting ledgers belong in this file. Builders receive the same frozen Frame and Evidence files.

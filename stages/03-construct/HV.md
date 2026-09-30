@@ -8,7 +8,9 @@
 
 ## 2. Causal model / positive pathway
 
-Apparitions (phenomenally actual, veridical content with costed extra-mental correlate) → interpretation → social formation → extant record:
+Real spiritual presence → experiences psychologically shaped and identified as Jesus → religious interpretation and social reinforcement → resurrection belief and proclamation, alongside ordinary psychological experiences:
+
+Explain the individual and group pathways and their fit to the locked record. Some experiences have a real spiritual basis under H-V; not every encounter must have one. Neither accurate Jesus identification nor Jesus’s continued personal existence or bodily resurrection is required.
 
 …
 
@@ -33,7 +35,7 @@ Apparitions (phenomenally actual, veridical content with costed extra-mental cor
 
 ## 5. Auxiliaries with cost
 
-Extra-mental correlate specified as a **costed posit** (not empty / “whatever we need”):
+Real spiritual presence treated as a **costed posit**. Its nature and enabling conditions remain unspecified. State the explanatory work, support, assumptions, and limits of this posit; do not fill the unspecified details with whichever mechanism a particular datum needs:
 
 …
 
@@ -47,7 +49,7 @@ Extra-mental correlate specified as a **costed posit** (not empty / “whatever 
 
 ## 8. Empty-correlate ban compliance
 
-Sincerity ≠ veridicality. Correlate nonempty and costed. …
+Sincerity and reports of visions do not establish a spiritual source. H-V commits to a real spiritual presence in some experiences; veridicality does not extend to the Jesus identification or Jesus-related content. Assess support for that presence separately from psychological shaping and testimony. The historical evidence may leave the source unresolved; distinguish this from worldview-based plausibility. …
 
 ## 9. Downstream telling (ordinary — cancelable)
 

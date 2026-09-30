@@ -1,7 +1,7 @@
 # Stage 1 — Frame
 
-**Protocol:** `HVHR-IBE-RB-1.5`
-**Status:** hypothesis and criterion pack baselines preserved below; complete the presupposition section and all component gates for each new run.
+**Protocol:** `HVHR-IBE-RB-1.6`
+**Status:** current hypothesis and criterion pack baselines below; complete the presupposition section and all component gates for each new run.
 
 Complete and approve 1A → 1B → 1C in order. A component lock freezes that section's substantive contents while the remaining sections are completed. After all three pass, freeze this whole file and emit `receipts/stage01.json`. Any supporting criteria crosswalk belongs within §1B. No extra ART files are needed.
 
@@ -15,7 +15,7 @@ Complete and approve 1A → 1B → 1C in order. A component lock freezes that se
 
 ### Locked H-V (quoted atomic)
 
-> After Jesus’s death, persons underwent phenomenally actual visionary appearance experiences in which Jesus was experienced or identified as present. These experiences were mediated through ordinary human psychological, cognitive, perceptual, mnemonic, and affective processes; nevertheless, at least some substantively significant Jesus-related content was veridical because a real extra-mental correlate genuinely contributed to that content. These experiences occurred without Jesus having been raised into transformed bodily life and did not consist in sustained ordinary bodily encounters with a resurrected Jesus. Their interpretation within their historical setting—including available Jewish categories—and the transmission and social reinforcement of testimony generated and stabilized resurrection belief and proclamation, appearance traditions, the early creed and appearance list, and the continuing movement. Ordinary transmission, elaboration, and literary shaping may account for later forms where supported by the locked evidence.
+> After Jesus’s death, some persons underwent experiences of a real spiritual presence that their psychological processes shaped and identified as encounters with Jesus. These experiences did not require Jesus’s continued personal existence or transformed bodily resurrection. Their interpretation within available religious categories, together with ordinary psychological experiences and the transmission and social reinforcement of testimony, contributed to the emergence and stabilization of resurrection belief and proclamation. The nature of the spiritual presence and the conditions enabling these experiences remain unspecified.
 
 
 ### Required comparison
@@ -31,12 +31,14 @@ Encounter **mode** is not causal **source**. H-R may include visionary encounter
 | Model | Auxiliaries | Losing conditions |
 |---|---|---|
 | H-R | encounter pathways; divine intention; individual/group; interpretation; social formation; later telling — costed | explicit lose conditions |
-| H-V | correlate + substantive veridical content + relation; encounter pathways; interpretation; social formation; later telling — costed | explicit lose conditions |
+| H-V | real spiritual presence + psychologically shaped Jesus identification; encounter pathways; interpretation; social formation; later telling — costed | explicit lose conditions |
 
 ### Parity notes
 
-- Downstream telling sentences matched for parity across H-R / H-V.
-- H-V correlate: unspecified but substantively nonempty; sincerity ≠ veridicality.
+- Apply the same evidential standards to downstream telling under H-R / H-V; supported shared mechanisms cancel.
+- H-V requires a real spiritual presence in some experiences, not in every encounter. Its nature and enabling conditions remain unspecified. Sincerity alone does not establish that presence.
+- Veridicality here concerns the presence itself, not the accuracy of its identification as Jesus or of Jesus-related content. H-V does not require Jesus’s continued personal existence or bodily resurrection.
+- Historical evidence may leave the spiritual source unresolved. State separately any support supplied by worldview assumptions; uncertainty does not guarantee either model a win.
 - No named metaphysics in H-V identity.
 
 ---
