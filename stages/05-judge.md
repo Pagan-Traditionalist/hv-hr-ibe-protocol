@@ -1,6 +1,6 @@
 # Stage 5 — Judge
 
-**Protocol pin:** `HVHR-IBE-RB-1.6`  
+**Protocol pin:** `HVHR-IBE-RB-1.7`  
 **Role:** Owner keep/cut of audit cells that violate locks (including abstention). No blended overall winner as protocol output. Ceiling language only.
 
 ## Per-node keep/cut
@@ -12,7 +12,18 @@
 | G | | | |
 | C | | | |
 
-## Aggregation lens commentary (optional; Equal remains primary)
+## Reasoned judgment (required per node)
+
+| Node | Retained reason IDs and explained evidential strength | Overlap removed from the balance | Strongest opposing reason and response | Warranted judgment and reversal conditions |
+|---|---|---|---|---|
+| B | | | | |
+| T | | | | |
+| G | | | | |
+| C | | | | |
+
+Review the Stage 4 reasons ledger. Criteria are questions, not votes: justify the verdict from nonduplicated explanatory support, its strength, and its uncertainty. A count of favorable criteria or weighted total cannot determine the result.
+
+## Aggregation lens commentary (required; Equal is the diagnostic baseline)
 
 | Lens | Owner reading | Honesty constraints honored? |
 |---|---|---|
@@ -42,4 +53,5 @@ Label clearly **`EXTRA-PROTOCOL`** if used. Not a blended protocol winner.
 - [ ] Per-node keep/cut; no blended overall winner as protocol output
 - [ ] Ceiling language; defects named (incl. abstention if present)
 - [ ] Keep/cut reasons cite runbook clauses
+- [ ] Each node has a reasoned judgment with overlap, strength, counterreason, and reversal conditions assessed; diagnostic profiles do not substitute for justification
 - [ ] Neutrality Gate run on the *run*

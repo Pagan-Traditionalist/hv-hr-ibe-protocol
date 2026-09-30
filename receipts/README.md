@@ -2,7 +2,7 @@
 
 These receipts are **procedural evidence**, not philosophical arguments.
 
-For a live `HVHR-IBE-RB-1.6` run, create a `receipts/` directory inside the run root with these exact live filenames:
+For a live `HVHR-IBE-RB-1.7` run, create a `receipts/` directory inside the run root with these exact live filenames:
 
 ```text
 stage01.json
@@ -38,8 +38,10 @@ Use `stage-lock.example.json` for Stage 1 and `stage02-lock.example.json` for St
 The reference gate uses `tools::md5sum()` so it can run with base R plus `jsonlite`. The MD5 here is a content-integrity fingerprint, not a cryptographic signature or identity proof.
 
 
-## v1.6 consolidated stage receipts
+Matrix `aggregations[].net` values summarize reasoned diagnostic profiles, not vote counts or weighted sums. Record supporting reason IDs, dependence, explained strength, and per-node synthesis in the fingerprinted Stage 4 Markdown artifact; the Neutrality Gate reviews their substance.
+
+## v1.7 consolidated stage receipts
 
 Stage 1 fingerprints `stages/01-frame.md` once and declares `completed_components: ["hypotheses", "criteria", "presuppositions"]`. Stage 2 fingerprints `stages/02-evidence.md` once and declares `completed_components: ["record", "dossier"]`. Each section must pass its component gate before the collective stage lock. The R gate verifies the required component names and full-file integrity; component completion is an attestation, not a machine judgment of philosophical quality.
 
-Stage 1 must lock before Stage 2; both must lock before construction. Live receipts are stage01.json through stage04.json, plus stage04-audit-matrix.json and neutrality.json. Stage 5 is the gated owner judgment. Previous-version receipts are not accepted as v1.6 runs. Earlier schemas remain in Git history.
+Stage 1 must lock before Stage 2; both must lock before construction. Live receipts are stage01.json through stage04.json, plus stage04-audit-matrix.json and neutrality.json. Stage 5 is the gated owner judgment. Previous-version receipts are not accepted as v1.7 runs. Earlier schemas remain in Git history.

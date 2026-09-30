@@ -4,7 +4,7 @@
 **Package:** stage-gated protocol = substantive runbook + procedural addendum + stage artifacts + this launcher  
 **Concept:** stage-gated method  
 
-**Version pin:** `HVHR-IBE-RB-1.6`  
+**Version pin:** `HVHR-IBE-RB-1.7`  
 **Conflict rule:** If this prompt disagrees with the substantive runbook, `PROTOCOL_GATE.md`, or locked live-run artifacts, **runbook + procedural addendum + locked artifacts win**.  
 **Status:** METHOD ROUTER ONLY — no hyp verdict, no hyp-favoring examples, no restated constitution.
 
@@ -25,14 +25,14 @@ You are seat: {ROLE}
 Protocol package: stage-gated protocol
 Substantive runbook: hv-hr-stage-gated-protocol.md
 Procedural enforcement addendum: PROTOCOL_GATE.md
-Version pin: HVHR-IBE-RB-1.6
+Version pin: HVHR-IBE-RB-1.7
 Conflict rule: substantive runbook + PROTOCOL_GATE.md + locked live-run artifacts WIN over this launcher.
 Mode: NEXT STAGE ONLY — do Stage {STAGE} only; do not advance past its exit gate.
 Method only. Do NOT issue an H-R / H-V / resurrection verdict except where Stage 4 is explicitly performing the locked comparative IBE under named nodes.
 No blended verdict across worldview nodes. H-R vs H-V only. Ceiling language only (more/less expected; underdetermined; ahead under a node).
 Publishable: no secret side instructions. No peeking across blind seats.
 
-Substantive locks for 1.6 (H-V revised; H-R and C1–C8 retained):
+Substantive locks for 1.7 (hypotheses and C1–C8 definitions retained; reasoned synthesis required):
   Two locked identities: H-R (transformed-bodily resurrection), H-V (real spiritual presence with psychologically shaped Jesus identification).
   Required comparison (machine ID: HR-HV):
     H-R vs H-V — compare the complete models; spiritual presence does not establish accurate Jesus identification. Labels: H-R+ / H-V+ / ≈ / insuf
@@ -66,7 +66,7 @@ Working files (read by reference; no duplicated constitution):
   NGATE: NEUTRALITY_GATE.md
   PGATE: PROTOCOL_GATE.md
 
-Procedural 1.6 requirements:
+Procedural 1.7 requirements:
   Every completed Stage 1–4 must emit the required machine-readable receipt under receipts/.
   Every locked/frozen artifact named by a receipt must include its integrity fingerprint.
   Stages 1–2 must be locked before Stage 3 begins.
@@ -94,6 +94,10 @@ Stage router (execute only the named stage):
     AFTER equal-weight (primary) profile publish aggregations Equal / C3-heavy / C1-heavy over same cells PER COURT;
     C3-heavy needs per-node ARGUED+LOCKED vs SMUGGLED;
     C1-heavy needs EVIDENCE-BRIDGE vs SLOGAN-FIT;
+    record reason IDs, supporting evidence, cross-criterion overlap, and explained differential strength;
+    synthesize nonduplicated reasons per node, address the strongest opposing reason, and state reversal conditions;
+    criteria are questions, not independent votes; Equal is the diagnostic baseline, not a voting rule;
+    no verdict by criterion counts or weighted totals; explain each lens using the reasons ledger;
     NO blended verdict across worldview nodes;
     emit receipts/stage04.json + receipts/stage04-audit-matrix.json
   Neutrality Gate → independent hostile-reader review; emit receipts/neutrality.json
@@ -146,8 +150,8 @@ Never edit this prompt mid-run as a side constitution.
 
 ## FREEZE RECORD
 
-**Status:** FROZEN for `HVHR-IBE-RB-1.6`  
-**Substantive inheritance:** H-V revised to the owner’s spiritual-presence wording; H-R and C1–C8 retained; five-stage layout preserved.  
+**Status:** FROZEN for `HVHR-IBE-RB-1.7`  
+**Substantive inheritance:** both hypotheses and C1–C8 definitions retained; reason dependence, evidential strength, and justified synthesis required; weights are diagnostic; five-stage layout preserved.  
 **Enforcement retained:** mandatory receipts + artifact fingerprints + Stage-4 structured audit companion + deterministic R Protocol Gate + Stage-5 block unless Neutrality Gate and Protocol Gate both PASS.  
-**Supersedes:** `HVHR-IBE-RB-1.5` for new runs.  
+**Supersedes:** `HVHR-IBE-RB-1.6` for new runs.  
 **No mid-run edit** without version bump + re-issue of Master Prompt.

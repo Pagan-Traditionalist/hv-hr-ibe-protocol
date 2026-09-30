@@ -2,7 +2,7 @@
 
 suppressPackageStartupMessages(library(jsonlite))
 
-EXPECTED_PROTOCOL <- "HVHR-IBE-RB-1.6"
+EXPECTED_PROTOCOL <- "HVHR-IBE-RB-1.7"
 
 args <- commandArgs(trailingOnly = TRUE)
 if (length(args) != 1) {

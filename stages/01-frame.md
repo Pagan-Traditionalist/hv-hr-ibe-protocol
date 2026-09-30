@@ -1,6 +1,6 @@
 # Stage 1 — Frame
 
-**Protocol:** `HVHR-IBE-RB-1.6`
+**Protocol:** `HVHR-IBE-RB-1.7`
 **Status:** current hypothesis and criterion pack baselines below; complete the presupposition section and all component gates for each new run.
 
 Complete and approve 1A → 1B → 1C in order. A component lock freezes that section's substantive contents while the remaining sections are completed. After all three pass, freeze this whole file and emit `receipts/stage01.json`. Any supporting criteria crosswalk belongs within §1B. No extra ART files are needed.
@@ -60,7 +60,7 @@ Encounter **mode** is not causal **source**. H-R may include visionary encounter
 | **C7** | Discriminating power / vulnerability | Capacity to distinguish possible records and expose the model to identifiable adverse evidence. |
 | **C8** | Robustness to contested data | Stability of warranted adequacy across admissible changes in contested claims, dependence, and auxiliaries. |
 
-**Default weights:** `w(C1) = … = w(C8) = 1` (equal). Subfunctions get no extra weights.
+**Diagnostic profile weights (not votes):** `w(C1) = … = w(C8) = 1` (equal). Subfunctions get no extra weights.
 
 ### Ordinal scale — H-R vs H-V
 
@@ -93,6 +93,16 @@ When publishing **C1-heavy**, require an explicit **per-criterion-or-node** tag 
 - **SLOGAN-FIT** — C1 is slogan-fit only (label / catchphrase without that bridge).
 
 If **SLOGAN-FIT**, **C1-heavy must not be treated as decisive**.
+
+### Criteria are questions, not independent votes
+
+C1–C8 organize explanatory assessment; neither a count of favorable labels nor a weighted total determines the verdict. Ordinal labels indicate direction, not the size of an advantage. Equal weights do not establish independence or equal evidential strength.
+
+For every claimed advantage, identify (1) the evidence or reasoning supporting it, (2) whether that support also appears under another criterion, and (3) how strongly it distinguishes the complete models, with an explanation of that strength and its uncertainty. Give each underlying reason a stable ID. A reason may inform several criteria, but its repeated appearances supply no additional independent support. Explain any distinct contribution instead of assuming that differently named criteria provide new reasons.
+
+For each worldview node, synthesize the strongest nonduplicated reasons, address the strongest opposing reason, and explain why the balance supports H-R ahead, H-V ahead, or underdetermined. One well-supported discriminator can outweigh several modest or overlapping advantages; this must be argued, not assumed. State what disputed evidence or assumption could reverse the judgment.
+
+Equal / C3-heavy / C1-heavy remain required diagnostic sensitivity profiles using the existing weights. Equal is the baseline presentation, not a binding voting rule. Each lens needs a reasoned interpretation that respects dependence and evidential strength. Explain changes across lenses; numerical totals or counts of favorable criteria are never sufficient grounds for a verdict.
 
 ### Essentials (anti-cooking)
 
