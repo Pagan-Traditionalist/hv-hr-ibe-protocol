@@ -1,6 +1,6 @@
-# Deterministic Protocol Gate — HVHR-IBE-RB-1.4
+# Deterministic Protocol Gate — HVHR-IBE-RB-1.5
 
-This document adds a **cross-stage procedural enforcement layer** to the existing stage-gated H-R / H-A / H-V IBE method. It does **not** change the hypotheses, criteria, worldview nodes, record policy, steelman requirements, or comparative IBE rules in `HVHR-IBE-RB-1.4`.
+This document adds a **cross-stage procedural enforcement layer** to the existing stage-gated H-R / H-V IBE method. It does **not** change the hypotheses, criteria, worldview nodes, record policy, steelman requirements, or comparative IBE rules in `HVHR-IBE-RB-1.5`.
 
 ## Purpose
 
@@ -14,11 +14,11 @@ Three layers must remain separate:
 2. **Neutrality / fairness review** — `NEUTRALITY_GATE.md`, judged by an independent reader.
 3. **Procedural verification** — this Deterministic Protocol Gate, implemented in R.
 
-The protocol gate does not decide whether H-R, H-A, or H-V is better supported. It does not decide whether a philosophical claim is true. It checks ordering, provenance, lock continuity, artifact integrity, role separation, required coverage, and gate completion.
+The protocol gate does not decide whether H-R or H-V is better supported. It does not decide whether a philosophical claim is true. It checks ordering, provenance, lock continuity, artifact integrity, role separation, required coverage, and gate completion.
 
-## 1.4 constitutional rule
+## 1.5 constitutional rule
 
-Under `HVHR-IBE-RB-1.4`, Stage 5 is blocked until both conditions are true:
+Under `HVHR-IBE-RB-1.5`, Stage 5 is blocked until both conditions are true:
 
 - the live-run Neutrality Gate returns `PASS`; and
 - `validation/protocol-gate/protocol_gate.R` returns `PASS` with `stage5_allowed: true`.
@@ -35,7 +35,6 @@ run/
   stages/02-evidence.md
   stages/03-construct/HR.md
   stages/03-construct/HV.md
-  stages/03-construct/HA.md
   stages/04-compare.md
   NEUTRALITY_GATE.md
   receipts/
@@ -66,18 +65,18 @@ Each receipt records at minimum:
 
 The content fingerprint is mandatory. The reference R implementation uses base R `tools::md5sum()` as an integrity fingerprint. It is an integrity check, not a digital signature or adversarial security guarantee.
 
-### Stage 3 — blind triple construction
+### Stage 3 — blind dual construction
 
 The Stage-3 receipt additionally records:
 
 - Stage-3 start time;
 - the shared official packet fingerprint;
-- H-R, H-A, and H-V constructor identities;
+- H-R and H-V constructor identities;
 - each memo path and fingerprint;
 - each memo freeze time;
 - a blind-first-pass attestation for each constructor.
 
-The gate verifies that all three builders declare the **same official packet fingerprint**, that their declared roles are distinct, and that all three memos were frozen before the audit began.
+The gate verifies that both builders declare the **same official packet fingerprint**, that their declared roles are distinct, and that both memos were frozen before the audit began.
 
 The gate cannot prove that a model never saw an unofficial side channel. That remains an attested procedural fact. The system therefore distinguishes **mechanically verified facts** from **declared attestations** instead of pretending they are equivalent.
 
@@ -87,11 +86,11 @@ Stage 4 retains the human-readable `stages/04-compare.md` and adds a machine-rea
 
 The companion must cover:
 
-- both courts: `Court1` and `Court2`;
+- the sole comparison: `court: "HR-HV"`;
 - all worldview nodes: `B`, `T`, `G`, `C`;
 - all locked criteria `C1`–`C8`;
 - a legal ordinal label in every required cell;
-- all three aggregation lenses per court/node: `Equal`, `C3-heavy`, `C1-heavy`;
+- all three aggregation lenses per node: `Equal`, `C3-heavy`, `C1-heavy`;
 - the required honesty tag for each heavy lens.
 
 The R gate checks coverage and legal values. It does **not** decide whether an ordinal label is philosophically justified. Anti-abstention and fairness remain substantive questions for the auditor and Neutrality Gate.
@@ -117,7 +116,7 @@ The Protocol Gate returns `FAIL` and `stage5_allowed: false` when any required i
 - artifact fingerprint mismatch after lock;
 - Stages 1–2 lock completed after Stage 3 began;
 - Stage-3 constructors do not share the same official packet fingerprint;
-- missing H-R, H-A, or H-V construction;
+- missing H-R or H-V construction;
 - duplicate declared constructor identities;
 - missing blind-first-pass attestation;
 - Stage 4 begins before all Stage-3 memos are frozen;
@@ -145,7 +144,7 @@ A valid run produces:
 
 ```json
 {
-  "protocol_version": "HVHR-IBE-RB-1.4",
+  "protocol_version": "HVHR-IBE-RB-1.5",
   "result": "PASS",
   "stage5_allowed": true,
   "failures": []
@@ -156,11 +155,11 @@ Any failed invariant produces `FAIL`, `stage5_allowed: false`, a non-zero exit s
 
 ## Version rule
 
-`HVHR-IBE-RB-1.4` consolidates the working files under the five stages while retaining the existing substantive rules and deterministic enforcement. Any later change to philosophical content, criteria, worldview nodes, court structure, or audit logic requires a further protocol version bump.
+`HVHR-IBE-RB-1.5` uses two constructors and one H-R vs H-V comparison under the five stages while retaining the existing substantive rules and deterministic enforcement. Any later change to philosophical content, criteria, worldview nodes, court structure, or audit logic requires a further protocol version bump.
 
 
-## v1.4 consolidated stage receipts
+## v1.5 consolidated stage receipts
 
 Stage 1 fingerprints `stages/01-frame.md` once and declares `completed_components: ["hypotheses", "criteria", "presuppositions"]`. Stage 2 fingerprints `stages/02-evidence.md` once and declares `completed_components: ["record", "dossier"]`. Each section must pass its component gate before the collective stage lock. The R gate verifies the required component names and full-file integrity; component completion is an attestation, not a machine judgment of philosophical quality.
 
-Stage 1 must lock before Stage 2; both must lock before construction. Live receipts are stage01.json through stage04.json, plus stage04-audit-matrix.json and neutrality.json. Stage 5 is the gated owner judgment. Previous-version receipts are not accepted as v1.4 runs. Earlier schemas remain in Git history.
+Stage 1 must lock before Stage 2; both must lock before construction. Live receipts are stage01.json through stage04.json, plus stage04-audit-matrix.json and neutrality.json. Stage 5 is the gated owner judgment. Previous-version receipts are not accepted as v1.5 runs. Earlier schemas remain in Git history.

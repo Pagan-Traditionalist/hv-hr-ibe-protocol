@@ -1,5 +1,5 @@
 ---
-protocol: HVHR-IBE-RB-1.4
+protocol: HVHR-IBE-RB-1.5
 artifact: NEUTRALITY_GATE.md
 status: EMPTY SHELL (fill after protocol merge and/or after Stage 4 of a live run)
 ---
@@ -8,17 +8,17 @@ status: EMPTY SHELL (fill after protocol merge and/or after Stage 4 of a live ru
 
 **Thin hostile-reader checklist.** Not a fourth hyp argument. Not self-graded by the seat that wrote soft language. Owner keep/cuts any Fail. Any Fail stops publishing scores until repaired.
 
-**Neutrality ≠ abstention.** Neutrality = (a) do not cook criteria to privilege H-R, H-A, or H-V; (b) do not cherry-pick/pad record. Withholding comparative labels is **abstention** — a protocol Fail (N0d).
+**Neutrality ≠ abstention.** Neutrality = (a) do not cook criteria to privilege H-R or H-V; (b) do not cherry-pick/pad record. Withholding comparative labels is **abstention** — a protocol Fail (N0d).
 
 ## Relationship to the Deterministic Protocol Gate
 
-This file remains the **substantive/fairness gate**. It asks questions that require judgment: Were all three hypotheses genuinely steelmanned? Were the criteria fair? Was relevant evidence omitted or padded? Did the Stage-4 auditor perform comparative IBE rather than abstain?
+This file remains the **substantive/fairness gate**. It asks questions that require judgment: Were both hypotheses genuinely steelmanned? Were the criteria fair? Was relevant evidence omitted or padded? Did the Stage-4 auditor perform comparative IBE rather than abstain?
 
 `PROTOCOL_GATE.md` and `validation/protocol-gate/protocol_gate.R` perform a different job: **procedural verification**. They verify that the required receipts, versions, fingerprints, stage order, role separation, structured audit coverage, and this completed Neutrality Gate are present and internally consistent.
 
 Neither gate substitutes for the other.
 
-For a live 1.4 run, after this checklist is completed, create `receipts/neutrality.json` with the independent reader identity, this artifact's fingerprint, completion time, overall result, and unresolved Fail count. Stage 5 remains blocked unless this Neutrality Gate is `PASS` **and** the Deterministic Protocol Gate returns `PASS` with `stage5_allowed: true`.
+For a live 1.5 run, after this checklist is completed, create `receipts/neutrality.json` with the independent reader identity, this artifact's fingerprint, completion time, overall result, and unresolved Fail count. Stage 5 remains blocked unless this Neutrality Gate is `PASS` **and** the Deterministic Protocol Gate returns `PASS` with `stage5_allowed: true`.
 
 ## Scope of this fill
 
@@ -29,11 +29,11 @@ For a live 1.4 run, after this checklist is completed, create `receipts/neutrali
 
 | # | Check | Pass condition | Result (Pass/Fail) | Notes |
 |---|---|---|---|---|
-| N0a | Triple steelman | H-R, H-A, and H-V constructions meet their full locked templates; none cartooned/emptied/softened | | |
+| N0a | Dual steelman | H-R and H-V constructions meet their full locked templates; none cartooned/emptied/softened | | |
 | N0b | Fairest criteria | Frame §1B before Stage 3; not cooked; no new criteria in audit | | |
 | N0c | No relevant-data omission | Strongest H-R and appearance-model scholarship; no cherry-pick/pad | | |
-| N0d | **Anti-abstention** | Stage 4 compares burdens in both courts; clear ordinals labeled; unpaid auxiliaries alone ≠ auto-`insuf`; abstention = Fail | | |
-| 1 | Triple steelman (ops) | Frame §1A + all three Stage 3 memos preserve transformed-body H-R, bounded H-A, and costed-correlate H-V | | |
+| N0d | **Anti-abstention** | Stage 4 compares burdens in the H-R vs H-V comparison; clear ordinals labeled; unpaid auxiliaries alone ≠ auto-`insuf`; abstention = Fail | | |
+| 1 | Dual steelman (ops) | Frame §1A + both Stage 3 memos preserve transformed-body H-R and costed-correlate H-V | | |
 | 2 | Criteria before builds | Timestamp(Frame §1B) < Timestamp(Stage 3 start) | | |
 | 3 | Slim tree live | Frame §1C has **B, T, G, C**; A and C− absent; G not optional | | |
 | 4 | C live, MODE unlocked | Prior usable; bodily MODE not locked by C | | |
@@ -42,7 +42,7 @@ For a live 1.4 run, after this checklist is completed, create `receipts/neutrali
 | 7 | No hidden naturalism / TI at B | B forbids both; B cells do not cite creatio-ban / T strain | | |
 | 8 | Publishable prompts | No secret side instructions | | |
 | 9 | Total-evidence discipline | Evidence §2B completeness Pass (N0c) | | |
-| 10 | No hidden destination | Underdetermination, H-A/H-V ahead, and H-R ahead are all legitimate ceilings under the appropriate court/node | | |
+| 10 | No hidden destination | Underdetermination, H-V ahead, and H-R ahead are all legitimate ceilings under the appropriate court/node | | |
 | 11 | Symmetric standards | Same official packet/criteria/templates for all constructors | | |
 | 12 | No tier laundering | Contested stays Contested unless owner promotes | | |
 | 13 | Research seat did not crown | Evidence §2B has zero ranking sentences | | |
@@ -50,7 +50,7 @@ For a live 1.4 run, after this checklist is completed, create `receipts/neutrali
 | 15 | Shared mechanisms cancel | Scorecard marks ordinary telling as cancel where shared | | |
 | 16 | Hostile Slice C available | Hostile-to-appearance-model tomb/group grant defined | | |
 | 17 | Neutrality ≠ abstention | Checklist/audit do not treat refusal to label as fairness | | |
-| 18 | Both courts complete | Court 1 H-R/H-A and Court 2 H-R/H-V each receive all required node/criterion comparisons | | |
+| 18 | Comparison complete | H-R vs H-V receives all required B/T/G/C node and C1–C8 criterion comparisons | | |
 
 ## Gate failure modes (of the gate itself)
 

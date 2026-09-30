@@ -4,16 +4,16 @@
 **Concept name (DA-locked):** stage-gated method  
 **Launcher name (DA-locked):** stage-routed Master Prompt  
 
-**Version:** `HVHR-IBE-RB-1.4`  
+**Version:** `HVHR-IBE-RB-1.5`  
 **Status:** METHOD ONLY — no hypothesis / resurrection verdict in this document  
 **Conflict rule:** If the Master Prompt and this runbook disagree, **runbook + locked stage artifacts win**.  
 **Version pin:** change runbook → bump version → re-issue Master Prompt. Never hot-patch the prompt mid-run as a side constitution.
 
 ---
 
-## 0. v1.4 file consolidation
+## 0. v1.5 comparison scope
 
-The five stage entries under `stages/` are the working artifacts: Frame, Evidence, Construct, Compare, Judge. Frame combines hypotheses, abductive criteria, and presuppositions; Evidence combines record, dossier, and supporting ledgers. Construct is a directory with three isolated memos, so a builder receives only its own template. Obsolete ART files, freeze-marker files, and merge notes have been removed; Git history retains earlier versions. Hypothesis atomics, C1–C8, weights, worldview nodes, and both pairwise courts are unchanged.
+This version uses only H-R and H-V. Stage 3 requires two isolated blind construction memos; Stage 4 compares H-R versus H-V under each B/T/G/C node using the same C1–C8 criteria and three aggregation lenses. The H-R and H-V atomics are unchanged. The five-stage layout and existing fairness and procedural safeguards remain. The structured matrix contains exactly 32 comparison cells and 12 aggregation rows, all using comparison ID `HR-HV`.
 
 ### Retained 1.1 method history
 
@@ -47,23 +47,22 @@ This document is the **protocol runbook** (method constitution) for a **stage-ga
 
 ### 2.1 Locked comparison
 
-The existing `stages/01-frame.md` supplies the authoritative H-R / H-A / H-V identities, unchanged by this reorganization. `stages/01-frame.md` supplies the unchanged C1–C8 definitions, weights, ordinal labels, and aggregation rules.
+The existing `stages/01-frame.md` supplies the authoritative H-R / H-V identities, unchanged by this reorganization. `stages/01-frame.md` supplies the unchanged C1–C8 definitions, weights, ordinal labels, and aggregation rules.
 
-- **Court 1:** H-R vs H-A.
-- **Court 2:** H-R vs H-V.
+- **Comparison:** H-R vs H-V (machine ID `HR-HV`).
 - **Question:** Which complete model makes the locked record + background more expected under each worldview node, at no greater unpaid auxiliary cost?
 
-Apply the inherited pairwise safeguards below separately in each court; references to both sides mean the two models in that court. All three construction memos are required before either court is audited. No blended three-way winner.
+Apply the inherited pairwise safeguards below to H-R versus H-V under each worldview node. Both construction memos are required before the comparison is audited. No blended verdict across worldview nodes.
 
 ### 2.2 Locked spine (5 stages)
 
 1. **Frame** — formulate and lock the existing hypotheses, C1–C8 abductive criteria, and B/T/G/C presuppositions.
 2. **Establish the evidence** — lock the record, then complete the shared dossier.
-3. **Construct explanations** — build and freeze the blind H-R, H-A, and H-V steelmans.
-4. **Compare and challenge** — compare both pairwise courts, apply the locked criteria, and run sensitivity and fairness checks.
+3. **Construct explanations** — build and freeze the blind H-R and H-V steelmans.
+4. **Compare and challenge** — compare the H-R vs H-V comparison, apply the locked criteria, and run sensitivity and fairness checks.
 5. **Judge** — Owner interpretation and keep/cut, only after both gates pass.
 
-Stage 1 contains three mandatory component locks within Frame; Stage 2 contains two within Evidence. Consolidation does not remove any component gate or change the criteria, weights, hypotheses, worldview nodes, or two-court structure.
+Stage 1 contains three mandatory component locks within Frame; Stage 2 contains two within Evidence. Consolidation does not remove any component gate or change the criteria, weights, hypotheses, worldview nodes, or single-comparison structure.
 
 ### 2.3 Owner Neutrality Lock (10) — 1.1 clarified
 
@@ -169,7 +168,7 @@ Complete components 1A, 1B, and 1C in order; all must pass before Stage 2.
 **Who locks:** Owner.  
 **Artifact:** `stages/01-frame.md`
 
-**Locked hypothesis texts:** quote the current H-R, H-A, and H-V atomics in `stages/01-frame.md` verbatim. Preserve its two pairwise courts and mode/source distinction. These pack-baseline identities govern; do not substitute an earlier working paraphrase.
+**Locked hypothesis texts:** quote the current H-R and H-V atomics in `stages/01-frame.md` verbatim. Preserve its one H-R vs H-V comparison and mode/source distinction. These pack-baseline identities govern; do not substitute an earlier working paraphrase.
 
 **Exit — Pass when all true:**
 
@@ -339,10 +338,10 @@ Pre-register slices in `Evidence §2A`. Run all registered slices or none (no on
 
 ### Stage 3 — Construct explanations (blind)
 
-**Who builds:** Grok = H-R only; Constructor-HA = H-A only; DeepSeek = H-V only. Fresh threads. Identical packet from `stages/01-frame.md` + `stages/02-evidence.md` + this runbook + Master Prompt.  
-**Artifacts:** `stages/03-construct/HR.md` · `stages/03-construct/HV.md` · `stages/03-construct/HA.md`
+**Who builds:** Grok = H-R only; DeepSeek = H-V only. Fresh threads. Identical packet from `stages/01-frame.md` + `stages/02-evidence.md` + this runbook + Master Prompt.  
+**Artifacts:** `stages/03-construct/HR.md` · `stages/03-construct/HV.md`
 
-**Default posture:** three blind steelmans; evaluate H-R vs H-A and H-R vs H-V separately.
+**Default posture:** two blind steelmans; evaluate H-R vs H-V under each worldview node.
 
 **Memo template (parity — required):**
 
@@ -368,7 +367,7 @@ Pre-register slices in `Evidence §2A`. Run all registered slices or none (no on
 - No unlocked criteria; no hidden prompt/side constitution.  
 - H-V extra-mental correlate specified as a **costed posit**, not “whatever we need.”  
 - H-R is transformed-bodily, not swoon.  
-- After all three first drafts complete, coordinator labels AI1/AI2/AI3; only then may cross-review occur (via auditor at Stage 4).
+- After both first drafts complete, coordinator labels AI1/AI2; only then may cross-review occur (via auditor at Stage 4).
 
 **Fail:** contamination; cartoon; missing self-risk; empty-correlate collapse; “mass hallucination” dump label; “visions prove veridicality”; constructor writes both sides; asymmetric template.
 
@@ -469,8 +468,8 @@ Unpaid auxiliaries / **unpaid bridges** do **not** by themselves auto-`insuf`.
 |---|---|---|
 | 1 Frame | `stages/01-frame.md` | Hypotheses (§1A), C1–C8 criteria (§1B), presuppositions (§1C) |
 | 2 Establish the evidence | `stages/02-evidence.md` | Record (§2A), shared dossier (§2B), supporting ledgers (§2C) |
-| 3 Construct explanations | `stages/03-construct/HR.md`, `HA.md`, `HV.md` | Three separate blind construction memos |
-| 4 Compare and challenge | `stages/04-compare.md` | Both pairwise courts, sensitivity, and comparative audit |
+| 3 Construct explanations | `stages/03-construct/HR.md`, `HV.md` | Two separate blind construction memos |
+| 4 Compare and challenge | `stages/04-compare.md` | H-R versus H-V, sensitivity, and comparative audit |
 | 5 Judge | `stages/05-judge.md` | Owner interpretation and keep/cut after both gates pass |
 
 The pack contains hypothesis/criteria baselines and unfilled templates, not a completed live run. The independent review remains `NEUTRALITY_GATE.md`; the R gate and its receipt examples are required enforcement support. `PROTOCOL_GATE.md` defines the receipt schema. No obsolete ART files are required.
@@ -675,7 +674,7 @@ Not a fourth hyp argument. Not self-graded by the seat that wrote soft language.
 - One screen + file pointers to the five stage entries under `stages/` and this runbook.  
 - Points at locks by **reference**; never restates criteria/tree/hyps.  
 - Does **not** override locked stage artifacts.  
-- Version-pinned to `HVHR-IBE-RB-1.4`. **If conflict, runbook + locked artifacts win.**  
+- Version-pinned to `HVHR-IBE-RB-1.5`. **If conflict, runbook + locked artifacts win.**  
 - Optional **“next stage only”** mode.  
 - No hyp-favoring examples inside the prompt.  
 - Change runbook → bump version → re-issue prompt. Never edit prompt mid-run as a side constitution.
@@ -701,11 +700,11 @@ Underdetermination, H-V ahead, and H-R ahead are legitimate *possible outputs of
 
 ## 16. Launch sequence (ops)
 
-1. Owner accepts this runbook as `HVHR-IBE-RB-1.4` (or merges then locks).  
+1. Owner accepts this runbook as `HVHR-IBE-RB-1.5` (or merges then locks).  
 2. Run Neutrality Gate on the *protocol* (incl. N0d anti-abstention).  
-3. Issue stage-routed Master Prompt v1.4.  
+3. Issue stage-routed Master Prompt v1.5.  
 4. Execute Stages 1–2; freeze; hash if available.  
-5. Open three fresh constructor threads with identical lock bundle.  
+5. Open two fresh constructor threads with identical lock bundle.  
 6. Freeze Stage 3 memos.  
 7. Open sterile auditor thread (prefer fourth seat); enforce anti-abstention.  
 8. Owner Stage 5 + Neutrality Gate on the *run*.  
@@ -768,12 +767,12 @@ Adversarial notes for Frame §1C semantics — tree is the **1.1 slim set**:
 
 ---
 
-*End of runbook `HVHR-IBE-RB-1.4`. Method only. No hypothesis verdict.*
+*End of runbook `HVHR-IBE-RB-1.5`. Method only. No hypothesis verdict.*
 
 ---
 ## FREEZE RECORD
 
-**Version:** `HVHR-IBE-RB-1.4`; file consolidation authorized by Owner on 2026-09-29 (America/Chicago).
-**Supersedes:** v1.3 for new runs. Old runs remain pinned to their original version; retrieve their files from Git history.
-**Scope:** combine stage components into Frame and Evidence, isolate the three construction memos, rename Compare and Judge, remove superseded files, and update receipt paths/schema. Hypotheses, criteria, and substantive safeguards are retained.
+**Version:** `HVHR-IBE-RB-1.5`; two-hypothesis scope authorized by Owner on 2026-09-29 (America/Chicago).
+**Supersedes:** v1.4 for new runs. Old runs remain pinned to their original version; retrieve their files from Git history.
+**Scope:** retain H-R and H-V only, with two blind construction memos and one comparative audit. The two surviving hypothesis atomics, C1–C8 criteria, weights, nodes, lenses, and substantive safeguards remain unchanged.
 **No mid-run edit** without version bump and reissued launcher.

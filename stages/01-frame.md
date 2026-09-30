@@ -1,61 +1,49 @@
 # Stage 1 — Frame
 
-**Protocol:** `HVHR-IBE-RB-1.4`
+**Protocol:** `HVHR-IBE-RB-1.5`
 **Status:** hypothesis and criterion pack baselines preserved below; complete the presupposition section and all component gates for each new run.
 
 Complete and approve 1A → 1B → 1C in order. A component lock freezes that section's substantive contents while the remaining sections are completed. After all three pass, freeze this whole file and emit `receipts/stage01.json`. Any supporting criteria crosswalk belongs within §1B. No extra ART files are needed.
 
 ## 1A. Hypotheses
 
-**Role:** Three locked identities for new runs — **H-R**, **H-A**, **H-V**. No scores. Stage 1 locks quoted atomics; section is READ-ONLY for the remainder of a run unless owner version-bumps.
+**Role:** Two locked identities for new runs — **H-R**, **H-V**. No scores. Stage 1 locks quoted atomics; section is READ-ONLY for the remainder of a run unless owner version-bumps.
 
 ### Locked H-R (quoted atomic)
 
 > God raised Jesus from death into transformed, glorified bodily life, with genuine personal and bodily continuity with the Jesus who died. The postmortem encounters were genuine encounters with the risen Jesus himself, who was their real causal source. These encounters, their interpretation within their historical setting—including available Jewish categories—and the transmission of testimony generated and stabilized resurrection belief and proclamation, appearance traditions, the early creed and appearance list, and the continuing movement. Ordinary transmission, elaboration, and literary shaping may account for later forms where supported by the locked evidence.
 
-### Locked H-A (quoted atomic)
-
-> After Jesus’s death, persons underwent phenomenally actual appearance-type experiences in which Jesus was experienced or identified as present. Permitted phenomenologies include ordinary perceptual, misperceptual, hallucinatory, or visionary experience; veridicality and any paranormal causal source are separate status/source questions left open by the atomic. These occurred without Jesus having been raised into transformed bodily life and without requiring a surviving empirical personality of Jesus as their causal source. These encounters, their interpretation within their historical setting—including available Jewish categories—and the transmission of testimony generated and stabilized resurrection belief and proclamation, appearance traditions, the early creed and appearance list, and the continuing movement. Ordinary transmission, elaboration, and literary shaping may account for later forms where supported by the locked evidence.
-
 ### Locked H-V (quoted atomic)
 
 > After Jesus’s death, persons underwent phenomenally actual visionary appearance experiences in which Jesus was experienced or identified as present. These experiences were mediated through ordinary human psychological, cognitive, perceptual, mnemonic, and affective processes; nevertheless, at least some substantively significant Jesus-related content was veridical because a real extra-mental correlate genuinely contributed to that content. These experiences occurred without Jesus having been raised into transformed bodily life and did not consist in sustained ordinary bodily encounters with a resurrected Jesus. Their interpretation within their historical setting—including available Jewish categories—and the transmission and social reinforcement of testimony generated and stabilized resurrection belief and proclamation, appearance traditions, the early creed and appearance list, and the continuing movement. Ordinary transmission, elaboration, and literary shaping may account for later forms where supported by the locked evidence.
 
-**Relation:** **H-A** and **H-V** share the same non-bodily structure. **H-A** allows the full appearance-type range. **H-V** restricts to visionary mode plus a nonempty extra-mental correlate (veridicality).
 
-### Two courts (required)
+### Required comparison
 
-Stage 4 scores **two pairwise courts**, not a single three-way blended winner:
-
-1. **Court 1: H-R vs H-A** — Do we need bodily resurrection at all?
-2. **Court 2: H-R vs H-V** — Even granting extra-mental veridical visionary appearance, is raised body better?
-
-Ordinal labels are court-specific (see Frame §1B). Anti-abstention and the three weight lenses apply **per court**.
+Stage 4 compares **H-R vs H-V** under each worldview node. Ordinal labels are `H-R+` / `H-V+` / `≈` / `insuf` (see Frame §1B). Anti-abstention and the three weight lenses apply to this comparison. The machine-readable comparison ID is `HR-HV`.
 
 ### Mode ≠ source
 
-Encounter **mode** is not causal **source**. H-R may include visionary encounters *caused by* the bodily risen Jesus. Appearance or visionary phenomenology alone does not decide for H-A or H-V.
+Encounter **mode** is not causal **source**. H-R may include visionary encounters *caused by* the bodily risen Jesus. Appearance or visionary phenomenology alone does not decide for H-V.
 
 ### Stage-3 placeholders (filled at construction)
 
 | Model | Auxiliaries | Losing conditions |
 |---|---|---|
 | H-R | encounter pathways; divine intention; individual/group; interpretation; social formation; later telling — costed | explicit lose conditions |
-| H-A | appearance pathway(s); interpretation; social formation; later telling — costed | explicit lose conditions |
 | H-V | correlate + substantive veridical content + relation; encounter pathways; interpretation; social formation; later telling — costed | explicit lose conditions |
 
 ### Parity notes
 
-- Downstream telling sentences matched for parity across H-R / H-A / H-V.
-- H-A / H-V atomics parallel except appearance-range vs visionary+veridical-correlate.
+- Downstream telling sentences matched for parity across H-R / H-V.
 - H-V correlate: unspecified but substantively nonempty; sincerity ≠ veridicality.
-- No named metaphysics in H-A / H-V identities.
+- No named metaphysics in H-V identity.
 
 ---
 
 ## 1B. Abductive criteria
 
-**Role:** Concise C1–C8 lock for new runs. No H-R / H-A / H-V scores here. Fuller literature crosswalk and hostile-reader table: append within this criteria section; essentials below.
+**Role:** Concise C1–C8 lock for new runs. No H-R / H-V scores here. Fuller literature crosswalk and hostile-reader table: append within this criteria section; essentials below.
 
 ### Criteria (C1–C8)
 
@@ -72,37 +60,32 @@ Encounter **mode** is not causal **source**. H-R may include visionary encounter
 
 **Default weights:** `w(C1) = … = w(C8) = 1` (equal). Subfunctions get no extra weights.
 
-### Ordinal scale — two pairwise courts
+### Ordinal scale — H-R vs H-V
 
-**Not a single three-way blended winner.** Stage 4 scores two courts with court-specific ordinal labels:
+Stage 4 applies `H-R+` / `H-V+` / `≈` / `insuf` to the H-R vs H-V comparison under each B/T/G/C node.
 
-| Court | Pair | Ordinal labels |
-|---|---|---|
-| **Court 1** | H-R vs H-A | `H-R+` / `H-A+` / `≈` / `insuf` |
-| **Court 2** | H-R vs H-V | `H-R+` / `H-V+` / `≈` / `insuf` |
-
-No probabilities. Shared downstream telling cancels. Mode ≠ source (see Frame §1A). Do not blend Court 1 and Court 2 into one overall crown.
+No probabilities. Shared downstream telling cancels. Mode ≠ source (see Frame §1A). Do not blend worldview nodes into one overall crown.
 
 ### Stage 4 aggregation lenses (owner lock for new runs)
 
-Scorecards stay **C1–C8** with the **equal-weight primary profile**. After filling cells, Stage 4 **must also publish two sensitivity aggregations over the same cells** (do **not** cook criteria; do **not** invent new families) — **per court**:
+Scorecards stay **C1–C8** with the **equal-weight primary profile**. After filling cells, Stage 4 **must also publish two sensitivity aggregations over the same cells** (do **not** cook criteria; do **not** invent new families) — **per node**:
 
 1. **Equal** — default; all `w = 1` (primary).
 2. **C3-heavy** — total-evidence coherence weighted strongest (`w(C3) = 3`; others `1`).
 3. **C1-heavy** — content-fit weighted strongest (`w(C1) = 3`; others `1`).
 
-**Lenses are aggregations, not new criteria.** Anti-abstention still applies to filling cells **per court**: unpaid bridges ≠ auto-`insuf`; assign the court-appropriate `H-R+` / `H-A+` or `H-R+` / `H-V+` / `≈` when ordinal difference is clear; `insuf` only after compare when warrant missing or deadlocked. **Equal-weight remains primary** in each court.
+**Lenses are aggregations, not new criteria.** Anti-abstention still applies to filling cells **per node**: unpaid bridges ≠ auto-`insuf`; assign the court-appropriate `H-R+` / `H-V+` / `≈` when ordinal difference is clear; `insuf` only after compare when warrant missing or deadlocked. **Equal-weight remains primary** in the comparison.
 
 #### Owner Stage-4 honesty checks (aggregation lenses)
 
-When publishing **C3-heavy**, require an explicit **per-node** tag (per court):
+When publishing **C3-heavy**, require an explicit **per-node** tag (per node):
 
 - **ARGUED+LOCKED** — the metaphysics relevant to C3 is argued and locked **for this node**, or
 - **SMUGGLED** — metaphysics is smuggled (imported without node-level lock/argument).
 
 If **SMUGGLED**, **C3-heavy must not be treated as decisive** for that node (flag / downgrade commentary).
 
-When publishing **C1-heavy**, require an explicit **per-criterion-or-node** tag (per court):
+When publishing **C1-heavy**, require an explicit **per-criterion-or-node** tag (per node):
 
 - **EVIDENCE-BRIDGE** — C1 rests on a bridge from data → differential expectedness vs the steelman rival, or
 - **SLOGAN-FIT** — C1 is slogan-fit only (label / catchphrase without that bridge).

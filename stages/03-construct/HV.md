@@ -1,6 +1,6 @@
 # Stage 3 — Construct H-V
 
-**Blind build.** Do not see Stage 3 H-R memo / Stage 3 H-A memo before freeze. Three-hypothesis Stage 3 (H-R, H-A, H-V). Identical packet: stages/01-frame.md + stages/02-evidence.md + runbook + Master Prompt.
+**Blind build.** Do not see Stage 3 H-R memo before freeze. Two-hypothesis Stage 3 (H-R, H-V). Identical packet: stages/01-frame.md + stages/02-evidence.md + runbook + Master Prompt.
 
 ## 1. Exact hypothesis text (from Frame §1A)
 
@@ -71,6 +71,6 @@ Generic rival-type self-contrast OK; not a prosecution file. Do not dump every n
 ## Exit checklist
 
 - [ ] Complete template; parity, specificity, self-risk present
-- [ ] No peeking / cross-reference to Stage 3 H-R memo / Stage 3 H-A memo
+- [ ] No peeking / cross-reference to Stage 3 H-R memo
 - [ ] Costed nonempty correlate (no empty-correlate collapse)
 - [ ] No unlocked criteria; no side constitution

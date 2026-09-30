@@ -24,14 +24,10 @@ write_json_file <- function(x, path) {
 make_matrix <- function() {
   cells <- list()
   k <- 1
-  for (court in c("Court1", "Court2")) {
+  for (court in "HR-HV") {
     for (node in c("B", "T", "G", "C")) {
       for (criterion in paste0("C", 1:8)) {
-        label <- if (court == "Court1") {
-          if (criterion %in% c("C1", "C3")) "H-R+" else if (criterion == "C2") "H-A+" else "≈"
-        } else {
-          if (criterion %in% c("C1", "C3")) "H-R+" else if (criterion == "C2") "H-V+" else "≈"
-        }
+        label <- if (criterion %in% c("C1", "C3")) "H-R+" else if (criterion == "C2") "H-V+" else "≈"
         cells[[k]] <- list(court = court, node = node, criterion = criterion, label = label)
         k <- k + 1
       }
@@ -40,7 +36,7 @@ make_matrix <- function() {
 
   aggs <- list()
   k <- 1
-  for (court in c("Court1", "Court2")) {
+  for (court in "HR-HV") {
     for (node in c("B", "T", "G", "C")) {
       aggs[[k]] <- list(court = court, node = node, lens = "Equal", net = "H-R ahead")
       k <- k + 1
@@ -52,7 +48,7 @@ make_matrix <- function() {
   }
 
   list(
-    protocol_version = "HVHR-IBE-RB-1.4",
+    protocol_version = "HVHR-IBE-RB-1.5",
     criteria = as.list(paste0("C", 1:8)),
     cells = cells,
     aggregations = aggs
@@ -69,7 +65,7 @@ make_valid_run <- function() {
   for (stage in 1:2) {
     components <- if (stage == 1) c("hypotheses", "criteria", "presuppositions") else c("record", "dossier")
     rec <- list(
-      protocol_version = "HVHR-IBE-RB-1.4", stage = stage, status = "LOCKED",
+      protocol_version = "HVHR-IBE-RB-1.5", stage = stage, status = "LOCKED",
       artifact_path = artifact_paths[[stage]], artifact_md5 = md5_rel(root, artifact_paths[[stage]]),
       completed_components = as.list(components),
       locked_at = sprintf("2026-09-16T01:%02d:00Z", stage),
@@ -83,11 +79,10 @@ make_valid_run <- function() {
 
   construction_paths <- list(
     "H-R" = "stages/03-construct/HR.md",
-    "H-A" = "stages/03-construct/HA.md",
     "H-V" = "stages/03-construct/HV.md"
   )
-  constructor_ids <- c("Constructor-HR", "Constructor-HA", "Constructor-HV")
-  freeze_times <- c("2026-09-16T03:00:00Z", "2026-09-16T03:05:00Z", "2026-09-16T03:10:00Z")
+  constructor_ids <- c("Constructor-HR", "Constructor-HV")
+  freeze_times <- c("2026-09-16T03:00:00Z", "2026-09-16T03:10:00Z")
 
   constructions <- list()
   j <- 1
@@ -107,7 +102,7 @@ make_valid_run <- function() {
   }
 
   stage3 <- list(
-    protocol_version = "HVHR-IBE-RB-1.4",
+    protocol_version = "HVHR-IBE-RB-1.5",
     stage = 3,
     status = "FROZEN",
     stage_started_at = "2026-09-16T02:00:00Z",
@@ -124,7 +119,7 @@ make_valid_run <- function() {
   write_json_file(matrix, file.path(root, matrix_rel))
 
   stage4 <- list(
-    protocol_version = "HVHR-IBE-RB-1.4",
+    protocol_version = "HVHR-IBE-RB-1.5",
     stage = 4,
     status = "PASS",
     auditor_id = "Auditor-Sterile",
@@ -140,7 +135,7 @@ make_valid_run <- function() {
 
   write_text(file.path(root, "NEUTRALITY_GATE.md"), "Synthetic Neutrality Gate PASS")
   neutrality <- list(
-    protocol_version = "HVHR-IBE-RB-1.4",
+    protocol_version = "HVHR-IBE-RB-1.5",
     status = "PASS",
     independent_reader_id = "Neutrality-Reader",
     artifact_path = "NEUTRALITY_GATE.md",
@@ -225,10 +220,52 @@ stopifnot(any(grepl("Stage 2 locked before Stage 1", res6$status$failures, fixed
 run7 <- make_valid_run()
 lock_path <- file.path(run7, "receipts", "stage01.json")
 rec <- fromJSON(lock_path, simplifyVector = FALSE)
-rec$protocol_version <- "HVHR-IBE-RB-1.3"
+rec$protocol_version <- "HVHR-IBE-RB-1.4"
 write_json_file(rec, lock_path)
 res7 <- run_gate(run7)
 stopifnot(res7$code != 0L)
 stopifnot(!isTRUE(res7$status$stage5_allowed))
+
+# FAIL: an extra constructor cannot enter the two-model protocol.
+run8 <- make_valid_run()
+construction_path <- file.path(run8, "receipts", "stage03.json")
+rec <- fromJSON(construction_path, simplifyVector = FALSE)
+extra <- rec$constructions[[1]]
+extra$hypothesis <- "H-X"
+extra$constructor_id <- "Constructor-X"
+rec$constructions[[3]] <- extra
+write_json_file(rec, construction_path)
+res8 <- run_gate(run8)
+stopifnot(res8$code != 0L)
+stopifnot(any(grepl("exactly two constructions", res8$status$failures, fixed = TRUE)))
+
+# FAIL: unexpected comparison rows must not slip through alongside the valid rows.
+run9 <- make_valid_run()
+matrix_path <- file.path(run9, "receipts", "stage04-audit-matrix.json")
+matrix <- fromJSON(matrix_path, simplifyVector = FALSE)
+extra <- matrix$cells[[1]]
+extra$court <- "UNREGISTERED"
+matrix$cells[[length(matrix$cells) + 1]] <- extra
+extra <- matrix$aggregations[[1]]
+extra$court <- "UNREGISTERED"
+matrix$aggregations[[length(matrix$aggregations) + 1]] <- extra
+write_json_file(matrix, matrix_path)
+audit_path <- file.path(run9, "receipts", "stage04.json")
+rec <- fromJSON(audit_path, simplifyVector = FALSE)
+rec$matrix_md5 <- md5_rel(run9, "receipts/stage04-audit-matrix.json")
+write_json_file(rec, audit_path)
+res9 <- run_gate(run9)
+stopifnot(res9$code != 0L)
+stopifnot(any(grepl("unexpected comparison", res9$status$failures, fixed = TRUE)))
+
+# FAIL: the audit cannot start until BOTH construction memos are frozen.
+run10 <- make_valid_run()
+audit_path <- file.path(run10, "receipts", "stage04.json")
+rec <- fromJSON(audit_path, simplifyVector = FALSE)
+rec$audit_started_at <- "2026-09-16T03:05:00Z"
+write_json_file(rec, audit_path)
+res10 <- run_gate(run10)
+stopifnot(res10$code != 0L)
+stopifnot(any(grepl("before all Stage 3 constructions were frozen", res10$status$failures, fixed = TRUE)))
 
 cat("All protocol-gate tests passed.\n")
